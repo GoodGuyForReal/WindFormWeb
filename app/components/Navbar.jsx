@@ -17,10 +17,10 @@ const Navbar = () => {
     return (
         <div>
             <header className="absolute inset-x-0 top-0 z-50 border-b border-gray-500">
-                <nav className="flex items-center justify-between px-6 py-2 lg:px-8" aria-label="Global">
+                <nav className="flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="">WindForm</span>
+                            <span className="">WindForm UI</span>
                         </a>
                     </div>
                     <div className="flex lg:hidden">
@@ -41,7 +41,7 @@ const Navbar = () => {
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                        <a href="#" className="text-sm font-semibold leading-6 text-white">
                             Log in <span aria-hidden="true">&rarr;</span>
                         </a>
                     </div>
