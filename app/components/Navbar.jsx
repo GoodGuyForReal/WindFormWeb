@@ -5,28 +5,28 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
-const Navbar = () => {
+export default function Navbar () {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     const navigation = [
-        { name: 'Documantation', href: '#' },
-        { name: 'Tamplates', href: '#' },
-        { name: 'Github', href: '#' },
+        { name: 'Documantation', href: '/doc' },
+        { name: 'Tamplates', href: '/tamplates' },
+        { name: 'About', href: '/about' },
     ]
 
     return (
         <div>
-            <header className="absolute inset-x-0 top-0 z-50 border-b border-gray-500">
+            <header className="fixed inset-x-0 top-0 z-50 border-b bg-black/30 backdrop-blur-lg border-gray-500">
                 <nav className="flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
-                        <a href="#" className="-m-1.5 p-1.5">
-                            <span className="">WindForm UI</span>
-                        </a>
+                        <Link href="/" className="-m-1.5 p-1.5">
+                            <span className="font-bold">WindForm UI</span>
+                        </Link>
                     </div>
                     <div className="flex lg:hidden">
                         <button
                             type="button"
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
                             onClick={() => setMobileMenuOpen(true)}
                         >
                             <span className="sr-only">Open main menu</span>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 </nav>
                 <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                     <div className="fixed inset-0 z-50" />
-                    <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black/30 backdrop-blur-xl px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
                             <a href="#" className="-m-1.5 p-1.5">
                                 <span className="">WindForm</span>
@@ -91,5 +91,3 @@ const Navbar = () => {
         </div>
     )
 }
-
-export default Navbar
