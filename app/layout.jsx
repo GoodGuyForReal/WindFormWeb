@@ -1,7 +1,7 @@
+"use client"
 import Navbar from './components/navbar'
 import './globals.css'
-import Sidebar from './Sidebar';
-import { useRouter } from 'next/router';
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,13 +9,10 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const router = useRouter();
-  const isDocumentationPage = router.pathname === '/docs';
   return (
     <html lang="en">
       <body className={''}>
         <Navbar />
-        {isDocumentationPage && <Sidebar />}
         {children}
       </body>
     </html>

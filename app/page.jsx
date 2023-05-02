@@ -2,7 +2,7 @@ import { Hero } from "./components/sections/hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex w-full min-h-screen flex-col items-center px-10 pt-24 sm:px-12 md:px-24">
       <Hero />
     </main>
   )
