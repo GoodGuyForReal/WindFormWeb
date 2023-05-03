@@ -2,8 +2,8 @@
 import React from 'react'
 import { useState } from "react";
 import SideBar from './components/Sidebar';
-import Intro from './components/sections/intro/intro';
-import Usage from './components/sections/usage/usage';
+import Intro from './components/sections/intro/Intro.jsx';
+import Usage from './components/sections/usage/Usage.jsx';
 
 const page = () => {
     const [activeTab, setActiveTab] = useState(0);
