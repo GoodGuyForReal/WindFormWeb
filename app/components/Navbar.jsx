@@ -4,8 +4,9 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import { SearchBar } from './SearchBar'
 
-export default function Navbar () {
+export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     const navigation = [
@@ -41,9 +42,7 @@ export default function Navbar () {
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-sm font-semibold leading-6 text-white">
-                            Log in <span aria-hidden="true">&rarr;</span>
-                        </a>
+                        <SearchBar />
                     </div>
                 </nav>
                 <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -65,6 +64,7 @@ export default function Navbar () {
                         <div className="mt-6 flow-root">
                             <div className="-my-6 divide-y divide-gray-500/10">
                                 <div className="space-y-2 py-6">
+                                    <SearchBar />
                                     {navigation.map((item) => (
                                         <a
                                             key={item.name}
