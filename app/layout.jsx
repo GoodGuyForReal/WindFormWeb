@@ -1,5 +1,5 @@
 "use client"
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar.jsx'
 import './globals.css'
 
 
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={''}>
+      <body>
         <Navbar />
         {children}
       </body>

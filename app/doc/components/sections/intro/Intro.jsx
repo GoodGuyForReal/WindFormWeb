@@ -2,9 +2,12 @@ import React from 'react'
 
 const Intro = () => {
     return (
-        <div className='Intro'>
-            <h1 className='text-4xl font-bold'>Introduction</h1>
-            <p>Re-usable components built using Radix UI and Tailwind CSS.</p>
+        <div className='Intro w-full'>
+            <div className='intro_header'>
+                <h1 className='text-4xl font-bold'>Introduction</h1>
+                <p>Re-usable components built using Radix UI and Tailwind CSS.</p>
+            </div>
+            <hr />
             <div className='intro_main h-[3000px]'>
                 <p>
                     This is NOT a component library. It's a collection of re-usable components that you can copy and paste into your apps.
