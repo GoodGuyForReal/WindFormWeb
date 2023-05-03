@@ -16,7 +16,7 @@ export default function Navbar () {
 
     return (
         <div>
-            <header className="fixed inset-x-0 top-0 z-50 border-b bg-black/30 backdrop-blur-lg border-gray-700">
+            <header className="fixed inset-x-0 top-0 z-50 border-b bg-slate-950/30 backdrop-blur-lg border-gray-700">
                 <nav className="flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
                         <Link href="/" className="-m-1.5 p-1.5">

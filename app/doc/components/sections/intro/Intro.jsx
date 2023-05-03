@@ -5,7 +5,7 @@ const Intro = () => {
         <div className='Intro w-full'>
             <div className='intro_header'>
                 <h1 className='text-4xl font-bold'>Introduction</h1>
-                <p>Re-usable components built using Radix UI and Tailwind CSS.</p>
+                <p className='text-light-secondary'>This is a re-usable and costimazible components based on forms. Built with Tailwind CSS.</p>
             </div>
             <hr />
             <div className='intro_main h-[3000px]'>
