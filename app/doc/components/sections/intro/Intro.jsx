@@ -2,25 +2,29 @@ import React from 'react'
 
 const Intro = () => {
     return (
-        <div className='Intro w-full'>
-            <div className='intro_header'>
-                <h1 className='text-4xl font-bold'>Introduction</h1>
-                <p className='text-light-secondary'>This is a re-usable and costimazible components based on forms. Built with Tailwind CSS.</p>
+        <div className='Intro w-full flex flex-col items-start gap-5'>
+
+            <div className='intro flex flex-col gap-5'>
+                <div className='intro_header'>
+                    <h1 className='text-5xl font-bold mb-4'>Introduction</h1>
+                    <p className='text-light-secondary text-lg'>This is a re-usable and costimazible components based on forms. Built with Tailwind CSS.</p>
+                </div>
+                <hr className='border-light-secondary' />
+                <div className='intro_main'>
+                    <p className='leading-[160%] text-lg'>
+                        This is a collection of reusable components that are not meant to be installed as a dependency or distributed through npm, so it is not considered a component library in the traditional sense.
+                        <br />
+                        <br />
+                        You can choose the specific components that you need and copy and paste their code into your own projects, then make any necessary customizations to fit your requirements.
+                        <br />
+                        <br />
+                        This means you have full control over the code and can use it as a reference to build your own component library.
+                    </p>
+                </div>
             </div>
-            <hr />
-            <div className='intro_main h-[3000px]'>
-                <p>
-                    This is NOT a component library. It's a collection of re-usable components that you can copy and paste into your apps.
 
-                    What do you mean by not a component library?
+            <button className='text-white border rounded-md border-light-secondary py-2 px-6 hover:bg-light-lightbg hover:text-dark-secondary duration-200 font-medium'>How to use</button>
 
-                    I mean you do not install it as a dependency. It is not available or distributed via npm. I have no plans to publish it as an npm package (for now).
-
-                    Pick the components you need. Copy and paste the code into your project and customize to your needs. The code is yours.
-
-                    Use this as a reference to build your own component libraries.
-                </p>
-            </div>
         </div>
     )
 }
