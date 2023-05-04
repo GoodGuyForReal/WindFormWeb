@@ -1,23 +1,32 @@
 import React, { useState } from 'react'
+import 'prismjs/themes/prism.css';
+import 'prismjs/components/prism-javascript';
+
 
 const PreviewCard = ({ item }) => {
-    const [isCodeDisplay, setisCodeDisplay] = useState({
+    const [isCodeDisplay, setIsCodeDisplay] = useState({
         isDisplay: false,
-        style: 'bg-white'
-    })
-
+        style: 'bg-white',
+    });
     const showCode = () => {
-        !isCodeDisplay.isDisplay ?
-            setisCodeDisplay({ isDisplay: true, style: 'bg-slate-900' })
-            :
-            setisCodeDisplay({ isDisplay: false, style: 'bg-white' })
-    }
+        setIsCodeDisplay((prevState) => ({
+            isDisplay: !prevState.isDisplay,
+            style: prevState.isDisplay ? 'bg-white' : 'bg-slate-900',
+        }));
+    };
+
+    useEffect(() => {
+        // Add PrismJS highlight to the code block when the component mounts
+        if (isCodeDisplay.isDisplay) {
+            window.Prism.highlightAll();
+        }
+    }, [isCodeDisplay.isDisplay]);
 
     console.log(item);
 
     return (
         <div>
-            <div className="preview_card w-full">
+            <div className="preview_card w-full max-w-[400px] ">
                 <div className="card_header w-full flex items-center justify-between mb-3">
                     <h3 className='text-lg'>{item.name}</h3>
 
@@ -35,8 +44,10 @@ const PreviewCard = ({ item }) => {
                         {
                             isCodeDisplay.isDisplay ?
                                 <div className='w-full h-full px-10'>
-                                    <pre lang='language-javascript' className='overflow-auto text-white'>
-                                        <code>{item.code}</code>
+                                    <pre
+                                        className={`overflow-auto text-white language-javascript ${isCodeDisplay.style}`}
+                                    >
+                                        <code className="language-javascript" >{item.code}</code>
                                     </pre>
                                 </div>
                                 :

@@ -23,8 +23,8 @@ const page = () => {
                 }
             </main>
 
-            <div>
-                <h1 className='text-white'>Content</h1>
+            <div className='pt-6'>
+                <h1 className='text-white '>Content</h1>
             </div>
         </div>
     );
