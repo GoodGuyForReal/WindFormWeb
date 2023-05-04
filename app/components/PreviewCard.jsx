@@ -1,32 +1,24 @@
 import React, { useState, useEffect } from 'react'
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
 
 const PreviewCard = ({ item }) => {
     const [isCodeDisplay, setIsCodeDisplay] = useState({
         isDisplay: false,
-        style: 'bg-white',
+        style: '',
     });
+
     const showCode = () => {
         setIsCodeDisplay((prevState) => ({
             isDisplay: !prevState.isDisplay,
-            style: prevState.isDisplay ? 'bg-white' : 'bg-slate-900',
+            style: prevState.isDisplay ? '' : 'bg-[#282C34]',
         }));
     };
 
-    useEffect(() => {
-        // Add PrismJS highlight to the code block when the component mounts
-        if (isCodeDisplay.isDisplay) {
-            window.Prism.highlightAll();
-        }
-    }, [isCodeDisplay.isDisplay]);
-
-    console.log(item);
-
     return (
         <div>
-            <div className="preview_card w-full max-w-[400px] ">
+            <div className="preview_card w-full max-w-full ">
                 <div className="card_header w-full flex items-center justify-between mb-3">
                     <h3 className='text-lg'>{item.name}</h3>
 
@@ -39,15 +31,15 @@ const PreviewCard = ({ item }) => {
                         </button>
                     </div>
                 </div>
-                <div className="card_main border border-dark-secondary rounded-md py-10 flex items-center justify-center">
+                <div className={`card_main border border-dark-secondary rounded-md py-10 flex items-center justify-center ${isCodeDisplay.style}`}>
                     <div>
                         {
                             isCodeDisplay.isDisplay ?
                                 <div className='w-full h-full px-10'>
-                                    <SyntaxHighlighter 
-                                        language="javascript"
-                                        style={dracula}
-                                        className={`overflow-auto text-white language-javascript ${isCodeDisplay.style}`}
+                                    <SyntaxHighlighter
+                                        wrapLongLines={true}
+                                        language="jsx"
+                                        style={atomOneDark}
                                     >
                                         {item.code}
                                     </SyntaxHighlighter>
