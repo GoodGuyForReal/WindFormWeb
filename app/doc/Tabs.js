@@ -21,7 +21,7 @@ export const tabs = [
         subtabs: [
             {
                 title: "Buttons",
-                component: <Buttons />
+                component: <Buttons />,
             },
             {
                 title: "Inputs",

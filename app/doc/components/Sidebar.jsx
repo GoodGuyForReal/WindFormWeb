@@ -3,7 +3,7 @@ import React from 'react'
 const SideBar = ({ tabs, setActiveTab, activeTab, setActiveSubTab, activeSubTab }) => {
 
     return (
-        <div className="flex flex-col sidebar px-10 pt-5">
+        <div className="flex flex-col sidebar px-10 pt-10">
             {tabs.map((tab, index) => (
                 <div key={index}>
                     <button
@@ -21,8 +21,8 @@ const SideBar = ({ tabs, setActiveTab, activeTab, setActiveSubTab, activeSubTab 
                             {tab.subtabs.map((subtab, subIndex) => (
                                 <button
                                     key={subIndex}
-                                    className={`flex items-center gap-2 py-1 px-4 text-sm text-left text-light-secondary font-medium hover:underline duration-200${activeSubTab === subIndex
-                                        ? " text-white bg-gray-900 rounded-lg w-full"
+                                    className={`flex items-center gap-2 py-1 px-4 text-sm text-left text-light-secondary font-medium hover:underline duration-200 ${activeSubTab === subIndex
+                                        ? " text-white underline font-bold"
                                         : "text-light-secondary"
                                         }`}
                                     onClick={() => setActiveSubTab(subIndex)}
