@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import 'prismjs/themes/prism.css';
-import 'prismjs/components/prism-javascript';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/default-highlight';
 
 
 const PreviewCard = ({ item }) => {
@@ -44,11 +44,13 @@ const PreviewCard = ({ item }) => {
                         {
                             isCodeDisplay.isDisplay ?
                                 <div className='w-full h-full px-10'>
-                                    <pre
+                                    <SyntaxHighlighter
+                                        language='javascript'
+                                        style={dracula}
                                         className={`overflow-auto text-white language-javascript ${isCodeDisplay.style}`}
                                     >
-                                        <code className="language-javascript" >{item.code}</code>
-                                    </pre>
+                                        {item.code}
+                                    </SyntaxHighlighter>
                                 </div>
                                 :
                                 <button className={`${item.class}`}>Button</button>
