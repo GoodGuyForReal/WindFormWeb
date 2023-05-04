@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/default-highlight';
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 
 const PreviewCard = ({ item }) => {
@@ -44,8 +44,8 @@ const PreviewCard = ({ item }) => {
                         {
                             isCodeDisplay.isDisplay ?
                                 <div className='w-full h-full px-10'>
-                                    <SyntaxHighlighter
-                                        language='javascript'
+                                    <SyntaxHighlighter 
+                                        language="javascript"
                                         style={dracula}
                                         className={`overflow-auto text-white language-javascript ${isCodeDisplay.style}`}
                                     >
