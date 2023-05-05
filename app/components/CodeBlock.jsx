@@ -3,9 +3,8 @@ import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
 
-const CodeBlock = ({item}) => {
+const CodeBlock = ({ item }) => {
     return (
-
         <SyntaxHighlighter
             wrapLongLines={true}
             language="jsx"
@@ -13,7 +12,6 @@ const CodeBlock = ({item}) => {
         >
             {item.code}
         </SyntaxHighlighter>
-
     )
 }
 
