@@ -4,6 +4,7 @@ import ButtonPrimary from './buttonPrimary/ButtonPrimary';
 import ButtonOutline from './buttonOutline/ButtonOutline';
 import ButtonGhost from './buttonGhost/ButtonGhost';
 import ButtonIcon from './buttonIcon/ButtonIcon';
+import ButtonLoading from './buttonLoading/ButtonLoading';
 
 const Buttons = () => {
 
@@ -16,8 +17,6 @@ const Buttons = () => {
                     name: 'Default',
                     component: <ButtonPrimary />,
                     code: `<button className='py-2 px-4 rounded-md bg-light-lightbg text-dark-darkbg hover:bg-light-lightbg/90 duration-200'>Button</button>`,
-
-
                 },
                 {
                     name: 'Outline',
@@ -32,6 +31,11 @@ const Buttons = () => {
                 {
                     name: 'With Icon',
                     component: <ButtonIcon />,
+                    code: `<button className='py-2 px-4 rounded-md bg-light-lightbg text-dark-darkbg hover:bg-light-lightbg/90 duration-200  flex items-center gap-2'><BanknotesIcon className=' h-5 w-5' /> Pay in cash</button>`,
+                },
+                {
+                    name: 'Loading',
+                    component: <ButtonLoading />,
                     code: `<button className='py-2 px-4 rounded-md bg-light-lightbg text-dark-darkbg hover:bg-light-lightbg/90 duration-200  flex items-center gap-2'><BanknotesIcon className=' h-5 w-5' /> Pay in cash</button>`,
                 },
             ],
