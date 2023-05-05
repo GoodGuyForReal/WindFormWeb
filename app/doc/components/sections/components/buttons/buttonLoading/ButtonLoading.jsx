@@ -5,7 +5,7 @@ const ButtonLoading = () => {
     return (
         <>
             <button className='py-2 px-4 rounded-md bg-light-lightbg text-dark-darkbg flex items-center gap-2'>
-                <SpinIcon /> Loadoing...</button>
+                <SpinIcon /> Loading...</button>
         </>
     )
 }

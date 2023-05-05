@@ -2,7 +2,7 @@ import React from 'react'
 
 const SideBar = ({ tabs, setActiveTab, activeTab, setActiveSubTab, activeSubTab }) => {
 
-    return (
+    return ( 
         <div className="flex flex-col sidebar px-10 pt-10">
             {tabs.map((tab, index) => (
                 <div key={index}>
