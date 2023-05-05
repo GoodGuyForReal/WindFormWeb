@@ -3,6 +3,7 @@ import ButtonIcon from "./buttonIcon/ButtonIcon";
 import ButtonLoading from "./buttonLoading/ButtonLoading";
 import ButtonOutline from "./buttonOutline/ButtonOutline";
 import ButtonPrimary from "./buttonPrimary/ButtonPrimary";
+import ButtonSecondary from "./buttonSecondary/buttonSecondary";
 
 
 export const buttonMain = [
@@ -13,6 +14,11 @@ export const buttonMain = [
                 name: 'Default',
                 component: <ButtonPrimary />,
                 code: `<button className='py-2 px-4 rounded-md bg-light-lightbg text-dark-darkbg hover:bg-light-lightbg/90 duration-200'>Button</button>`,
+            },
+            {
+                name: 'Secondary',
+                component: <ButtonSecondary />,
+                code: `<button className='py-2 px-4 rounded-md bg-gray-700 text-dark-primary hover:bg-gray-700/90 duration-200'>Button</button>`,
             },
             {
                 name: 'Outline',

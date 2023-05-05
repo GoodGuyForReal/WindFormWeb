@@ -7,12 +7,14 @@ const PreviewCard = ({ item }) => {
     const [isCodeDisplay, setIsCodeDisplay] = useState({
         isDisplay: false,
         style: '',
+        text : 'Code'
     });
 
     const showCode = () => {
         setIsCodeDisplay((prevState) => ({
             isDisplay: !prevState.isDisplay,
             style: prevState.isDisplay ? '' : 'bg-[#282C34]',
+            text:  prevState.isDisplay ? 'Code' : 'Preview'
         }));
     };
 
@@ -33,7 +35,7 @@ const PreviewCard = ({ item }) => {
                             onClick={showCode}
                             className='py-1 text-sm border border-dark-secondary hover:bg-dark-primary hover:text-dark-darkbg duration-200 px-4 rounded-md text-dark-primary'
                         >
-                            Code
+                            {isCodeDisplay.text}
                         </button>
                         <button
                             onClick={copyCodeToClipboard}
