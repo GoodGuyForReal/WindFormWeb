@@ -2,7 +2,7 @@ import Intro from './components/sections/intro/Intro.jsx';
 import Usage from './components/sections/usage/Usage.jsx';
 
 import { HomeIcon, CloudArrowDownIcon } from '@heroicons/react/24/outline'
-import Buttons from './components/sections/components/buttons/Buttons';
+import Buttons from './components/sections/components/buttons/ButtonsSection.jsx';
 import Inputs from './components/sections/components/inputs/Inputs';
 
 export const tabs = [

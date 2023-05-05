@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import React, { useState } from 'react'
+import CodeBlock from './CodeBlock';
 
 
 const PreviewCard = ({ item }) => {
@@ -36,16 +35,12 @@ const PreviewCard = ({ item }) => {
                         {
                             isCodeDisplay.isDisplay ?
                                 <div className='w-full h-full px-10'>
-                                    <SyntaxHighlighter
-                                        wrapLongLines={true}
-                                        language="jsx"
-                                        style={atomOneDark}
-                                    >
-                                        {item.code}
-                                    </SyntaxHighlighter>
+                                    <CodeBlock item={item} />
                                 </div>
                                 :
-                                <button className={`${item.class}`}>Button</button>
+                                <>
+                                    {item.component}
+                                </>
                         }
                     </div>
                 </div>

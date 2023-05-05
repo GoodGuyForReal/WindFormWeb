@@ -1,5 +1,7 @@
 import React from 'react';
 import PreviewCard from '../../../../../components/PreviewCard'
+import ButtonPrimary from './buttonPrimary/ButtonPrimary';
+import ButtonOutline from './buttonOutline/ButtonOutline';
 
 const Buttons = () => {
 
@@ -10,16 +12,22 @@ const Buttons = () => {
             subComponent: [
                 {
                     name: 'Default Button',
-                    class: 'py-2 px-4 rounded-md bg-light-lightbg text-dark-darkbg hover:bg-light-lightbg/90 duration-200',
+                    component: <ButtonPrimary />,
                     code: `<button className='py-2 px-4 rounded-md bg-light-lightbg text-dark-darkbg hover:bg-light-lightbg/90 duration-200'>Button</button>`,
 
 
                 },
                 {
                     name: 'Outline Button',
-                    class: 'py-2 px-4 rounded-md border border-light-secondary text-white hover:bg-dark-primary hover:text-dark-darkbg duration-200',
+                    component: <ButtonOutline />,
                     code: `<button className='py-2 px-4 rounded-md border border-light-secondary text-white hover:bg-dark-primary hover:text-dark-darkbg duration-200'>Button</button>`,
                 },
+                {
+                    name: 'Ghost Button',
+                    component: <ButtonOutline />,
+                    code: `<button className='py-2 px-4 rounded-md text-white hover:bg-dark-primary hover:text-dark-darkbg duration-200'>Button</button>`,
+                },
+
             ],
         },
     ];
