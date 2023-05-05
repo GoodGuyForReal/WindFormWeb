@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import CodeBlock from './CodeBlock';
+import { ClipboardDocumentIcon } from '@heroicons/react/24/outline';
 
 
 const PreviewCard = ({ item }) => {
@@ -15,6 +16,12 @@ const PreviewCard = ({ item }) => {
         }));
     };
 
+    const copyCodeToClipboard = () => {
+        const code = item.code;
+        navigator.clipboard.writeText(code);
+        alert('Code copied to clipboard!');
+    };
+
     return (
         <div>
             <div className="preview_card w-full max-w-full ">
@@ -27,6 +34,12 @@ const PreviewCard = ({ item }) => {
                             className='py-1 text-sm border border-dark-secondary hover:bg-dark-primary hover:text-dark-darkbg duration-200 px-4 rounded-md text-dark-primary'
                         >
                             Code
+                        </button>
+                        <button
+                            onClick={copyCodeToClipboard}
+                            className=''
+                        >
+                            <ClipboardDocumentIcon className=' h-5 w-5 text-white'/>
                         </button>
                     </div>
                 </div>

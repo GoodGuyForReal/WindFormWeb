@@ -5,13 +5,15 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 
 const CodeBlock = ({ item }) => {
     return (
-        <SyntaxHighlighter
-            wrapLongLines={true}
-            language="jsx"
-            style={atomOneDark}
-        >
-            {item.code}
-        </SyntaxHighlighter>
+        <div className='overflow-y-auto'>
+            <SyntaxHighlighter
+                wrapLongLines={true}
+                language="jsx"
+                style={atomOneDark}
+            >
+                {item.code}
+            </SyntaxHighlighter>
+        </div>
     )
 }
 
