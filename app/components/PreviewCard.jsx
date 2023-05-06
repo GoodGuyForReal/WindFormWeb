@@ -45,7 +45,7 @@ const PreviewCard = ({ item }) => {
                         </button>
                     </div>
                 </div>
-                <div className={`card_main border border-gray-200 rounded-lg  flex items-center justify-center ${isCodeDisplay.style}`}>
+                <div className={`card_main border border-gray-300/90 rounded-lg flex items-center justify-center ${isCodeDisplay.style}`}>
                     {
                         isCodeDisplay.isDisplay ?
                             <div className='w-full py-2 h-full px-5'>
