@@ -6,12 +6,12 @@ const Intro = () => {
 
             <div className='intro flex flex-col gap-5'>
                 <div className='intro_header'>
-                    <h1 className='text-5xl font-bold mb-4'>Introduction</h1>
-                    <p className='text-light-secondary text-lg'>This is a re-usable and costimazible components based on forms. Built with Tailwind CSS.</p>
+                    <h1 className='text-5xl font-extrabold mb-4 text-gray-800'>Introduction</h1>
+                    <p className=' text-lg text-gray-500'>This is a re-usable and costimazible components based on forms. Built with Tailwind CSS.</p>
                 </div>
                 <hr className='border-light-secondary' />
                 <div className='intro_main'>
-                    <p className='leading-[160%] text-lg'>
+                    <p className='leading-[160%] text-lg text-gray-800'>
                         This is a collection of reusable components that are not meant to be installed as a dependency or distributed through npm, so it is not considered a component library in the traditional sense.
                         <br />
                         <br />
@@ -23,7 +23,7 @@ const Intro = () => {
                 </div>
             </div>
 
-            <button className='text-white border rounded-md border-light-secondary py-2 px-6 hover:bg-light-lightbg hover:text-dark-secondary duration-200 font-medium'>How to use</button>
+            <button className='text-gray-800 border rounded-md border-light-secondary py-2 px-6 hover:bg-gray-800 hover:text-slate-50 duration-200 font-medium'>How to use</button>
 
         </div>
     )

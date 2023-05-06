@@ -17,17 +17,17 @@ export default function Navbar() {
 
     return (
         <div>
-            <header className="fixed inset-x-0 top-0 z-50 border-b bg-slate-950/30 backdrop-blur-lg border-gray-700">
+            <header className="fixed inset-x-0 top-0 z-50 border-b bg-slate-100/50 backdrop-blur-lg border-gray-300">
                 <nav className="flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
                         <Link href="/" className="-m-1.5 p-1.5">
-                            <span className="font-bold">WindForm UI</span>
+                            <span className="font-bold text-gray-800">WindForm UI</span>
                         </Link>
                     </div>
                     <div className="flex lg:hidden">
                         <button
                             type="button"
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
                             onClick={() => setMobileMenuOpen(true)}
                         >
                             <span className="sr-only">Open main menu</span>
@@ -36,7 +36,7 @@ export default function Navbar() {
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <Link key={item.name} href={item.href} className="text-sm font-medium leading-6 text-white">
+                            <Link key={item.name} href={item.href} className="text-sm font-medium leading-6 text-gray-800">
                                 {item.name}
                             </Link>
                         ))}
