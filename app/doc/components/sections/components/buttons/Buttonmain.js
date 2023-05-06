@@ -3,7 +3,7 @@ import ButtonIcon from "./buttonIcon/ButtonIcon";
 import ButtonLoading from "./buttonLoading/ButtonLoading";
 import ButtonOutline from "./buttonOutline/ButtonOutline";
 import ButtonPrimary from "./buttonPrimary/ButtonPrimary";
-import ButtonSecondary from "./buttonSecondary/buttonSecondary";
+import ButtonSecondary from "./buttonSecondary/ButtonSecondary";
 
 
 export const buttonMain = [
