@@ -9,7 +9,7 @@ const DocSection = ({ section }) => {
                 <h2 className="text-4xl font-bold mb-4 text-gray-800">{section[0].title}</h2>
             </div>
             <hr className="border-gray-300/90" />
-            <div className="doc_main flex flex-col gap-10">
+            <div className="doc_main flex flex-col gap-20">
                 {subComponents.map((item, id) => (
                     <div key={id}>
                         <PreviewCard item={item} />
