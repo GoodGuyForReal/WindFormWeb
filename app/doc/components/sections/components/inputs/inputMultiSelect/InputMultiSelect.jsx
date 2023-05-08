@@ -2,7 +2,7 @@ import { popUpCloser } from '@/app/components/useCase/PopUpCloser';
 import React, { useState, useRef } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
-const team = [
+const teamEm = [
     { empID: 1, value: 'Jane', label: 'Jane' },
     { empID: 2, value: 'Jason', label: 'Jason' },
     { empID: 3, value: 'Karen', label: 'Karen' },
@@ -10,15 +10,21 @@ const team = [
 
 const InputMultiSelect = () => {
     const [selectedOptions, setSelectedOptions] = useState([{ empID: 4, value: 'Kaven', label: 'Kaven' },]);
+    const [team, setTeam] = useState(teamEm)
     const [isSelectOpen, setIsSelectOpen] = useState(false)
     const [searchitem, setSearchitem] = useState('')
     const wrapperRef = useRef(null);
 
     popUpCloser(wrapperRef, setIsSelectOpen);
 
+
+    const handleRemovePrevArray = (memberID) => setTeam((current) =>
+        current.filter((item) => item.empID !== memberID)
+    );
+
     const handleSelect = (item) => {
         setSelectedOptions(current => [item, ...current])
-        team.filter((item) => item.empID !== item)
+        handleRemovePrevArray(item.empID)
     }
 
     const handleSelectRemove = (memberID) => setSelectedOptions((current) =>
