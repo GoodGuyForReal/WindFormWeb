@@ -27,15 +27,11 @@ const InputMultiSelect = () => {
         handleRemovePrevArray(item.empID)
     }
 
-    const handleSelectRemove = (memberID) => setSelectedOptions((current) =>
-        current.filter((item) => item.empID !== memberID)
-    );
-
-    const search = searchitem.trim() !== ''
-        ?
-        team.filter(item => item.label.toLowerCase().includes(searchitem.toLowerCase()))
-        :
-        team
+    const handleSelectRemove = (memberID) => {
+        setTeam(current => [memberID, ...current])
+        setSelectedOptions((current) => current.filter((item) => item.empID !== memberID.empID))
+    }
+    const search = searchitem.trim() !== '' ? team.filter(item => item.label.toLowerCase().includes(searchitem.toLowerCase())) : team
 
     return (
         <div className='w-full'>
@@ -55,7 +51,7 @@ const InputMultiSelect = () => {
                                 <span
                                     key={id}
                                     className='py-1 px-3 flex items-center gap-2 font-medium text-sm rounded-full border border-gray-300 hover:bg-red-100 hover:border-red-300 duration-200 text-gray-800 cursor-default'
-                                    onClick={() => handleSelectRemove(item.empID)}
+                                    onClick={() => handleSelectRemove(item)}
                                 >
                                     {item.label}
                                     <XMarkIcon className='h-4 w-4 text-gray-800' />
