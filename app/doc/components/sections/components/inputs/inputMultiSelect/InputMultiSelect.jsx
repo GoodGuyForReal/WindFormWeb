@@ -25,13 +25,14 @@ const InputMultiSelect = () => {
     const handleSelect = (item) => {
         setSelectedOptions(current => [item, ...current])
         handleRemovePrevArray(item.empID)
+        setSearchitem('')
     }
 
     const handleSelectRemove = (memberID) => {
         setTeam(current => [memberID, ...current])
         setSelectedOptions((current) => current.filter((item) => item.empID !== memberID.empID))
     }
-    const search = searchitem.trim() !== '' ? team.filter(item => item.label.toLowerCase().includes(searchitem.toLowerCase())) : team
+    const search = searchitem !== '' ? team.filter(item => item.label.toLowerCase().includes(searchitem.trim().toLowerCase())) : team
 
     return (
         <div className='w-full'>
@@ -62,13 +63,14 @@ const InputMultiSelect = () => {
                             type="text"
                             className='w-[50%] bg-transparent outline-none text-sm text-gray-800 p-1'
                             placeholder='Search...'
+                            value={searchitem}
                             onChange={(e) => setSearchitem(e.target.value)}
                             onClick={() => setIsSelectOpen(true)}
                         />
                     </div>
                 </div>
                 <div className='relative w-full h-full'>
-                    {isSelectOpen &&
+                    {isSelectOpen && team.length > 0 &&
                         <div ref={wrapperRef} className="absolute z-10 top-0 left-0 right-20 items-center drop-shadow-sm">
                             <div className='drop_down w-full border rounded-b-md'>
                                 {search.map((option) => (
@@ -82,7 +84,8 @@ const InputMultiSelect = () => {
                                     </p>
                                 ))}
                             </div>
-                        </div>}
+                        </div>
+                    }
                 </div>
             </div>
         </div>
