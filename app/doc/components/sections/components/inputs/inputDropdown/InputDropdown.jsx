@@ -1,16 +1,12 @@
 import React from 'react'
 
 const InputDropdown = () => {
-
-
     const country = [
         { code: '+1' },
         { code: '+49' },
         { code: '+44' },
         { code: '+90' },
     ]
-
-
     return (
         <div className='w-full'>
             <label htmlFor="tel" className="block text-sm font-medium leading-6 text-gray-900 mb-1">
