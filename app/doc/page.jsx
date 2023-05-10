@@ -9,7 +9,7 @@ const page = () => {
     const [activeSubTab, setActiveSubTab] = useState(0);
 
     return (
-        <div className="w-full h-full pt-12 flex-1 items-start md:grid md:grid-cols-[200px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[250px_minmax(0,1fr)] lg:gap-10 bg-slate-50">
+        <div className="w-full h-full pt-12 flex-1 items-start md:grid md:grid-cols-[200px_minmax(0,1fr)_200px] md:gap-6 lg:grid-cols-[250px_minmax(0,1fr)_250px] lg:gap-10 bg-slate-50">
             <div className="fixed top-14 z-30 -ml-2 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 overflow-y-auto border-r md:sticky md:block">
                 <SideBar tabs={tabs} setActiveTab={setActiveTab} activeTab={activeTab} setActiveSubTab={setActiveSubTab} activeSubTab={activeSubTab} />
             </div>
@@ -20,6 +20,10 @@ const page = () => {
                     : tabs[activeTab].content
                 }
             </main>
+
+            <div className='included'>
+                <h1>Doc</h1>
+            </div>
         </div >
     );
 }
