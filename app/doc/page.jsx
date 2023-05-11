@@ -21,8 +21,8 @@ const page = () => {
                 }
             </main>
 
-            <div className='included'>
-                <h1>Doc</h1>
+            <div className='included pt-14'>
+                <h1 className='text-gray-800'>Doc</h1>
             </div>
         </div >
     );

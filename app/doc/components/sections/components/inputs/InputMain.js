@@ -7,6 +7,8 @@ import InputPassword from "./inputPassword/InputPassword";
 import InputUrl from "./inputUrl/InputUrl";
 import InputHint from "./inputHint/InputHint";
 import InputDropdownOutside from "./inputDropdownOutside/InputDropdownOutside";
+import ToggleSwitch from "./toggleDefault/ToggleSwitch";
+import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
 
 export const InputMain = [
     {
@@ -321,6 +323,16 @@ const InputMultiSelect = () => {
 
 export default InputMultiSelect;      
 `,
+            },
+            {
+                name: 'Toggle Switch',
+                component: <ToggleSwitch />,
+                code: ``,
+            },
+            {
+                name: 'Toggle With Label',
+                component: <ToggleWithLabel />,
+                code: ``,
             },
         ]
     }

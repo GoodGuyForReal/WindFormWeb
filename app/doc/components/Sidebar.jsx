@@ -24,8 +24,8 @@ const SideBar = ({ tabs, setActiveTab, activeTab, setActiveSubTab, activeSubTab 
             {componenets.subTabs.map((subtab, subIndex) => (
                 <button
                     key={subIndex}
-                    className={`flex items-center gap-2 py-1 px-4 text-sm text-left text-gray-400 font-medium hover:underline duration-200 ${activeSubTab === subIndex
-                        && " text-gray-800 underline font-bold"
+                    className={`flex items-center gap-2 py-1 px-4 text-sm text-left border-l text-gray-400 font-medium hover:underline duration-200 ${activeSubTab === subIndex
+                        && " text-gray-800 underline font-bold border-l-gray-800"
                         }`}
                     onClick={() => setActiveSubTab(subIndex)}
                 >
