@@ -39,7 +39,7 @@ const CheckDefault = () => {
                         checked={isChecked}
                         onChange={toggleSwitch}
                     />
-                    <div className="flex items-center justify-center h-5 w-5 bg-gray-100 border border-gray-400 rounded-md dark:bg-gray-300 peer-checked:after:border-white peer-checked:bg-blue-500 peer-checked:border-blue-500">
+                    <div className="flex items-center justify-center h-5 w-5 bg-gray-50 hover:bg-gray-100 border border-gray-400 rounded-md peer-checked:after:border-white peer-checked:bg-blue-500 peer-checked:hover:bg-blue-600 peer-checked:border-blue-500 duration-200">
                         <CheckIcon checked={isChecked} />
                     </div>
                 </label>

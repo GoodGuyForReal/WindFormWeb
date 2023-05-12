@@ -10,6 +10,7 @@ import InputDropdownOutside from "./inputDropdownOutside/InputDropdownOutside";
 import ToggleSwitch from "./toggleDefault/ToggleSwitch";
 import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
 import CheckDefault from "./checkDefault/CheckDefault";
+import ToggleDisable from "./toggledDissable/ToggleDisable";
 
 export const InputMain = [
     {
@@ -68,6 +69,11 @@ export const InputMain = [
             {
                 name: 'Toggle With Label',
                 component: <ToggleWithLabel />,
+                code: ``,
+            },
+            {
+                name: 'Toggle Disable',
+                component: <ToggleDisable />,
                 code: ``,
             },
             {
