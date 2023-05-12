@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+
 
 function CheckIcon({ checked }) {
     return (
@@ -24,7 +25,9 @@ function CheckIcon({ checked }) {
     );
 }
 
-const CheckDefault = () => {
+
+
+const CheckWithLabel = () => {
     const [isChecked, setIsChecked] = useState(false);
 
     const toggleSwitch = () => setIsChecked((prevChecked) => !prevChecked);
@@ -44,11 +47,12 @@ const CheckDefault = () => {
                     </div>
                 </label>
             </div>
-            <span className="text-sm font-medium text-gray-900 dark:text-gray-800">
-                {isChecked ? 'True' : 'False'}
-            </span>
+            <div className="label">
+                <h3 className='text-gray-800 font-semibold text-base'>Notifications</h3>
+                <p className='text-gray-400 text-sm'>Receive updates and alerts</p>
+            </div>
         </div>
     );
-};
+}
 
-export default CheckDefault;
+export default CheckWithLabel

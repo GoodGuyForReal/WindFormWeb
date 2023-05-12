@@ -11,6 +11,8 @@ import ToggleSwitch from "./toggleDefault/ToggleSwitch";
 import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
 import CheckDefault from "./checkDefault/CheckDefault";
 import ToggleDisable from "./toggledDissable/ToggleDisable";
+import CheckWithLabel from "./checkWithLabel/CheckWithLabel";
+import CheckDisable from "./checkDisable/CheckDisable";
 
 export const InputMain = [
     {
@@ -79,6 +81,16 @@ export const InputMain = [
             {
                 name: 'Checkbox Default',
                 component: <CheckDefault />,
+                code: ``,
+            },
+            {
+                name: 'Check With Label',
+                component: <CheckWithLabel />,
+                code: ``,
+            },
+            {
+                name: 'Check Disable',
+                component: <CheckDisable />,
                 code: ``,
             },
         ]

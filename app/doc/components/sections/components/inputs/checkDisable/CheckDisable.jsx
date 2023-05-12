@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 function CheckIcon({ checked }) {
     return (
@@ -24,14 +24,19 @@ function CheckIcon({ checked }) {
     );
 }
 
-const CheckDefault = () => {
+const CheckDisable = () => {
     const [isChecked, setIsChecked] = useState(false);
+    const [isDisabled, setIsDisabled] = useState(true);
 
-    const toggleSwitch = () => setIsChecked((prevChecked) => !prevChecked);
+    const toggleSwitch = () => {
+        if (!isDisabled) {
+            setIsChecked(!isChecked);
+        }
+    };
 
     return (
         <div className="flex gap-3">
-            <div className="toggle_container">
+            <div className={`toggle_container ${isDisabled ? 'disabled opacity-50' : ''}`}>
                 <label className="relative inline-flex items-center cursor-pointer">
                     <input
                         type="checkbox"
@@ -44,11 +49,17 @@ const CheckDefault = () => {
                     </div>
                 </label>
             </div>
-            <span className="text-sm font-medium text-gray-900 dark:text-gray-800">
+            <span className={`text-sm font-medium ${isDisabled ? 'text-gray-500 dark:text-gray-500' : 'text-gray-900 dark:text-gray-800'}`}>
                 {isChecked ? 'True' : 'False'}
             </span>
+            <button
+                className='py-2 px-4 text-sm rounded-md border border-gray-400 text-gray-800 hover:bg-gray-800 hover:text-slate-50 duration-200'
+                onClick={() => setIsDisabled(!isDisabled)}
+            >
+                {isDisabled ? "Active" : "Disable"}
+            </button>
         </div>
     );
-};
+}
 
-export default CheckDefault;
+export default CheckDisable
