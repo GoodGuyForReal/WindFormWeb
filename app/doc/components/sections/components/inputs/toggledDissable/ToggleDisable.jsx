@@ -33,7 +33,12 @@ const ToggleDisable = () => {
             <span className={`text-sm font-medium ${isDisabled ? 'text-gray-500 dark:text-gray-500' : 'text-gray-900 dark:text-gray-800'}`}>
                 {isChecked ? 'True' : 'False'}
             </span>
-            <button onClick={() => setIsDisabled(!isDisabled)}>Toggle Disable</button>
+            <button
+                className='py-2 px-4 text-sm rounded-md border border-gray-400 text-gray-800 hover:bg-gray-800 hover:text-slate-50 duration-200'
+                onClick={() => setIsDisabled(!isDisabled)}
+            >
+                {isDisabled ? "Active" : "Disable"}
+            </button>
         </div>
     );
 }
