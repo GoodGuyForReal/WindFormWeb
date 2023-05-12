@@ -6,7 +6,7 @@ const ToggleWithLabel = () => {
     const toggleSwitch = () => setIsChecked(!isChecked);
 
     return (
-        <div className='flex gap-3 w-full'>
+        <div className='flex gap-3'>
             <div className='toggle_container pt-1'>
                 <label className="relative inline-flex items-center cursor-pointer">
                     <input
