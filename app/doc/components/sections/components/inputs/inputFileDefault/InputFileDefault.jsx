@@ -19,7 +19,7 @@ const InputFileDefault = () => {
                     <CameraIcon className='h-5 w-5 text-blue-600' />
                 </div>
                 <div className='text-center'>
-                    <p className='text-gray-500 text-sm font-medium'><span className='text-blue-600'>Click to upload</span> or drag and drop</p>
+                    <p className='text-gray-500 text-sm font-medium'><span className='text-blue-600'>Browse file</span> or drag and drop</p>
                     <p className='text-gray-500 text-xs font-medium'>SVG, PNG, JPG or GIF(max. 10MB)</p>
                 </div>
                 <input
