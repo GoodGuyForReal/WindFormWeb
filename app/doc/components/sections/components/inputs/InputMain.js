@@ -13,6 +13,7 @@ import CheckDefault from "./checkDefault/CheckDefault";
 import ToggleDisable from "./toggledDissable/ToggleDisable";
 import CheckWithLabel from "./checkWithLabel/CheckWithLabel";
 import CheckDisable from "./checkDisable/CheckDisable";
+import InputFileDefault from "./inputFileDefault/InputFileDefault";
 
 export const InputMain = [
     {
@@ -91,6 +92,11 @@ export const InputMain = [
             {
                 name: 'Check Disable',
                 component: <CheckDisable />,
+                code: ``,
+            },
+            {
+                name: 'Input File Default',
+                component: <InputFileDefault />,
                 code: ``,
             },
         ]
