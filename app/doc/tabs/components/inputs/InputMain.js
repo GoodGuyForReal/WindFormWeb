@@ -125,7 +125,6 @@ export const InputMain = [
                 component: <TabLine />,
                 code: ``,
             },
-            
         ]
     }
 ];

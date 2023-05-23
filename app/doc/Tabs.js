@@ -10,25 +10,23 @@ export const tabs = [
         title: "Getting Started",
         content: <Intro />,
         icon: <HomeIcon className="h-5 w-h-5" />,
+        id:0
     },
     {
         title: "Installation",
         content: <Usage />,
         icon: <CloudArrowDownIcon className="h-5 w-h-5" />,
+        id:1
     },
     {
-        title: "Components",
-        subTabs: [
-            {
-                title: "Buttons",
-                component: <Buttons />,
-            },
-            {
-                title: "Inputs",
-                component: <Inputs />,
-            }
-            // add more subtabs here as needed
-        ]
+        title: "Buttons",
+        content: <Buttons />,
+        id:2
     },
+    {
+        title: "Inputs",
+        content: <Inputs />,
+        id:3
+    }
 
 ];
