@@ -1,5 +1,4 @@
-import { popUpCloser } from "@/app/components/useCase/PopUpCloser";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const InputDropdownOutside = () => {
@@ -15,6 +14,22 @@ const InputDropdownOutside = () => {
     { label: "Tops" },
     { label: "Suits" },
   ];
+
+  function popUpCloser(ref, setIsSelectOpen) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setIsSelectOpen(false);
+        }
+      }
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
 
   return (
     <div className="w-full">

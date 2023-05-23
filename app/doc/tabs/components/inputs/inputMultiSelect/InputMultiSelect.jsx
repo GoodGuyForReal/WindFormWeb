@@ -1,5 +1,4 @@
-import { popUpCloser } from "@/app/components/useCase/PopUpCloser";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const teamEm = [
@@ -38,12 +37,29 @@ const InputMultiSelect = () => {
       current.filter((item) => item.empID !== memberID.empID)
     );
   };
+
   const search =
     searchitem !== ""
       ? team.filter((item) =>
           item.label.toLowerCase().includes(searchitem.trim().toLowerCase())
         )
       : team;
+
+  function popUpCloser(ref, setIsSelectOpen) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setIsSelectOpen(false);
+        }
+      }
+      // Bind the event listener
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        // Unbind the event listener on clean up
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
 
   return (
     <div className="w-full">
@@ -86,7 +102,7 @@ const InputMultiSelect = () => {
               ref={wrapperRef}
               className="absolute left-0 right-0 top-1 z-10 items-center drop-shadow-sm"
             >
-              <div className="drop_down w-full rounded-md overflow-hidden border">
+              <div className="drop_down w-full overflow-hidden rounded-md border">
                 {search.map((option) => (
                   <p
                     onClick={() => handleSelect(option)}

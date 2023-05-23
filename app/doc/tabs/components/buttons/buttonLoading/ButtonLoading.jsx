@@ -1,4 +1,4 @@
-import SpinIcon from '@/app/components/assets/customIcons/SpinIcon'
+import SpinIcon from '@/components/assets/customIcons/SpinIcon' 
 import React from 'react'
 
 const ButtonLoading = () => {

@@ -1,9 +1,9 @@
-import Intro from './components/sections/intro/Intro.jsx';
-import Usage from './components/sections/usage/Usage.jsx';
+import Intro from './tabs/intro/Intro' 
+import Usage from './tabs/usage/Usage' 
 
 import { HomeIcon, CloudArrowDownIcon } from '@heroicons/react/24/outline'
-import Buttons from './components/sections/components/buttons/ButtonsSection.jsx';
-import Inputs from './components/sections/components/inputs/Inputs';
+import Buttons from './tabs/components/buttons/ButtonsSection' 
+import Inputs from './tabs/components/inputs/Inputs' 
 
 export const tabs = [
     {

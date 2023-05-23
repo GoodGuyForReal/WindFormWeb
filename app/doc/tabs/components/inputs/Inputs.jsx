@@ -1,6 +1,6 @@
 import React from 'react';
-import { InputMain } from './InputMain';
-import DocSection from '@/app/components/DocSection';
+import { InputMain } from './InputMain'; 
+import DocSection from '@/components/DocSection'; 
 
 
 const Inputs = () => {
