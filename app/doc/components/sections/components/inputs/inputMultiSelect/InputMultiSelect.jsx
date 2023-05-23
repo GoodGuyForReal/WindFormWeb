@@ -1,98 +1,109 @@
-import { popUpCloser } from '@/app/components/useCase/PopUpCloser';
-import React, { useState, useRef } from 'react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { popUpCloser } from "@/app/components/useCase/PopUpCloser";
+import React, { useState, useRef } from "react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const teamEm = [
-    { empID: 1, value: '@Jane', label: 'Jane' },
-    { empID: 2, value: '@Jason', label: 'Jason' },
-    { empID: 3, value: '@Karen', label: 'Karen' },
-    { empID: 5, value: '@Mark', label: 'Mark' },
-    { empID: 6, value: '@Kandry', label: 'Kandry' },
-    { empID: 7, value: '@Kurt', label: 'Kurt' },
-    { empID: 8, value: '@Ashly', label: 'Ashly' },
+  { empID: 1, value: "@Jane", label: "Jane" },
+  { empID: 2, value: "@Jason", label: "Jason" },
+  { empID: 3, value: "@Karen", label: "Karen" },
+  { empID: 5, value: "@Mark", label: "Mark" },
+  { empID: 6, value: "@Kandry", label: "Kandry" },
+  { empID: 7, value: "@Kurt", label: "Kurt" },
+  { empID: 8, value: "@Ashly", label: "Ashly" },
 ];
 
 const InputMultiSelect = () => {
-    const [selectedOptions, setSelectedOptions] = useState([{ empID: 4, value: '@Kaven', label: 'Kaven' },]);
-    const [team, setTeam] = useState(teamEm)
-    const [isSelectOpen, setIsSelectOpen] = useState(false)
-    const [searchitem, setSearchitem] = useState('')
-    const wrapperRef = useRef(null);
+  const [selectedOptions, setSelectedOptions] = useState([
+    { empID: 4, value: "@Kaven", label: "Kaven" },
+  ]);
+  const [team, setTeam] = useState(teamEm);
+  const [isSelectOpen, setIsSelectOpen] = useState(false);
+  const [searchitem, setSearchitem] = useState("");
+  const wrapperRef = useRef(null);
 
-    popUpCloser(wrapperRef, setIsSelectOpen);
+  popUpCloser(wrapperRef, setIsSelectOpen);
 
+  const handleRemovePrevArray = (memberID) =>
+    setTeam((current) => current.filter((item) => item.empID !== memberID));
 
-    const handleRemovePrevArray = (memberID) => setTeam((current) =>
-        current.filter((item) => item.empID !== memberID)
+  const handleSelect = (item) => {
+    setSelectedOptions((current) => [item, ...current]);
+    handleRemovePrevArray(item.empID);
+    setSearchitem("");
+  };
+
+  const handleSelectRemove = (memberID) => {
+    setTeam((current) => [memberID, ...current]);
+    setSelectedOptions((current) =>
+      current.filter((item) => item.empID !== memberID.empID)
     );
+  };
+  const search =
+    searchitem !== ""
+      ? team.filter((item) =>
+          item.label.toLowerCase().includes(searchitem.trim().toLowerCase())
+        )
+      : team;
 
-    const handleSelect = (item) => {
-        setSelectedOptions(current => [item, ...current])
-        handleRemovePrevArray(item.empID)
-        setSearchitem('')
-    }
-
-    const handleSelectRemove = (memberID) => {
-        setTeam(current => [memberID, ...current])
-        setSelectedOptions((current) => current.filter((item) => item.empID !== memberID.empID))
-    }
-    const search = searchitem !== '' ? team.filter(item => item.label.toLowerCase().includes(searchitem.trim().toLowerCase())) : team
-
-    return (
-        <div className='w-full'>
-            <label htmlFor="person" className="block text-sm font-medium leading-6 text-gray-900 mb-1">
-                Select team member
-            </label>
-            <div className="flex flex-col gap-2">
-                <div
-                    name="person"
-                    id="person"
-                    className="flex w-full rounded-md outline-none border-0 h-full min-h-[40px] py-2 px-2 bg-slate-50 text-gray-900 ring-1 ring-inset ring-gray-300 sm:text-sm sm:leading-6"
-                >
-                    <div className='team_main w-full flex flex-wrap items-center gap-2'>
-                        {
-                            selectedOptions.map((item, id) => (
-                                <span
-                                    key={id}
-                                    className='py-1 px-3 flex items-center gap-2 font-medium text-sm rounded-lg border border-gray-300 hover:bg-red-100 hover:border-red-300 duration-200 text-gray-800 cursor-default'
-                                    onClick={() => handleSelectRemove(item)}
-                                >
-                                    {item.value}
-                                    <XMarkIcon className='h-4 w-4 text-gray-800' />
-                                </span>
-                            ))
-                        }
-                        <input
-                            type="text"
-                            className='w-[50%] bg-transparent outline-none text-sm text-gray-800 p-1'
-                            placeholder='@Search...'
-                            value={searchitem}
-                            onChange={(e) => setSearchitem(e.target.value)}
-                            onClick={() => setIsSelectOpen(true)}
-                        />
-                    </div>
-                </div>
-                <div className='relative w-full h-full'>
-                    {isSelectOpen && team.length > 0 &&
-                        <div ref={wrapperRef} className="absolute z-10 top-0 left-0 right-0 items-center drop-shadow-sm">
-                            <div className='drop_down w-full border rounded-md'>
-                                {search.map((option) => (
-                                    <p
-                                        onClick={() => handleSelect(option)}
-                                        key={option.value}
-                                        value={option.value}
-                                        className='text-gray-800 w-full py-2 px-2 bg-slate-50 hover:bg-slate-300/50 duration-200 cursor-default truncate'
-                                    >
-                                        {option.label}
-                                    </p>
-                                ))}
-                            </div>
-                        </div>
-                    }
-                </div>
-            </div>
+  return (
+    <div className="w-full">
+      <label
+        htmlFor="person"
+        className="mb-1 block text-sm font-medium leading-6 text-gray-900"
+      >
+        Select team member
+      </label>
+      <div className="multi_select_body">
+        <div
+          name="person"
+          id="person"
+          className="flex h-full min-h-[40px] w-full rounded-md border-0 bg-slate-50 px-2 py-2 text-gray-900 outline-none ring-1 ring-inset ring-gray-300 sm:text-sm sm:leading-6"
+        >
+          <div className="team_main flex w-full flex-wrap items-center gap-2">
+            {selectedOptions.map((item, id) => (
+              <span
+                key={id}
+                className="flex cursor-default items-center gap-2 rounded-lg border border-gray-300 px-3 py-1 text-sm font-medium text-gray-800 duration-200 hover:border-red-300 hover:bg-red-100"
+                onClick={() => handleSelectRemove(item)}
+              >
+                {item.value}
+                <XMarkIcon className="h-4 w-4 text-gray-800" />
+              </span>
+            ))}
+            <input
+              type="text"
+              className="w-[50%] bg-transparent p-1 text-sm text-gray-800 outline-none"
+              placeholder="@Search..."
+              value={searchitem}
+              onChange={(e) => setSearchitem(e.target.value)}
+              onClick={() => setIsSelectOpen(true)}
+            />
+          </div>
         </div>
-    );
+        <div className="relative h-full w-full">
+          {isSelectOpen && team.length > 0 && (
+            <div
+              ref={wrapperRef}
+              className="absolute left-0 right-0 top-1 z-10 items-center drop-shadow-sm"
+            >
+              <div className="drop_down w-full rounded-md overflow-hidden border">
+                {search.map((option) => (
+                  <p
+                    onClick={() => handleSelect(option)}
+                    key={option.value}
+                    value={option.value}
+                    className="w-full cursor-default truncate bg-slate-50 px-2 py-2 text-gray-800 duration-200 hover:bg-slate-200"
+                  >
+                    {option.label}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default InputMultiSelect;

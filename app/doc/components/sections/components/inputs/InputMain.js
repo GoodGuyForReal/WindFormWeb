@@ -15,6 +15,7 @@ import CheckWithLabel from "./checkWithLabel/CheckWithLabel";
 import CheckDisable from "./checkDisable/CheckDisable";
 import InputFileDefault from "./inputFileDefault/InputFileDefault";
 import InputFileSmall from "./inputFileSmall/InputFileSmall";
+import InputSuccess from "./inputSuccess/InputSuccess";
 
 
 
@@ -23,27 +24,32 @@ export const InputMain = [
         title: 'Inputs',
         subComponent: [
             {
-                name: 'Default',
+                name: 'Input Default',
                 component: <DefaultInput />,
                 code: ``,
             },
             {
-                name: 'Valid Error',
+                name: 'Input Error',
                 component: <InputEmailIsValid />,
                 code: ``,
             },
             {
-                name: 'Info',
+                name: 'Input Success',
+                component: <InputSuccess />,
+                code: ``,
+            },
+            {
+                name: 'Input With Description',
                 component: <InputHint />,
                 code: ``,
             },
             {
-                name: 'Password',
+                name: 'Input Password',
                 component: <InputPassword />,
                 code: ``,
             },
             {
-                name: 'Search with icon',
+                name: 'Input Search with icon',
                 component: <InputIcon />,
                 code: ``,
             },
@@ -58,7 +64,7 @@ export const InputMain = [
                 code: ``,
             },
             {
-                name: 'URL',
+                name: 'Input URL',
                 component: <InputUrl />,
                 code: ``,
             },
@@ -68,32 +74,32 @@ export const InputMain = [
                 code: ``,
             },
             {
-                name: 'Toggle Switch',
+                name: 'Input Toggle Switch',
                 component: <ToggleSwitch />,
                 code: ``,
             },
             {
-                name: 'Toggle With Label',
+                name: 'Input Toggle With Label',
                 component: <ToggleWithLabel />,
                 code: ``,
             },
             {
-                name: 'Toggle Disable',
+                name: 'Input Toggle Disable',
                 component: <ToggleDisable />,
                 code: ``,
             },
             {
-                name: 'Checkbox Default',
+                name: 'Input Checkbox Default',
                 component: <CheckDefault />,
                 code: ``,
             },
             {
-                name: 'Check With Label',
+                name: 'Input Check With Label',
                 component: <CheckWithLabel />,
                 code: ``,
             },
             {
-                name: 'Check Disable',
+                name: 'Input Check Disable',
                 component: <CheckDisable />,
                 code: ``,
             },

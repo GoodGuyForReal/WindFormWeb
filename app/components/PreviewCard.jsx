@@ -52,7 +52,7 @@ const PreviewCard = ({ item }) => {
                                 <CodeBlock item={item} />
                             </div>
                             :
-                            <div className='w-full max-w-xs flex items-center justify-center py-10'>
+                            <div className='w-full max-w-sm flex items-center justify-center py-10'>
                                 {item.component}
                             </div >
                     }
