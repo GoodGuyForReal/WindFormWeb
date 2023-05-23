@@ -17,6 +17,7 @@ import InputFileDefault from "./inputFileDefault/InputFileDefault";
 import InputFileSmall from "./inputFileSmall/InputFileSmall";
 import InputSuccess from "./inputSuccess/InputSuccess";
 import TabDefault from "./tabDefault/TabDefault";
+import TabLine from "./tabLine/TabLine";
 
 
 
@@ -115,8 +116,13 @@ export const InputMain = [
                 code: ``,
             },
             {
-                name: 'Input Tab Default',
+                name: 'Tab Default',
                 component: <TabDefault />,
+                code: ``,
+            },
+            {
+                name: 'Tab Line',
+                component: <TabLine />,
                 code: ``,
             },
             
