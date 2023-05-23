@@ -16,6 +16,7 @@ import CheckDisable from "./checkDisable/CheckDisable";
 import InputFileDefault from "./inputFileDefault/InputFileDefault";
 import InputFileSmall from "./inputFileSmall/InputFileSmall";
 import InputSuccess from "./inputSuccess/InputSuccess";
+import TabDefault from "./tabDefault/TabDefault";
 
 
 
@@ -113,6 +114,12 @@ export const InputMain = [
                 component: <InputFileSmall />,
                 code: ``,
             },
+            {
+                name: 'Input Tab Default',
+                component: <TabDefault />,
+                code: ``,
+            },
+            
         ]
     }
 ];

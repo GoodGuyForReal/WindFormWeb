@@ -18,7 +18,7 @@ const InputEmailIsValid = () => {
           type="text"
           name="Email"
           id="errorEmail"
-          className="block w-full rounded-md border-0 bg-slate-50 px-4 py-2 text-red-900 outline-none ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
+          className="block w-full rounded-md border-0 bg-slate-50 px-4 py-2 text-sm text-red-900 outline-none ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:leading-6"
           placeholder="Enter your email"
         />
         <span className="mt-2 flex items-center gap-1 text-sm text-red-500">
