@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-type checkProp = {
+type CheckProp = {
   checked: boolean;
 };
 
-function CheckIcon({ checked }: checkProp) {
+function CheckIcon({ checked }: CheckProp) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const CheckDisableTS = () => {
 
   return (
     <div>
-      <div className="flex gap-3">
+      <div className="check_disable flex gap-3">
         <div
           className={`toggle_container ${isDisabled && "disabled opacity-50"}`}
         >

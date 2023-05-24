@@ -32,7 +32,7 @@ const CheckDisableJS = () => {
 
   return (
     <div>
-      <div className="flex gap-3">
+      <div className="check_disable flex gap-3">
         <div
           className={`toggle_container ${isDisabled && "disabled opacity-50"}`}
         >

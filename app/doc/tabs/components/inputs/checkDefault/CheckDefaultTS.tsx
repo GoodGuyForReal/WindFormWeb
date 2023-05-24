@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-type checkProp = {
+type CheckProp = {
   checked: boolean;
 };
 
-function CheckIcon({ checked }: checkProp) {
+function CheckIcon({ checked }: CheckProp) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ const CheckDefaultTS = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
   return (
-    <div className="flex gap-3">
+    <div className="check_default flex gap-3">
       <div className="toggle_container">
         <label className="relative inline-flex cursor-pointer items-center">
           <input

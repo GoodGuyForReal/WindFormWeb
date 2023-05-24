@@ -1,5 +1,5 @@
 import DefaultInput from "./inputDefault/DefaultInput";
-import InputDropdown from "./inputDropdown/InputDropdown";
+import InputDropdownTS from "./inputDropdown/InputDropdownTS";
 import InputIcon from "./inputIcon/InputIcon";
 import InputMultiSelect from "./inputMultiSelect/InputMultiSelect";
 import InputEmailIsValid from "./inputValidError/InputEmailIsValid";
@@ -62,7 +62,7 @@ export const InputMain = [
             },
             {
                 name: 'Input with dropdown',
-                component: <InputDropdown />,
+                component: <InputDropdownTS />,
                 code: ``,
             },
             {

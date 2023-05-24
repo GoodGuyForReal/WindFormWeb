@@ -31,7 +31,7 @@ const CheckWithLabelJS = () => {
     const [isChecked, setIsChecked] = useState(false);
 
     return (
-        <div className="flex gap-3">
+        <div className="check_with_label flex gap-3">
             <div className="toggle_container">
                 <label className="relative inline-flex items-center cursor-pointer">
                     <input

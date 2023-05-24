@@ -28,7 +28,7 @@ const CheckDefaultJS = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <div className="flex gap-3">
+    <div className="check_default flex gap-3">
       <div className="toggle_container">
         <label className="relative inline-flex cursor-pointer items-center">
           <input
