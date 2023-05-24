@@ -24,15 +24,11 @@ function CheckIcon({ checked }) {
   );
 }
 
-const CheckDisable = () => {
+const CheckDisableJS = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [isDisabled, setIsDisabled] = useState(true);
 
-  const toggleSwitch = () => {
-    if (!isDisabled) {
-      setIsChecked(!isChecked);
-    }
-  };
+  const toggleSwitch = () => !isDisabled && setIsChecked(!isChecked);
 
   return (
     <div>
@@ -72,4 +68,4 @@ const CheckDisable = () => {
   );
 };
 
-export default CheckDisable;
+export default CheckDisableJS;

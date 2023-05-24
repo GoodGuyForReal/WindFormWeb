@@ -27,10 +27,8 @@ function CheckIcon({ checked }) {
 
 
 
-const CheckWithLabel = () => {
+const CheckWithLabelJS = () => {
     const [isChecked, setIsChecked] = useState(false);
-
-    const toggleSwitch = () => setIsChecked((prevChecked) => !prevChecked);
 
     return (
         <div className="flex gap-3">
@@ -40,7 +38,7 @@ const CheckWithLabel = () => {
                         type="checkbox"
                         className="sr-only peer"
                         checked={isChecked}
-                        onChange={toggleSwitch}
+                        onChange={() => setIsChecked(!isChecked)}
                     />
                     <div className="flex items-center justify-center h-5 w-5 bg-gray-100 hover:bg-gray-100 border border-gray-400 rounded-md peer-checked:after:border-white peer-checked:bg-blue-500 peer-checked:hover:bg-blue-600 peer-checked:border-blue-500 duration-200">
                         <CheckIcon checked={isChecked} />
@@ -55,4 +53,4 @@ const CheckWithLabel = () => {
     );
 }
 
-export default CheckWithLabel
+export default CheckWithLabelJS

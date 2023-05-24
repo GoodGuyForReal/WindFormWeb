@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-function CheckIcon({ checked}) {
+type checkProp = {
+  checked: boolean;
+};
+
+function CheckIcon({ checked }: checkProp) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,10 +28,8 @@ function CheckIcon({ checked}) {
   );
 }
 
-const CheckDefault = () => {
-  const [isChecked, setIsChecked] = useState(false);
-
-  const toggleSwitch = () => setIsChecked((prevChecked) => !prevChecked);
+const CheckDefaultTS = () => {
+  const [isChecked, setIsChecked] = useState<boolean>(false);
 
   return (
     <div className="flex gap-3">
@@ -37,7 +39,7 @@ const CheckDefault = () => {
             type="checkbox"
             className="peer sr-only"
             checked={isChecked}
-            onChange={toggleSwitch}
+            onChange={() => setIsChecked(!isChecked)}
           />
           <div className="flex h-5 w-5 items-center justify-center rounded-md border border-gray-400 bg-gray-100 duration-200 hover:bg-gray-100 peer-checked:border-blue-500 peer-checked:bg-blue-500 peer-checked:after:border-white peer-checked:hover:bg-blue-600">
             <CheckIcon checked={isChecked} />
@@ -51,4 +53,4 @@ const CheckDefault = () => {
   );
 };
 
-export default CheckDefault;
+export default CheckDefaultTS;

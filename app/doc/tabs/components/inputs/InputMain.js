@@ -9,10 +9,10 @@ import InputHint from "./inputHint/InputHint";
 import InputDropdownOutside from "./inputDropdownOutside/InputDropdownOutside";
 import ToggleSwitch from "./toggleDefault/ToggleSwitch";
 import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
-import CheckDefault from "./checkDefault/CheckDefault";
+import CheckDefaultTS from "./checkDefault/CheckDefaultTS";
 import ToggleDisable from "./toggledDissable/ToggleDisable";
-import CheckWithLabel from "./checkWithLabel/CheckWithLabel";
-import CheckDisable from "./checkDisable/CheckDisable";
+import CheckWithLabelTS from "./checkWithLabel/CheckWithLabelTS";
+import CheckDisableTS from "./checkDisable/CheckDisableTS";
 import InputFileDefault from "./inputFileDefault/InputFileDefault";
 import InputFileSmall from "./inputFileSmall/InputFileSmall";
 import InputSuccess from "./inputSuccess/InputSuccess";
@@ -92,17 +92,17 @@ export const InputMain = [
             },
             {
                 name: 'Input Checkbox Default',
-                component: <CheckDefault />,
+                component: <CheckDefaultTS />,
                 code: ``,
             },
             {
                 name: 'Input Check With Label',
-                component: <CheckWithLabel />,
+                component: <CheckWithLabelTS />,
                 code: ``,
             },
             {
                 name: 'Input Check Disable',
-                component: <CheckDisable />,
+                component: <CheckDisableTS />,
                 code: ``,
             },
             {
