@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ArrowDownCircleIcon } from '@heroicons/react/24/solid';
 
-const InputFileSmall = () => {
+const InputFileSmallJS = () => {
     const [selectedFile, setSelectedFile] = useState(null);
 
     const handleFileChange = (event) => {
@@ -11,7 +11,7 @@ const InputFileSmall = () => {
 
     return (
         <div>
-            <div className='file_input_container w-full h-full border border-gray-300 rounded-lg hover:bg-blue-50 duration-200'>
+            <div className='w-full h-full border border-gray-300 rounded-lg hover:bg-blue-50 duration-200'>
                 <label
                     htmlFor="file-input-small"
                     className="cursor-pointer w-full h-full rounded-lg flex items-center gap-3 p-5"
@@ -40,4 +40,4 @@ const InputFileSmall = () => {
     );
 }
 
-export default InputFileSmall
+export default InputFileSmallJS

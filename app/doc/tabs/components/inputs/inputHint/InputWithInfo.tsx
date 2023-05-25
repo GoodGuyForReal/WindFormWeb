@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InputHint = () => {
+const InputWithInfo = () => {
     return (
         <div className='w-full'>
             <label htmlFor="Email" className="block w-full font-medium text-sm leading-6 text-gray-800 mb-1">
@@ -20,4 +20,4 @@ const InputHint = () => {
     )
 }
 
-export default InputHint
+export default InputWithInfo

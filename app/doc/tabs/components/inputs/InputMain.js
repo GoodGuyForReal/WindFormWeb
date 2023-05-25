@@ -5,7 +5,7 @@ import InputMultiSelect from "./inputMultiSelect/InputMultiSelect";
 import InputEmailIsValid from "./inputValidError/InputEmailIsValid";
 import InputPassword from "./inputPassword/InputPassword";
 import InputUrl from "./inputUrl/InputUrl";
-import InputHint from "./inputHint/InputHint";
+import InputWithInfo from "./inputHint/InputWithInfo";
 import InputDropdownOutsideTS from "./inputDropdownOutside/InputDropdownOutsideTS";
 import ToggleSwitch from "./toggleDefault/ToggleSwitch";
 import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
@@ -13,11 +13,11 @@ import CheckDefaultTS from "./checkDefault/CheckDefaultTS";
 import ToggleDisable from "./toggledDissable/ToggleDisable";
 import CheckWithLabelTS from "./checkWithLabel/CheckWithLabelTS";
 import CheckDisableTS from "./checkDisable/CheckDisableTS";
-import InputFileSmall from "./inputFileSmall/InputFileSmall";
 import InputSuccess from "./inputSuccess/InputSuccess";
 import TabDefault from "./tabDefault/TabDefault";
 import TabLine from "./tabLine/TabLine";
 import InputFileDefaultTS from "./inputFileDefault/InputFileDefaultTS";
+import InputFileSmallTS from "./inputFileSmall/InputFileSmallTS";
 
 
 
@@ -41,8 +41,8 @@ export const InputMain = [
                 code: ``,
             },
             {
-                name: 'Input With Description',
-                component: <InputHint />,
+                name: 'Input With Info',
+                component: <InputWithInfo />,
                 code: ``,
             },
             {
@@ -112,7 +112,7 @@ export const InputMain = [
             },
             {
                 name: 'Input File Small',
-                component: <InputFileSmall />,
+                component: <InputFileSmallTS />,
                 code: ``,
             },
             {
