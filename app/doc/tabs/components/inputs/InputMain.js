@@ -6,18 +6,18 @@ import InputEmailIsValid from "./inputValidError/InputEmailIsValid";
 import InputPassword from "./inputPassword/InputPassword";
 import InputUrl from "./inputUrl/InputUrl";
 import InputHint from "./inputHint/InputHint";
-import InputDropdownOutside from "./inputDropdownOutside/InputDropdownOutside";
+import InputDropdownOutsideTS from "./inputDropdownOutside/InputDropdownOutsideTS";
 import ToggleSwitch from "./toggleDefault/ToggleSwitch";
 import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
 import CheckDefaultTS from "./checkDefault/CheckDefaultTS";
 import ToggleDisable from "./toggledDissable/ToggleDisable";
 import CheckWithLabelTS from "./checkWithLabel/CheckWithLabelTS";
 import CheckDisableTS from "./checkDisable/CheckDisableTS";
-import InputFileDefault from "./inputFileDefault/InputFileDefault";
 import InputFileSmall from "./inputFileSmall/InputFileSmall";
 import InputSuccess from "./inputSuccess/InputSuccess";
 import TabDefault from "./tabDefault/TabDefault";
 import TabLine from "./tabLine/TabLine";
+import InputFileDefaultTS from "./inputFileDefault/InputFileDefaultTS";
 
 
 
@@ -57,7 +57,7 @@ export const InputMain = [
             },
             {
                 name: 'Input with dropdown Outside',
-                component: <InputDropdownOutside />,
+                component: <InputDropdownOutsideTS />,
                 code: ``,
             },
             {
@@ -107,7 +107,7 @@ export const InputMain = [
             },
             {
                 name: 'Input File Default',
-                component: <InputFileDefault />,
+                component: <InputFileDefaultTS />,
                 code: ``,
             },
             {
