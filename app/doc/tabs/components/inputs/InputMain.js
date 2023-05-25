@@ -1,7 +1,6 @@
 import DefaultInput from "./inputDefault/DefaultInput";
 import InputDropdownTS from "./inputDropdown/InputDropdownTS";
 import InputIcon from "./inputIcon/InputIcon";
-import InputMultiSelect from "./inputMultiSelect/InputMultiSelect";
 import InputEmailIsValid from "./inputValidError/InputEmailIsValid";
 import InputPassword from "./inputPassword/InputPassword";
 import InputUrl from "./inputUrl/InputUrl";
@@ -18,6 +17,7 @@ import TabDefault from "./tabDefault/TabDefault";
 import TabLine from "./tabLine/TabLine";
 import InputFileDefaultTS from "./inputFileDefault/InputFileDefaultTS";
 import InputFileSmallTS from "./inputFileSmall/InputFileSmallTS";
+import InputMultiSelectTS from "./inputMultiSelect/InputMultiSelectTS";
 
 
 
@@ -72,7 +72,7 @@ export const InputMain = [
             },
             {
                 name: 'Input Multi select',
-                component: <InputMultiSelect />,
+                component: <InputMultiSelectTS />,
                 code: ``,
             },
             {

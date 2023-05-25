@@ -11,7 +11,7 @@ const teamEm = [
   { empID: 8, value: "@Ashly", label: "Ashly" },
 ];
 
-const InputMultiSelect = () => {
+const InputMultiSelectJS = () => {
   const [selectedOptions, setSelectedOptions] = useState([
     { empID: 4, value: "@Kaven", label: "Kaven" },
   ]);
@@ -71,7 +71,6 @@ const InputMultiSelect = () => {
       </label>
       <div className="multi_select_body">
         <div
-          name="person"
           id="person"
           className="flex h-full min-h-[40px] w-full rounded-md border-0 bg-slate-50 px-2 py-2 text-gray-900 outline-none ring-1 ring-inset ring-gray-300 sm:text-sm sm:leading-6"
         >
@@ -107,7 +106,6 @@ const InputMultiSelect = () => {
                   <p
                     onClick={() => handleSelect(option)}
                     key={option.value}
-                    value={option.value}
                     className="w-full cursor-default truncate bg-slate-50 px-2 py-2 text-gray-800 duration-200 hover:bg-slate-200"
                   >
                     {option.label}
@@ -122,4 +120,4 @@ const InputMultiSelect = () => {
   );
 };
 
-export default InputMultiSelect;
+export default InputMultiSelectJS;
