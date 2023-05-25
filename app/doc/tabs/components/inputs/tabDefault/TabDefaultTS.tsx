@@ -24,13 +24,19 @@ const Tab3 = () => {
   );
 };
 
-const TabDefault = () => {
-  const [selectedTabID, setSelectedTabID] = useState(0);
+type TabsProbs = {
+  id: number;
+  label:string;
+  content: React.JSX.Element
+}[];
 
-  const tabs = [
-    { id: 0, lable: "Tab 1", content: <Tab1 /> },
-    { id: 1, lable: "Tab 2", content: <Tab2 /> },
-    { id: 3, lable: "Tab 3", content: <Tab3 /> },
+const TabDefaultTS = () => {
+  const [selectedTabID, setSelectedTabID] = useState<number>(0);
+
+  const tabs : TabsProbs = [
+    { id: 0, label: "Tab 1", content: <Tab1 /> },
+    { id: 1, label: "Tab 2", content: <Tab2 /> },
+    { id: 3, label: "Tab 3", content: <Tab3 /> },
   ];
 
   const selectedTab = tabs.find((item) => item.id === selectedTabID);
@@ -41,7 +47,7 @@ const TabDefault = () => {
         {tabs.map((item, id) => (
           <button
             key={id}
-            className={`rounded-md w-full px-4 py-2 font-medium outline-none duration-200 hover:bg-gray-50 
+            className={`w-full rounded-md px-4 py-2 font-medium outline-none duration-200 hover:bg-gray-50 
             ${
               selectedTabID === item.id
                 ? "bg-white text-blue-500 drop-shadow-md"
@@ -49,17 +55,17 @@ const TabDefault = () => {
             } `}
             onClick={() => setSelectedTabID(item.id)}
           >
-            {item.lable}
+            {item.label}
           </button>
         ))}
       </div>
       <div className="tab_contents mt-3">
         <div className="tab_contents_body text-gray-700">
-          {selectedTab.content}
+          {selectedTab?.content}
         </div>
       </div>
     </div>
   );
 };
 
-export default TabDefault;
+export default TabDefaultTS;

@@ -39,6 +39,7 @@ const InputFileSmallTS = () => {
             type="file"
             className="hidden"
             onChange={handleFileChange}
+            accept=".jpg, .svg, .png"
           />
         </label>
       </div>

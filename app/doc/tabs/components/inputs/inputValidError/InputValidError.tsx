@@ -1,7 +1,7 @@
 import React from "react";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid";
 
-const InputEmailIsValid = () => {
+const InputValidError = () => {
   return (
     <div className="w-full">
       <div className="flex w-full items-center justify-between">
@@ -30,4 +30,4 @@ const InputEmailIsValid = () => {
   );
 };
 
-export default InputEmailIsValid;
+export default InputValidError;

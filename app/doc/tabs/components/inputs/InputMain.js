@@ -1,8 +1,7 @@
 import DefaultInput from "./inputDefault/DefaultInput";
 import InputDropdownTS from "./inputDropdown/InputDropdownTS";
 import InputIcon from "./inputIcon/InputIcon";
-import InputEmailIsValid from "./inputValidError/InputEmailIsValid";
-import InputPassword from "./inputPassword/InputPassword";
+import InputValidError from "./inputValidError/InputValidError";
 import InputUrl from "./inputUrl/InputUrl";
 import InputWithInfo from "./inputHint/InputWithInfo";
 import InputDropdownOutsideTS from "./inputDropdownOutside/InputDropdownOutsideTS";
@@ -13,11 +12,12 @@ import ToggleDisable from "./toggledDissable/ToggleDisable";
 import CheckWithLabelTS from "./checkWithLabel/CheckWithLabelTS";
 import CheckDisableTS from "./checkDisable/CheckDisableTS";
 import InputSuccess from "./inputSuccess/InputSuccess";
-import TabDefault from "./tabDefault/TabDefault";
-import TabLine from "./tabLine/TabLine";
 import InputFileDefaultTS from "./inputFileDefault/InputFileDefaultTS";
 import InputFileSmallTS from "./inputFileSmall/InputFileSmallTS";
 import InputMultiSelectTS from "./inputMultiSelect/InputMultiSelectTS";
+import InputPasswordTS from "./inputPassword/InputPasswordTS";
+import TabDefaultTS from "./tabDefault/TabDefaultTS";
+import TabLineTS from "./tabLine/TabLineTS";
 
 
 
@@ -32,7 +32,7 @@ export const InputMain = [
             },
             {
                 name: 'Input Error',
-                component: <InputEmailIsValid />,
+                component: <InputValidError />,
                 code: ``,
             },
             {
@@ -47,7 +47,7 @@ export const InputMain = [
             },
             {
                 name: 'Input Password',
-                component: <InputPassword />,
+                component: <InputPasswordTS />,
                 code: ``,
             },
             {
@@ -117,12 +117,12 @@ export const InputMain = [
             },
             {
                 name: 'Tab Default',
-                component: <TabDefault />,
+                component: <TabDefaultTS />,
                 code: ``,
             },
             {
                 name: 'Tab Line',
-                component: <TabLine />,
+                component: <TabLineTS />,
                 code: ``,
             },
         ]

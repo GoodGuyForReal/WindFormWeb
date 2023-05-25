@@ -24,6 +24,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/doc/tabs/components/inputs/checkDefault/CheckDefaultJS.jsx", "app/doc/tabs/components/inputs/checkDefault/CheckDefault.jsx", "app/doc/tabs/components/inputs/inputPassword/InputPassword.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/doc/tabs/components/inputs/checkDefault/CheckDefaultJS.jsx", "app/doc/tabs/components/inputs/checkDefault/CheckDefault.jsx", "app/doc/tabs/components/inputs/inputPassword/InputPasswordJS.jsx"],
   "exclude": ["node_modules"]
 }

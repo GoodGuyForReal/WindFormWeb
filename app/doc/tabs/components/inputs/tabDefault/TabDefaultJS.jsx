@@ -24,29 +24,29 @@ const Tab3 = () => {
   );
 };
 
-const TabLine = () => {
+const TabDefaultJS = () => {
   const [selectedTabID, setSelectedTabID] = useState(0);
 
   const tabs = [
-    { id: 0, lable: "Tab 1", content: <Tab1 /> },
-    { id: 1, lable: "Tab 2", content: <Tab2 /> },
-    { id: 3, lable: "Tab 3", content: <Tab3 /> },
+    { id: 0, label: "Tab 1", content: <Tab1 /> },
+    { id: 1, label: "Tab 2", content: <Tab2 /> },
+    { id: 3, label: "Tab 3", content: <Tab3 /> },
   ];
 
   const selectedTab = tabs.find((item) => item.id === selectedTabID);
 
   return (
     <div className="w-full">
-      <div className="tabs flex gap-1 border-b border-gray-300">
+      <div className="tabs flex w-full gap-1 rounded-md bg-gray-200/60 p-1">
         {tabs.map((item, id) => (
           <button
             key={id}
-            className={`px-4 py-2 font-medium outline-none duration-200
-              ${
-                selectedTabID === item.id
-                  ? "border-b-2 border-blue-500 text-blue-500"
-                  : "text-gray-400 hover:text-gray-500"
-              } `}
+            className={`rounded-md w-full px-4 py-2 font-medium outline-none duration-200 hover:bg-gray-50 
+            ${
+              selectedTabID === item.id
+                ? "bg-white text-blue-500 drop-shadow-md"
+                : "bg-none text-gray-400"
+            } `}
             onClick={() => setSelectedTabID(item.id)}
           >
             {item.lable}
@@ -62,4 +62,4 @@ const TabLine = () => {
   );
 };
 
-export default TabLine;
+export default TabDefaultJS;
