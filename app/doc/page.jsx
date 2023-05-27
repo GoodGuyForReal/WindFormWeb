@@ -27,7 +27,7 @@ const page = () => {
         <div className="included_main ml-2 mt-5 flex flex-col gap-2">
           {tabs[activeTab].list?.[0]?.subComponent.map((item, id) => (
             <Link
-              href={`#${item.href}`}
+              href={`/doc#${item.href}`}
               scroll={false}
               className="cursor-pointer text-sm text-gray-400 duration-200 hover:text-gray-800"
               key={id}
