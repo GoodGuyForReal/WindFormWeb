@@ -6,7 +6,7 @@ import { tabs } from "./Tabs";
 import ComponentLinks from './components/ComponentLinks'
 
 const page = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState<number>(0);
 
   return (
     <div className="h-full w-full flex-1 items-start bg-slate-50 pt-12 md:grid md:grid-cols-[200px_minmax(0,1fr)_200px] md:gap-6 lg:grid-cols-[250px_minmax(0,1fr)_250px] lg:gap-10">

@@ -5,12 +5,6 @@ import InputValidError from "./inputValidError/InputValidError";
 import InputUrl from "./inputUrl/InputUrl";
 import InputWithInfo from "./inputHint/InputWithInfo";
 import InputDropdownOutsideTS from "./inputDropdownOutside/InputDropdownOutsideTS";
-import ToggleSwitch from "./toggleDefault/ToggleSwitch";
-import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
-import CheckDefaultTS from "./checkDefault/CheckDefaultTS";
-import ToggleDisableJS from "./toggledDissable/ToggleDisableJS";
-import CheckWithLabelTS from "./checkWithLabel/CheckWithLabelTS";
-import CheckDisableTS from "./checkDisable/CheckDisableTS";
 import InputSuccess from "./inputSuccess/InputSuccess";
 import InputFileDefaultTS from "./inputFileDefault/InputFileDefaultTS";
 import InputFileSmallTS from "./inputFileSmall/InputFileSmallTS";
@@ -84,42 +78,6 @@ export const InputMain = [
                 component: <InputMultiSelectTS />,
                 code: ``,
                 href: 'InputMultiSelect'
-            },
-            {
-                name: 'Input Toggle Switch',
-                component: <ToggleSwitch />,
-                code: ``,
-                href: 'InputToggleSwitch'
-            },
-            {
-                name: 'Input Toggle With Label',
-                component: <ToggleWithLabel />,
-                code: ``,
-                href: 'InputToggleWithLabel'
-            },
-            {
-                name: 'Input Toggle Disable',
-                component: <ToggleDisableJS />,
-                code: ``,
-                href: 'InputToggleDisable'
-            },
-            {
-                name: 'Input Checkbox Default',
-                component: <CheckDefaultTS />,
-                code: ``,
-                href: 'InputCheckboxDefault'
-            },
-            {
-                name: 'Input Check With Label',
-                component: <CheckWithLabelTS />,
-                code: ``,
-                href: 'InputCheckWithLabel'
-            },
-            {
-                name: 'Input Check Disable',
-                component: <CheckDisableTS />,
-                code: ``,
-                href: 'InputCheckDisable'
             },
             {
                 name: 'Input File Default',

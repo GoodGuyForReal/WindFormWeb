@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const SideBar = ({ tabs, setActiveTab, activeTab }) => {
@@ -5,6 +6,9 @@ const SideBar = ({ tabs, setActiveTab, activeTab }) => {
 
   return (
     <div className="sidebar flex flex-col px-10 pt-10">
+      <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        
+      </div>
       {tabs.map((tab, index) => (
         <div key={index}>
           <button
