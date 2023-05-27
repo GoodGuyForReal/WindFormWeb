@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import SideBar from "./components/Sidebar";
 import { tabs } from "./Tabs";
-import Link from "next/link";
+import ComponentLinks from './components/ComponentLinks'
 
 const page = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -24,18 +24,7 @@ const page = () => {
 
       <div className="included sticky top-14 pt-10">
         <h1 className="text-gray-800">On This Page</h1>
-        <div className="included_main ml-2 mt-5 flex flex-col gap-2">
-          {tabs[activeTab].list?.[0]?.subComponent.map((item, id) => (
-            <Link
-              href={`/doc#${item.href}`}
-              scroll={false}
-              className="cursor-pointer text-sm text-gray-400 duration-200 hover:text-gray-800"
-              key={id}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
+        <ComponentLinks components={tabs[activeTab].list?.[0]?.subComponent}/>
       </div>
     </div>
   );

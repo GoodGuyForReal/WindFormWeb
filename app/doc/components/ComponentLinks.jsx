@@ -6,30 +6,19 @@ import Link from "next/link";
 const ComponentLinks = ({ components }) => {
 
 
-  const handleClick = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <div className="included_main mt-2 flex flex-col gap-2">
-      <ul>
-        {components?.map((item, id) => (
-          <li>
+   <div className="included_main ml-2 mt-5 flex flex-col gap-2">
+          {components?.map((item, id) => (
             <Link
-              href={`#${item.href}`}
+              href={`/doc#${item.href}`}
               scroll={false}
               className="cursor-pointer text-sm text-gray-400 duration-200 hover:text-gray-800"
               key={id}
             >
-              <span onClick={() => handleClick(item.href)}>{item.name}</span>
+              {item.name}
             </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+          ))}
+        </div>
   );
 };
 
