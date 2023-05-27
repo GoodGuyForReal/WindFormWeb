@@ -2,31 +2,33 @@ import Intro from './tabs/intro/Intro'
 import Usage from './tabs/usage/Usage' 
 
 import { HomeIcon, CloudArrowDownIcon } from '@heroicons/react/24/outline'
-import Buttons from './tabs/components/buttons/ButtonsSection' 
-import Inputs from './tabs/components/inputs/Inputs' 
+import { InputMain } from './tabs/components/inputs/InputMain'
+import { buttonMain } from './tabs/components/buttons/Buttonmain'
+import DocSection from '@/components/DocSection'
 
 export const tabs = [
     {
+        id:0,
         title: "Getting Started",
-        content: <Intro />,
+        section: <Intro />,
         icon: <HomeIcon className="h-5 w-h-5" />,
-        id:0
     },
     {
+        id:1,
         title: "Installation",
-        content: <Usage />,
+        section: <Usage />,
         icon: <CloudArrowDownIcon className="h-5 w-h-5" />,
-        id:1
     },
     {
+        id:2,
         title: "Buttons",
-        content: <Buttons />,
-        id:2
+        section : <DocSection section={buttonMain}/>,
+        list: buttonMain
     },
     {
+        id:3,
         title: "Inputs",
-        content: <Inputs />,
-        id:3
+        section : <DocSection section={InputMain}/>,
+        list: InputMain
     }
-
 ];

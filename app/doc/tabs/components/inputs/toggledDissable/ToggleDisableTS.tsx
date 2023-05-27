@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-const ToggleDisable = () => {
-  const [isChecked, setIsChecked] = useState(false);
-  const [isDisabled, setIsDisabled] = useState(true);
+const ToggleDisableJS = () => {
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [isDisabled, setIsDisabled] = useState<boolean>(true);
 
   const toggleSwitch = () => {
     if (!isDisabled) {
@@ -64,4 +64,4 @@ const ToggleDisable = () => {
   );
 };
 
-export default ToggleDisable;
+export default ToggleDisableJS;
