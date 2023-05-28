@@ -1,17 +1,26 @@
 import React, { useState, ChangeEvent } from "react";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
 
-const InputFileSmallTS = () => {
+interface FileInputProps {
+  maxSizeInMb?: number;
+}
+
+export function InputFileSmallTS({ maxSizeInMb = 5 }: FileInputProps) {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files && event.target.files[0];
-    //? 10.019066 MB
-    if (file && file.size > 10019066) {
-      alert("Size limit is 10mb");
-      event.target.value = "";
-    } else if (file) {
-      setSelectedFile(file);
+
+    if (file) {
+      const fileSizeInBytes = file.size;
+      const fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024); // Convert bytes to megabytes
+
+      if (fileSizeInMegabytes > maxSizeInMb) {
+        alert(`Size limit is ${maxSizeInMb.toFixed(2)} MB`);
+        event.target.value = "";
+      } else {
+        setSelectedFile(file);
+      }
     }
   };
 

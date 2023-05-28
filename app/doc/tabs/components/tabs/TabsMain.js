@@ -3,7 +3,7 @@ import TabLineTS from "./tabLine/TabLineTS";
 
 export const TabsMain = [
   {
-    title: "Inputs",
+    title: "Tabs",
     subComponent: [
       {
         name: "Tab Default",

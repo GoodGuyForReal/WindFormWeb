@@ -7,6 +7,9 @@ import { buttonMain } from "./tabs/components/buttons/Buttonmain";
 import { CheckBoxMain } from "./tabs/components/checkBox/CheckBoxMain";
 import { ToggleSwitchMain } from "./tabs/components/toggleSwitch/ToggleSwitchMain";
 import { TabsMain } from "./tabs/components/tabs/TabsMain";
+import { MultiSelectMain } from "./tabs/components/multiSelect/MultiSelectMain";
+import { FileInputMain } from "./tabs/components/fileInput/FileInputMain";
+
 
 import DocSection from "@/components/DocSection";
 
@@ -42,15 +45,27 @@ export const tabs = [
     list: CheckBoxMain,
   },
   {
-    id: 4,
+    id: 5,
     title: "Toggle Switch",
     section: <DocSection section={ToggleSwitchMain} />,
     list: ToggleSwitchMain,
   },
   {
-    id: 4,
+    id: 6,
     title: "Tabs",
     section: <DocSection section={TabsMain} />,
     list: TabsMain,
+  },
+  {
+    id: 7,
+    title: "Multi Select",
+    section: <DocSection section={MultiSelectMain} />,
+    list: MultiSelectMain,
+  },
+  {
+    id: 8,
+    title: "File Input",
+    section: <DocSection section={FileInputMain} />,
+    list: FileInputMain,
   },
 ];
