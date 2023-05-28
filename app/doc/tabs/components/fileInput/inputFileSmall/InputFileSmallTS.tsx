@@ -53,7 +53,9 @@ export function InputFileSmallTS({ maxSizeInMb = 5 }: FileInputProps) {
         </label>
       </div>
       {selectedFile && (
-        <p className="mt-2 rounded-md border border-blue-600 bg-blue-50 px-3 py-1 text-center text-sm text-blue-600">
+        <p className="mt-2 rounded-md border border-blue-600 bg-blue-50 px-3 py-1 text-center text-sm text-blue-600"
+        
+        >
           {selectedFile.name}
         </p>
       )}

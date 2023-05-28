@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import SideBar from "./components/Sidebar";
 import { tabs } from "./Tabs";
-import ComponentLinks from './components/ComponentLinks'
+import ComponentLinks from "./components/ComponentLinks";
 
 const page = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
@@ -18,13 +18,13 @@ const page = () => {
         />
       </div>
 
-      <main className="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr]">
+      <main className="relative min-h-screen py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr]">
         {tabs[activeTab].section}
       </main>
 
       <div className="included sticky top-14 pt-10">
         <h1 className="text-gray-800">On This Page</h1>
-        <ComponentLinks components={tabs[activeTab].list?.[0]?.subComponent}/>
+        <ComponentLinks components={tabs[activeTab].list?.[0]?.subComponent} />
       </div>
     </div>
   );
