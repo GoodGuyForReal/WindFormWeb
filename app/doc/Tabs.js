@@ -9,6 +9,7 @@ import { ToggleSwitchMain } from "./tabs/components/toggleSwitch/ToggleSwitchMai
 import { TabsMain } from "./tabs/components/tabs/TabsMain";
 import { MultiSelectMain } from "./tabs/components/multiSelect/MultiSelectMain";
 import { FileInputMain } from "./tabs/components/fileInput/FileInputMain";
+import { InputDropdown } from "./tabs/components/inputDropdown/InputDropdown";
 
 
 import DocSection from "@/components/DocSection";
@@ -68,4 +69,12 @@ export const tabs = [
     section: <DocSection section={FileInputMain} />,
     list: FileInputMain,
   },
+  {
+    id: 9,
+    title: "Input Dropdown",
+    section: <DocSection section={InputDropdown} />,
+    list: InputDropdown,
+  },
+
+  
 ];

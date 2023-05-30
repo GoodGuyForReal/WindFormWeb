@@ -1,13 +1,9 @@
 import DefaultInput from "./inputDefault/DefaultInput";
-import InputDropdownTS from "./inputDropdown/InputDropdownTS";
 import InputIcon from "./inputIcon/InputIcon";
 import InputValidError from "./inputValidError/InputValidError";
 import InputUrl from "./inputUrl/InputUrl";
 import InputWithInfo from "./inputHint/InputWithInfo";
-import InputDropdownOutsideTS from "./inputDropdownOutside/InputDropdownOutsideTS";
 import InputSuccess from "./inputSuccess/InputSuccess";
-
-
 import InputPasswordTS from "./inputPassword/InputPasswordTS";
 
 export const InputMain = [
@@ -49,18 +45,6 @@ export const InputMain = [
         component: <InputIcon />,
         code: ``,
         href: "InputIcon",
-      },
-      {
-        name: "Input with dropdown Outside",
-        component: <InputDropdownOutsideTS />,
-        code: ``,
-        href: "InputDropdownOutside",
-      },
-      {
-        name: "Input with dropdown",
-        component: <InputDropdownTS />,
-        code: ``,
-        href: "InputDropdown",
       },
       {
         name: "Input URL",

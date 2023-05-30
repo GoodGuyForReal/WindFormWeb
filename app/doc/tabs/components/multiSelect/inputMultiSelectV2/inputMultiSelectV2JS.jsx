@@ -11,7 +11,7 @@ const teamEm = [
   { empID: 8, value: "@Ashly", label: "Ashly" },
 ];
 
-const InputMultiSelectJS = () => {
+const inputMultiSelectV2JS = () => {
   const [selectedOptions, setSelectedOptions] = useState([
     { empID: 4, value: "@Kaven", label: "Kaven" },
   ]);
@@ -120,4 +120,4 @@ const InputMultiSelectJS = () => {
   );
 };
 
-export default InputMultiSelectJS;
+export default inputMultiSelectV2JS;
