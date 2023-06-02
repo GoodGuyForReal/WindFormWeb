@@ -1,9 +1,10 @@
 import InputMultiSelectTS from "./inputMultiSelect/InputMultiSelectTS";
 import InputMultiSelectV2TS from "./inputMultiSelectV2/inputMultiSelectV2TS";
+import InputSingleSelectTS from "./inputSingleSelect/InputSingleSelectTS";
 
 export const MultiSelectMain = [
   {
-    title: "Multi Select",
+    title: "Input Select",
     subComponent: [
       {
         name: "Input Multi Select",
@@ -14,6 +15,12 @@ export const MultiSelectMain = [
       {
         name: "Input Multi Select V2",
         component: <InputMultiSelectV2TS />,
+        code: ``,
+        href: "InputMultiSelect",
+      },
+      {
+        name: "Input Single Select",
+        component: <InputSingleSelectTS />,
         code: ``,
         href: "InputMultiSelect",
       },

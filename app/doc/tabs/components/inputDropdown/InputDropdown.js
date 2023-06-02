@@ -3,7 +3,7 @@ import InputDropdownOutsideTS from "./inputDropdownOutside/InputDropdownOutsideT
 
 export const InputDropdown = [
   {
-    title: "Inputs",
+    title: "Inputs Dropdown",
     subComponent: [
       {
         name: "Input with dropdown Outside",
