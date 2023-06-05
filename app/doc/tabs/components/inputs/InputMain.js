@@ -5,6 +5,8 @@ import InputUrl from "./inputUrl/InputUrl";
 import InputWithInfo from "./inputHint/InputWithInfo";
 import InputSuccess from "./inputSuccess/InputSuccess";
 import InputPasswordTS from "./inputPassword/InputPasswordTS";
+import InputButtonInside from "./inputButtonInside/InputButtonInside";
+import InputButtonOutside from "./inputButtonOutside/InputButtonOutside";
 
 export const InputMain = [
   {
@@ -51,6 +53,18 @@ export const InputMain = [
         component: <InputUrl />,
         code: ``,
         href: "InputURL",
+      },
+      {
+        name: "Input Button Inside",
+        component: <InputButtonInside />,
+        code: ``,
+        href: "InputButtonInside",
+      },
+      {
+        name: "Input Button Outside",
+        component: <InputButtonOutside />,
+        code: ``,
+        href: "InputButtonOutside",
       },
     ],
   },

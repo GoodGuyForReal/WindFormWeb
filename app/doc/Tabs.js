@@ -74,7 +74,5 @@ export const tabs = [
     title: "Input Dropdown",
     section: <DocSection section={InputDropdown} />,
     list: InputDropdown,
-  },
-
-  
+  },  
 ];
