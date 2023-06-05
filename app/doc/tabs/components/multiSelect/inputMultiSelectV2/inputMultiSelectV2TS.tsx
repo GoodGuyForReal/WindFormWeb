@@ -124,7 +124,7 @@ const InputMultiSelectV2TS = () => {
       </label>
       <div className="multi_select_body">
         <div
-          className={`flex h-full min-h-[40px] w-full rounded-sm border-0 bg-slate-50 px-2 py-2 text-gray-900 outline-none ring-1 ring-inset  duration-200 sm:text-sm sm:leading-6
+          className={`flex h-full min-h-[40px] w-full rounded-md border-0 px-2 py-2 text-gray-900 outline-none ring-1 ring-inset  duration-200 sm:text-sm sm:leading-6
          ${!isSelectOpen ? "ring-gray-300" : "ring-blue-500"}
          `}
         >
@@ -132,7 +132,7 @@ const InputMultiSelectV2TS = () => {
             {selectedOptions.map((item, id) => (
               <span
                 key={id}
-                className="flex cursor-pointer items-center gap-2 rounded-sm border border-gray-300 px-2 py-1 text-sm font-bold text-gray-800 duration-200 hover:border-red-300 hover:bg-red-100"
+                className="flex cursor-pointer items-center gap-2 rounded-md border border-gray-300 px-2 py-1 text-sm font-bold text-gray-800 duration-200 hover:border-red-300 hover:bg-red-100"
                 onClick={() => handleSelectRemove(item)}
               >
                 <img
@@ -165,12 +165,12 @@ const InputMultiSelectV2TS = () => {
                   <p
                     onClick={() => handleSelectAdd(item)}
                     key={item.value}
-                    className="flex w-full cursor-pointer items-center gap-1 truncate bg-slate-50 px-2 py-2 text-gray-800 duration-200 hover:bg-blue-100"
+                    className="flex w-full cursor-pointer items-center gap-1 truncate bg-white px-2 py-2 text-gray-800 duration-200 hover:bg-blue-100"
                   >
                     <img
                       src={item.img}
                       alt={item.value}
-                      className="h-6 w-6 rounded-full bg-slate-400 object-cover"
+                      className="h-6 w-6 rounded-full object-cover"
                     />
                     {item.label}
                   </p>

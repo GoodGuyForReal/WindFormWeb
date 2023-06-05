@@ -41,7 +41,7 @@ const CheckWithLabelJS = () => {
             checked={isChecked}
             onChange={() => setIsChecked(!isChecked)}
           />
-          <div className="flex h-5 w-5 items-center justify-center rounded-md border border-gray-400 bg-gray-100 duration-200 hover:bg-gray-100 peer-checked:border-blue-500 peer-checked:bg-blue-500 peer-checked:after:border-white peer-checked:hover:bg-blue-600">
+          <div className="flex h-5 w-5 items-center justify-center rounded-md border border-gray-400 duration-200 hover:bg-gray-100 peer-checked:border-blue-500 peer-checked:bg-blue-500 peer-checked:after:border-white peer-checked:hover:bg-blue-600">
             <CheckIcon checked={isChecked} />
           </div>
         </label>

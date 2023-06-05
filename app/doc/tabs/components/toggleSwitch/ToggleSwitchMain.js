@@ -1,6 +1,7 @@
 import ToggleSwitch from "./toggleDefault/ToggleSwitch";
 import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
 import ToggleDisableJS from "./toggledDissable/ToggleDisableTS";
+import ToggleSwitchColor from "./toggleColor/ToggleSwitchColor";
 
 export const ToggleSwitchMain = [
     {
@@ -11,6 +12,12 @@ export const ToggleSwitchMain = [
                 component: <ToggleSwitch />,
                 code: ``,
                 href: 'InputToggleSwitch'
+            },
+            {
+                name: 'Input Toggle Switch Colors',
+                component: <ToggleSwitchColor />,
+                code: ``,
+                href: 'ToggleSwitchWithIcon'
             },
             {
                 name: 'Input Toggle With Label',

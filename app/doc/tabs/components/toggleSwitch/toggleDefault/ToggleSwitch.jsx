@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const ToggleSwitch = () => {
   const [isChecked, setIsChecked] = useState(false);
 
-
   return (
     <div className="flex gap-3">
       <div className="toggle_container">
@@ -14,7 +13,7 @@ const ToggleSwitch = () => {
             checked={isChecked}
             onChange={() => setIsChecked(!isChecked)}
           />
-          <div className="h-6 w-[45px] rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white dark:bg-gray-300">
+          <div className="h-6 w-[45px] rounded-full bg-gray-200 peer-checked:bg-blue-500 peer-checked:after:translate-x-full peer-checked:after:border-white dark:bg-gray-300">
             {/* Toggle Ball */}
             <div
               className={`absolute left-[2px] top-[2px] h-5 w-5 rounded-full transition-transform ${
