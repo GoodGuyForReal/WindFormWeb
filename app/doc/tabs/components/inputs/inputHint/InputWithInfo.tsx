@@ -1,23 +1,28 @@
-import React from 'react'
+import React from "react";
 
 const InputWithInfo = () => {
-    return (
-        <div className='w-full'>
-            <label htmlFor="Email" className="block w-full font-medium text-sm leading-6 text-gray-800 mb-1">
-                Email
-            </label>
-            <div>
-                <input
-                    type="text"
-                    name="Email"
-                    id="hintEmail"
-                    className="block w-full rounded-md outline-none border-0 py-2 px-4 bg-slate-50 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
-                    placeholder="Enter your email"
-                />
-                <span className='text-gray-500 text-sm mt-2'>We’ll never share your details.</span>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="w-full">
+      <label
+        htmlFor="Email"
+        className="mb-1 block w-full text-sm font-medium leading-6 text-gray-800"
+      >
+        Email
+      </label>
+      <div>
+        <input
+          type="text"
+          name="Email"
+          id="hintEmail"
+          className="w-full rounded-md border-0 px-4 py-2 text-sm text-gray-900 outline-none ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:leading-6"
+          placeholder="Enter your email"
+        />
+        <span className="mt-2 text-sm text-gray-500">
+          We’ll never share your details.
+        </span>
+      </div>
+    </div>
+  );
+};
 
-export default InputWithInfo
+export default InputWithInfo;

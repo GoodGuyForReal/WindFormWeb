@@ -17,6 +17,12 @@ export const InputMain = [
         href: "DefaultInput",
       },
       {
+        name: "Input With Info",
+        component: <InputWithInfo />,
+        code: ``,
+        href: "InputWithInfo",
+      },
+      {
         name: "Input Error",
         component: <InputValidError />,
         code: ``,
@@ -27,12 +33,6 @@ export const InputMain = [
         component: <InputSuccess />,
         code: ``,
         href: "InputSuccess",
-      },
-      {
-        name: "Input With Info",
-        component: <InputWithInfo />,
-        code: ``,
-        href: "InputWithInfo",
       },
       {
         name: "Input Password",

@@ -1,25 +1,28 @@
-import React from 'react'
+import React from "react";
 
 const InputUrl = () => {
-    return (
-        <div className='w-full'>
-            <label htmlFor="url" className="block w-full text-sm font-medium leading-6 text-gray-800 mb-1">
-                URL
-            </label>
-            <div className='flex'>
-            <div className="w-fit px-3 rounded-l-md flex items-center border border-r-transparent border-gray-300 bg-gray-100">
-                    <label className='text-gray-800'>http://</label>
-                </div>
-                <input
-                    type="url"
-                    name="url"
-                    id="url"
-                    className="block w-full rounded-r-md outline-none border-0 py-2 pl-4 pr-4 bg-slate-50 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
-                    placeholder="yoursite.com"
-                />
-            </div>
+  return (
+    <div className="w-full">
+      <label
+        htmlFor="url"
+        className="mb-1 block w-full text-sm font-medium leading-6 text-gray-800"
+      >
+        URL
+      </label>
+      <div className="flex">
+        <div className="flex w-fit items-center rounded-l-md border border-gray-300 border-r-transparent bg-gray-50 px-3">
+          <label className="text-gray-800">http://</label>
         </div>
-    )
-}
+        <input
+          type="url"
+          name="url"
+          id="url"
+          className="block w-full rounded-r-md border-0 py-2 pl-4 pr-4 text-gray-900 outline-none ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
+          placeholder="yoursite.com"
+        />
+      </div>
+    </div>
+  );
+};
 
-export default InputUrl
+export default InputUrl;
