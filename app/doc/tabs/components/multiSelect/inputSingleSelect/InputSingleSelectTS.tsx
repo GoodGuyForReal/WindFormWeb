@@ -51,7 +51,7 @@ const InputSingleSelectTS = () => {
       <div className="w-full">
         <div className="w-full">
           <div
-            className="flex h-full w-full cursor-pointer items-center justify-between rounded-md border border-gray-300  px-2 py-2 outline-none hover:bg-slate-100"
+            className="flex h-full w-full cursor-pointer items-center justify-between rounded-md border border-gray-300  px-2 py-2 outline-none hover:bg-blue-50"
             onClick={() => setIsSelectOpen(true)}
           >
             <label className="text-sm text-gray-800">{selectedValue}</label>
