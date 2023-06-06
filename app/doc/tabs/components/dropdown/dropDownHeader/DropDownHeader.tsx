@@ -32,7 +32,7 @@ function DropDownModal() {
         <ul className="p-2">
           <li className="px-4 py-2">
             <p className="text-sm">Signed as</p>
-            <label className="font-medium">tom@example.com</label>
+            <label className="font-medium">james@example.com</label>
           </li>
           {dropdownItems.map((item, id) => (
             <li
