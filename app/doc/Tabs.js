@@ -86,7 +86,7 @@ export const tabs = [
   }, 
   {
     id: 11,
-    title: "Modal",
+    title: "Modal Cards",
     section: <DocSection section={ModalMain} />,
     list: ModalMain,
   }, 
