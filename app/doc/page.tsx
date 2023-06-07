@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import SideBar from "./components/Sidebar";
 import { tabs } from "./Tabs";
@@ -8,12 +8,26 @@ import ComponentLinks from "./components/ComponentLinks";
 const page = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activeTab]);
+
+  const mainRef = useRef<HTMLDivElement>(null);
+
+  const handleTabChange = (tabIndex: number) => {
+    setActiveTab(tabIndex);
+    if (mainRef.current) {
+      mainRef.current.scrollTop = 0;
+    }
+  };
+
+
   return (
     <div className="h-full w-full flex-1 items-start pt-12 md:grid md:grid-cols-[200px_minmax(0,1fr)_200px] md:gap-6 lg:grid-cols-[250px_minmax(0,1fr)_250px] lg:gap-10">
       <div className="fixed top-14 z-30 -ml-2 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 overflow-y-auto md:sticky md:block">
         <SideBar
           tabs={tabs}
-          setActiveTab={setActiveTab}
+          setActiveTab={handleTabChange}
           activeTab={activeTab}
         />
       </div>
