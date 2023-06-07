@@ -44,7 +44,7 @@ const InputDropdownJS = () => {
           name="tel"
           id="tel"
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}"
-          className="block w-full rounded-md border-0 bg-slate-50 py-2 pl-16 pr-4 text-gray-900 outline-none ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
+          className="block w-full rounded-md border-0  py-2 pl-16 pr-4 text-gray-900 outline-none ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
           placeholder="000-000-000"
         />
         <div className="absolute inset-y-0 left-0 w-full max-w-[60px] px-2">
@@ -69,7 +69,7 @@ const InputDropdownJS = () => {
                     <p
                       onClick={() => setSelectedValue(item.code)}
                       key={id}
-                      className="w-full cursor-pointer truncate bg-slate-50 px-2 py-2 text-sm text-gray-800 duration-200 hover:bg-slate-200"
+                      className="w-full cursor-pointer truncate bg-white px-2 py-2 text-sm text-gray-800 duration-200 hover:bg-blue-100"
                     >
                       {item.code}
                     </p>

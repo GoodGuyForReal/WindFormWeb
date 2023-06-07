@@ -11,6 +11,9 @@ import { MultiSelectMain } from "./tabs/components/multiSelect/MultiSelectMain";
 import { FileInputMain } from "./tabs/components/fileInput/FileInputMain";
 import { InputDropdown } from "./tabs/components/inputDropdown/InputDropdown";
 import { DropDownMain } from "./tabs/components/dropdown/DropDownMain";
+import { ModalMain } from "./tabs/components/modals/ModalMain";
+
+
 
 import DocSection from "@/components/DocSection";
 
@@ -80,5 +83,11 @@ export const tabs = [
     title: "Dropdown",
     section: <DocSection section={DropDownMain} />,
     list: DropDownMain,
+  }, 
+  {
+    id: 11,
+    title: "Modal",
+    section: <DocSection section={ModalMain} />,
+    list: ModalMain,
   }, 
 ];
