@@ -132,7 +132,7 @@ const InputMultiSelectV2TS = () => {
             {selectedOptions.map((item, id) => (
               <span
                 key={id}
-                className="flex cursor-pointer items-center gap-2 rounded-md border border-gray-300 px-2 py-1 text-sm font-bold text-gray-800 duration-200 hover:border-red-300 hover:bg-red-100"
+                className="flex cursor-pointer items-center gap-2 rounded-md border border-gray-300 px-2 py-1 text-sm font-medium text-gray-800 duration-200 hover:border-red-300 hover:bg-red-100"
                 onClick={() => handleSelectRemove(item)}
               >
                 <img
@@ -171,7 +171,7 @@ const InputMultiSelectV2TS = () => {
                     <img
                       src={item.img}
                       alt={item.value}
-                      className="h-6 w-6 rounded-full object-cover"
+                      className="h-5 w-5 rounded-full object-cover"
                     />
                     {item.label}
                   </li>

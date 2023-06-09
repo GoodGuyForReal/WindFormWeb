@@ -1,5 +1,6 @@
 import TabDefaultTS from "../tabs/tabDefault/TabDefaultTS";
 import TabLineTS from "./tabLine/TabLineTS";
+import TabOutlineTS from "./tabOutline/TabOutlineTS";
 
 export const TabsMain = [
   {
@@ -10,6 +11,12 @@ export const TabsMain = [
         component: <TabDefaultTS />,
         code: ``,
         href: "TabDefault",
+      },
+      {
+        name: "Tab Outline",
+        component: <TabOutlineTS />,
+        code: ``,
+        href: "TabOutlineTS",
       },
       {
         name: "Tab Line",

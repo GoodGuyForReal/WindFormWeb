@@ -24,16 +24,10 @@ const Tab3 = () => {
   );
 };
 
-type TabsProbs = {
-  id: number;
-  label:string;
-  content: React.JSX.Element
-}[];
+const TabOutlineJS = () => {
+  const [selectedTabID, setSelectedTabID] = useState(0);
 
-const TabDefaultTS = () => {
-  const [selectedTabID, setSelectedTabID] = useState<number>(0);
-
-  const tabs : TabsProbs = [
+  const tabs = [
     { id: 0, label: "Tab 1", content: <Tab1 /> },
     { id: 1, label: "Tab 2", content: <Tab2 /> },
     { id: 3, label: "Tab 3", content: <Tab3 /> },
@@ -47,7 +41,7 @@ const TabDefaultTS = () => {
         {tabs.map((item, id) => (
           <button
             key={id}
-            className={`w-full rounded-md text-sm px-4 py-2 font-medium outline-none duration-200 hover:bg-gray-50 
+            className={`rounded-md w-full px-4 py-2 font-medium outline-none duration-200 hover:bg-gray-50 
             ${
               selectedTabID === item.id
                 ? "bg-white text-blue-500 drop-shadow-md"
@@ -55,17 +49,17 @@ const TabDefaultTS = () => {
             } `}
             onClick={() => setSelectedTabID(item.id)}
           >
-            {item.label}
+            {item.lable}
           </button>
         ))}
       </div>
       <div className="tab_contents mt-3">
         <div className="tab_contents_body text-gray-700">
-          {selectedTab?.content}
+          {selectedTab.content}
         </div>
       </div>
     </div>
   );
 };
 
-export default TabDefaultTS;
+export default TabOutlineJS;

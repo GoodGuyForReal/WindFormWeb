@@ -26,14 +26,14 @@ const Tab3 = () => {
 
 type TabsProbs = {
   id: number;
-  label:string;
-  content: React.JSX.Element
+  label: string;
+  content: React.JSX.Element;
 }[];
 
 const TabLineTS = () => {
   const [selectedTabID, setSelectedTabID] = useState<number>(0);
 
-  const tabs : TabsProbs = [
+  const tabs: TabsProbs = [
     { id: 0, label: "Tab 1", content: <Tab1 /> },
     { id: 1, label: "Tab 2", content: <Tab2 /> },
     { id: 3, label: "Tab 3", content: <Tab3 /> },
@@ -47,7 +47,7 @@ const TabLineTS = () => {
         {tabs.map((item, id) => (
           <button
             key={id}
-            className={`px-4 py-2 font-medium outline-none duration-200
+            className={`px-4 py-2 text-sm font-medium outline-none duration-200
               ${
                 selectedTabID === item.id
                   ? "border-b-2 border-blue-500 text-blue-500"
