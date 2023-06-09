@@ -114,15 +114,17 @@ const InputMultiSelectTS = () => {
               className="absolute left-0 right-0 top-1 z-10 items-center drop-shadow-sm"
             >
               <div className="drop_down w-full overflow-hidden rounded-md border">
+              <ul className="max-h-60 overflow-y-auto">
                 {search.map((item) => (
-                  <p
+                  <li
                     onClick={() => handleSelectAdd(item)}
                     key={item.value}
                     className="w-full cursor-pointer truncate bg-white px-2 py-2 text-gray-800 duration-200 hover:bg-blue-100"
                   >
                     {item.label}
-                  </p>
+                  </li>
                 ))}
+                </ul>
               </div>
             </div>
           )}

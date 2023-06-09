@@ -12,7 +12,7 @@ import { FileInputMain } from "./tabs/components/fileInput/FileInputMain";
 import { InputDropdown } from "./tabs/components/inputDropdown/InputDropdown";
 import { DropDownMain } from "./tabs/components/dropdown/DropDownMain";
 import { ModalMain } from "./tabs/components/modals/ModalMain";
-
+import { TextAreaMain } from "./tabs/components/textArea/TextAreaMain";
 
 
 import DocSection from "@/components/DocSection";
@@ -89,5 +89,11 @@ export const tabs = [
     title: "Modal Cards",
     section: <DocSection section={ModalMain} />,
     list: ModalMain,
+  }, 
+  {
+    id: 12,
+    title: "Textareas",
+    section: <DocSection section={TextAreaMain} />,
+    list: TextAreaMain,
   }, 
 ];

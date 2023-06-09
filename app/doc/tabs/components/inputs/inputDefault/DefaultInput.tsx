@@ -2,7 +2,7 @@ import React from "react";
 
 const DefaultInput = () => {
   return (
-    <div className="default_input w-full">
+    <div className="w-full">
       <label
         htmlFor="Email"
         className="mb-1 block w-full text-sm font-medium leading-6 text-gray-800"

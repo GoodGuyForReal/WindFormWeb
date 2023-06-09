@@ -160,9 +160,10 @@ const InputMultiSelectV2TS = () => {
               ref={wrapperRef}
               className="absolute left-0 right-0 top-1 z-10 items-center drop-shadow-sm"
             >
-              <div className="drop_down h-full max-h-60 w-full overflow-hidden overflow-y-auto rounded-md border">
+              <div className="drop_down h-full w-full overflow-hidden rounded-md border">
+              <ul className="max-h-60 overflow-y-auto">
                 {search.map((item) => (
-                  <p
+                  <li
                     onClick={() => handleSelectAdd(item)}
                     key={item.value}
                     className="flex w-full cursor-pointer items-center gap-1 truncate bg-white px-2 py-2 text-gray-800 duration-200 hover:bg-blue-100"
@@ -173,8 +174,9 @@ const InputMultiSelectV2TS = () => {
                       className="h-6 w-6 rounded-full object-cover"
                     />
                     {item.label}
-                  </p>
+                  </li>
                 ))}
+                </ul>
               </div>
             </div>
           )}

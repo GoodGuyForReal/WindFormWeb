@@ -4,7 +4,7 @@ import InputSingleSelectTS from "./inputSingleSelect/InputSingleSelectTS";
 
 export const MultiSelectMain = [
   {
-    title: "Input Select",
+    title: "Select",
     subComponent: [
       {
         name: "Input Multi Select",

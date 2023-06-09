@@ -51,7 +51,9 @@ const InputSingleSelectTS = () => {
       <div className="w-full">
         <div className="w-full">
           <div
-            className="flex h-full w-full cursor-pointer items-center justify-between rounded-md border border-gray-300  px-2 py-2 outline-none hover:bg-blue-50"
+            className={`flex h-full w-full cursor-pointer items-center  justify-between rounded-md px-2 py-2 outline-none ring-1 ring-inset hover:bg-blue-50
+            ${!isSelectOpen ? "ring-gray-300" : "ring-blue-500"}
+            `}
             onClick={() => setIsSelectOpen(true)}
           >
             <label className="text-sm text-gray-800">{selectedValue}</label>
@@ -65,15 +67,17 @@ const InputSingleSelectTS = () => {
                 className="absolute left-0 right-0 top-1 z-10 items-center drop-shadow-sm"
               >
                 <div className="drop_down w-full overflow-hidden rounded-md border">
-                  {category.map((item, id) => (
-                    <p
-                      onClick={() => setselectedValue(item.label)}
-                      key={id}
-                      className="w-full cursor-pointer truncate bg-white px-2 py-2 text-sm text-gray-800 duration-200 hover:bg-blue-100"
-                    >
-                      {item.label}
-                    </p>
-                  ))}
+                  <ul className="max-h-60 overflow-y-auto">
+                    {category.map((item, id) => (
+                      <li
+                        onClick={() => setselectedValue(item.label)}
+                        key={id}
+                        className="w-full cursor-pointer truncate bg-white px-2 py-2 text-sm text-gray-800 duration-200 hover:bg-blue-100"
+                      >
+                        {item.label}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             )}
