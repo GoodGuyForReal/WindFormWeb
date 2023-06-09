@@ -1,7 +1,7 @@
 import React from "react";
 import { XCircleIcon } from "@heroicons/react/24/solid";
 
-const ModalFail = () => {
+const ToastFail = () => {
   return (
     <div>
       <div className="rounded-lg border bg-slate-50 p-5 shadow-xl">
@@ -20,4 +20,4 @@ const ModalFail = () => {
   );
 };
 
-export default ModalFail;
+export default ToastFail;

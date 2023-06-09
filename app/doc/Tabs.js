@@ -11,7 +11,7 @@ import { MultiSelectMain } from "./tabs/components/multiSelect/MultiSelectMain";
 import { FileInputMain } from "./tabs/components/fileInput/FileInputMain";
 import { InputDropdown } from "./tabs/components/inputDropdown/InputDropdown";
 import { DropDownMain } from "./tabs/components/dropdown/DropDownMain";
-import { ModalMain } from "./tabs/components/modals/ModalMain";
+import { ToastMain } from "./tabs/components/toast/ToastMain";
 import { TextAreaMain } from "./tabs/components/textArea/TextAreaMain";
 
 
@@ -86,9 +86,9 @@ export const tabs = [
   }, 
   {
     id: 11,
-    title: "Modal Cards",
-    section: <DocSection section={ModalMain} />,
-    list: ModalMain,
+    title: "Toast Cards",
+    section: <DocSection section={ToastMain} />,
+    list: ToastMain,
   }, 
   {
     id: 12,

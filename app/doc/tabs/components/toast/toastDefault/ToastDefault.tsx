@@ -1,7 +1,7 @@
 import React from "react";
 import { CheckBadgeIcon } from "@heroicons/react/24/solid";
 
-const ModalDefault = () => {
+const ToastDefault = () => {
   return (
     <div>
       <div className="rounded-lg border bg-slate-50 p-5 shadow-xl backdrop-blur-lg">
@@ -22,4 +22,4 @@ const ModalDefault = () => {
   );
 };
 
-export default ModalDefault;
+export default ToastDefault;

@@ -1,7 +1,7 @@
 import React from "react";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid";
 
-const ModalWarning = () => {
+const ToastWarning = () => {
   return (
     <div>
       <div className="rounded-lg border bg-slate-50 p-5 shadow-xl">
@@ -25,4 +25,4 @@ const ModalWarning = () => {
   );
 };
 
-export default ModalWarning;
+export default ToastWarning;
