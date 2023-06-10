@@ -13,10 +13,6 @@ const Footer = ({ setActiveTab, activeTab, tabs }) => {
     setChangeTab(activeTab);
   }, [activeTab]);
 
-  console.log(tabs.length);
-  console.log(activeTab);
-  console.log(changeTab);
-
   return (
     <div className="flex flex-col gap-5 pt-16">
       <div className="flex w-full justify-between">
