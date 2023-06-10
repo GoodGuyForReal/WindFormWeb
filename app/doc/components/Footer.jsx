@@ -9,6 +9,14 @@ const Footer = ({ setActiveTab, activeTab, tabs }) => {
     setActiveTab(changeTab);
   }, [setActiveTab, changeTab]);
 
+  useEffect(() => {
+    setChangeTab(activeTab);
+  }, [activeTab]);
+
+  console.log(tabs.length);
+  console.log(activeTab);
+  console.log(changeTab);
+
   return (
     <div className="flex flex-col gap-5 pt-16">
       <div className="flex w-full justify-between">
@@ -23,7 +31,7 @@ const Footer = ({ setActiveTab, activeTab, tabs }) => {
             </button>
           </div>
         )}
-        {activeTab < tabs.length && (
+        {changeTab < tabs.length - 1 && (
           <div>
             <p className="mb-5 font-bold">{tabs[activeTab + 1]?.title}</p>
             <button
