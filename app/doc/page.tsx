@@ -4,15 +4,16 @@ import { useState } from "react";
 import SideBar from "./components/Sidebar";
 import { tabs } from "./Tabs";
 import ComponentLinks from "./components/ComponentLinks";
+import Footer from "./components/Footer";
 
 const page = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
+  const mainRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [activeTab]);
 
-  const mainRef = useRef<HTMLDivElement>(null);
 
   const handleTabChange = (tabIndex: number) => {
     setActiveTab(tabIndex);
@@ -34,6 +35,7 @@ const page = () => {
 
       <main className="relative min-h-screen py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr]">
         {tabs[activeTab].section}
+        <Footer setActiveTab={setActiveTab} activeTab={activeTab} tabs={tabs}/>
       </main>
 
       <div className="included sticky top-14 pt-10">

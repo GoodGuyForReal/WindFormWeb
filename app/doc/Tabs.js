@@ -1,5 +1,6 @@
 import Intro from "./tabs/intro/Intro";
 import Usage from "./tabs/usage/Usage";
+import DocSection from "@/components/DocSection";
 
 import { HomeIcon, CloudArrowDownIcon } from "@heroicons/react/24/outline";
 import { InputMain } from "./tabs/components/inputs/InputMain";
@@ -13,9 +14,6 @@ import { InputDropdown } from "./tabs/components/inputDropdown/InputDropdown";
 import { DropDownMain } from "./tabs/components/dropdown/DropDownMain";
 import { ToastMain } from "./tabs/components/toast/ToastMain";
 import { TextAreaMain } from "./tabs/components/textArea/TextAreaMain";
-
-
-import DocSection from "@/components/DocSection";
 
 export const tabs = [
   {
@@ -77,23 +75,23 @@ export const tabs = [
     title: "Input Dropdown",
     section: <DocSection section={InputDropdown} />,
     list: InputDropdown,
-  },  
+  },
   {
     id: 10,
     title: "Dropdown",
     section: <DocSection section={DropDownMain} />,
     list: DropDownMain,
-  }, 
+  },
   {
     id: 11,
     title: "Toast Cards",
     section: <DocSection section={ToastMain} />,
     list: ToastMain,
-  }, 
+  },
   {
     id: 12,
     title: "Textareas",
     section: <DocSection section={TextAreaMain} />,
     list: TextAreaMain,
-  }, 
+  },
 ];
