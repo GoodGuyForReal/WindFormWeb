@@ -1,4 +1,4 @@
-import { Hero } from "../components/sections/Hero";
+import Hero from "../components/sections/Hero";
 import ShowCase from "../components/sections/ShowCase";
 import Pricing from "../components/sections/Pricing";
 

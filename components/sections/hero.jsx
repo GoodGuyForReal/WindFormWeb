@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export function Hero() {
+export default function Hero() {
   return (
     <div className="relative isolate overflow-hidden">
       
@@ -53,7 +53,10 @@ export function Hero() {
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Start using our app today.
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <div className="py-6">
+            <span>React</span> <span>TypeScript</span> <span>TailwindCss</span>
+          </div>
+          <p className="text-lg leading-8 text-gray-600">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
             fugiat aliqua.
