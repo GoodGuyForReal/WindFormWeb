@@ -1,6 +1,6 @@
-import Hero from "../components/sections/Hero";
-import ShowCase from "../components/sections/ShowCase";
-import Pricing from "../components/sections/Pricing";
+import Hero from "@/components/sections/Hero";
+import ShowCase from "@/components/sections/ShowCase";
+import Pricing from "@/components/sections/Pricing";
 
 export default function Home() {
   return (
