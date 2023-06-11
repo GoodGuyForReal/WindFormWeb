@@ -4,8 +4,7 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="relative isolate overflow-hidden">
-      
-      <div className="absolute opacity-60 inset-0 -z-10 overflow-hidden">
+      <div className="absolute inset-0 -z-10 overflow-hidden opacity-60">
         <svg
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
           aria-hidden="true"
@@ -37,12 +36,11 @@ export default function Hero() {
         </svg>
       </div>
 
-
-      <div className="mx-auto max-w-2xl pt-32 pb-10 ">
+      <div className="mx-auto max-w-2xl pb-10 pt-32 ">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-          Download doc elements
-            <a href=""  download className="font-semibold text-blue-500">
+            Download doc elements
+            <a href="" download className="font-semibold text-blue-500">
               <span className="absolute inset-0" aria-hidden="true" />
               Read more <span aria-hidden="true">&rarr;</span>
             </a>
