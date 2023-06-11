@@ -1,8 +1,10 @@
-import Pricing from "../components/sections/Pricing" 
+import Pricing from "../components/sections/Pricing";
+import ShowCase from "../components/sections/ShowCase";
 
 export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-7xl flex-col items-center px-6 lg:px-8">
+      <ShowCase />
       <Pricing />
     </main>
   );
