@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 
+
 const Footer = ({ setActiveTab, activeTab, tabs }) => {
   const [changeTab, setChangeTab] = useState(activeTab);
 
@@ -41,10 +42,22 @@ const Footer = ({ setActiveTab, activeTab, tabs }) => {
       </div>
       <hr />
       <div className="flex w-full justify-between">
-        <p>© Copyright 2023. All rights reserved.</p>
+        <p className="text-gray-500">© Copyright 2023. All rights reserved.</p>
         <div className="flex gap-2">
-          <p>Linkedin</p>
-          <p>Github</p>
+          <a
+            href="https://www.linkedin.com/in/tarik-doganay/"
+            target="_blank"
+            className="text-gray-500"
+          >
+            Linkedin
+          </a>
+          <a
+            href="https://github.com/GoodGuyForReal"
+            target="_blank"
+            className="text-gray-500"
+          >
+            Github
+          </a>
         </div>
       </div>
     </div>

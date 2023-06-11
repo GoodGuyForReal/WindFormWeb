@@ -43,7 +43,7 @@ const TabDefaultTS = () => {
 
   return (
     <div className="w-full">
-      <div className="tabs flex w-full gap-1 rounded-md bg-gray-200/60 p-1">
+      <div className="tabs flex w-full gap-1 rounded-md bg-gray-200 p-1">
         {tabs.map((item, id) => (
           <button
             key={id}

@@ -11,7 +11,6 @@ export default function Navbar() {
 
     const navigation = [
         { name: 'Documantation', href: '/doc' },
-        { name: 'Tamplates', href: '/tamplates' },
         { name: 'About', href: '/about' },
     ]
 

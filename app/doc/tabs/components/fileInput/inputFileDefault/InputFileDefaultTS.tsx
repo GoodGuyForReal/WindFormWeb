@@ -28,9 +28,9 @@ export function InputFileDefaultTS({ maxSizeInMb = 5 }: FileInputProps) {
     <div className="h-full w-full rounded-lg border border-gray-300 duration-200 hover:bg-blue-50">
       <label
         htmlFor="file-input"
-        className="flex h-full w-full cursor-pointer flex-col items-center gap-3 rounded-lg p-5"
+        className="flex h-full w-full cursor-pointer flex-col items-center justify-center gap-3 rounded-lg p-5"
       >
-        <div className="cameraIcon_container flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
           <CameraIcon className="h-5 w-5 text-blue-600" />
         </div>
         <div className="text-center">

@@ -45,7 +45,7 @@ function DropDownModal() {
   ];
 
   return (
-    <div className="absolute right-0 mt-2 min-w-[200px] rounded-md border bg-white shadow-md">
+    <div className="absolute right-0 z-50 mt-2 min-w-[200px] rounded-md border bg-white shadow-md">
       <div>
         <ul className="p-2">
           {dropdownItems.map((item, id) => (

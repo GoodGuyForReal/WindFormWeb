@@ -4,7 +4,7 @@ import { CheckBadgeIcon } from "@heroicons/react/24/solid";
 const ToastDefault = () => {
   return (
     <div>
-      <div className="rounded-lg border bg-slate-50 p-5 shadow-xl backdrop-blur-lg">
+      <div className="flex w-full items-center justify-center rounded-lg border bg-slate-50 p-5 shadow-xl backdrop-blur-lg">
         <div className="flex w-64 flex-col items-center justify-center gap-1">
           <CheckBadgeIcon className=" h-w-9 w-9 text-blue-500" />
           <h2 className="font-semibold">Form Successfully Submited</h2>

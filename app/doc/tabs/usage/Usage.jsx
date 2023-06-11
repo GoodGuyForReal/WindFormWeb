@@ -2,7 +2,7 @@ import React from "react";
 
 const Usage = () => {
   return (
-    <div className="Intro flex min-h-screen w-full flex-col items-start gap-5">
+    <div className="Intro flex w-full flex-col items-start gap-5">
       <div className="intro flex flex-col gap-5">
         <div className="intro_header">
           <h1 className="mb-4 text-5xl font-extrabold text-gray-800">

@@ -2,7 +2,6 @@
 import React from "react";
 
 const SideBar = ({ tabs, setActiveTab, activeTab }) => {
-  const componenets = tabs.find((item) => item.title === "Components");
 
   return (
     <div className="sidebar flex flex-col px-10 pt-10">
