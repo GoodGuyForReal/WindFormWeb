@@ -4,8 +4,7 @@ function ReactIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2194"
-      height="2500"
+      height="30"
       viewBox="175.7 78 490.6 436.9"
     >
       <g fill="#61dafb">

@@ -4,8 +4,7 @@ function TailwindIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2500"
-      height="1499"
+      width="35"
       viewBox="0.15 0.13 799.7 479.69"
     >
       <path

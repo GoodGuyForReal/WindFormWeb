@@ -1,5 +1,8 @@
 import Link from "next/link";
 import React from "react";
+import ReactIcon from "@/components/assets/brandIcons/ReactIcon";
+import TailwindIcon from "@/components/assets/brandIcons/TailwindIcon";
+import TypeScriptIcon from "@/components/assets/brandIcons/TypeScriptIcon";
 
 export default function Hero() {
   return (
@@ -36,28 +39,31 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="mx-auto max-w-2xl pb-10 pt-32 ">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+      <div className="mx-auto max-w-4xl pb-10 pt-32">
+        <div className="hidden cursor-pointer sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Download doc elements
-            <a href="" download className="font-semibold text-blue-500">
-              <span className="absolute inset-0" aria-hidden="true" />
-              Read more <span aria-hidden="true">&rarr;</span>
-            </a>
+            WindForm Alpha{" "}
+            <span className="font-semibold text-blue-500">1.0</span>
           </div>
         </div>
 
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Start using our app today.
+            Build Forms even faster with fully customizable Tailwind CSS
+            components
           </h1>
-          <div className="py-6">
-            <span>React</span> <span>TypeScript</span> <span>TailwindCss</span>
+          <div className="flex items-center justify-center gap-4 py-6">
+            <ReactIcon />
+
+            <TypeScriptIcon />
+
+            <TailwindIcon />
           </div>
           <p className="text-lg leading-8 text-gray-600">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Say goodbye to npm downloads and gain complete control over your
+            form design. Customize every aspect of your components without
+            limitations. Start building your custom forms today and
+            revolutionize the way you collect data.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
