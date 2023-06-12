@@ -60,7 +60,7 @@ export const tabs = [
   },
   {
     id: 7,
-    title: "Input Select",
+    title: "Select",
     section: <DocSection section={MultiSelectMain} />,
     list: MultiSelectMain,
   },

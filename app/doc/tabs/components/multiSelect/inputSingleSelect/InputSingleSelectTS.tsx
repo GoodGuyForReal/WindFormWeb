@@ -1,6 +1,20 @@
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import React, { useEffect, useRef, useState } from "react";
 
+function popUpCloser(ref: any, setIsSelectOpen: any): void {
+  useEffect(() => {
+    function handleClickOutside(event: any) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setIsSelectOpen(false);
+      }
+    }
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [ref]);
+}
+
 type CategoryProp = {
   label: string;
 }[];
@@ -18,21 +32,6 @@ const InputSingleSelectTS = () => {
     { label: "C1 English (Advanced)" },
     { label: "C2 English (Proficient)" },
   ];
-
-  function popUpCloser(ref: any, setIsSelectOpen: any): void {
-    useEffect(() => {
-      function handleClickOutside(event: any) {
-        if (ref.current && !ref.current.contains(event.target)) {
-          setIsSelectOpen(false);
-        }
-      }
-      // Bind the event listener
-      document.addEventListener("mousedown", handleClickOutside);
-
-      return () =>
-        document.removeEventListener("mousedown", handleClickOutside);
-    }, [ref]);
-  }
 
   popUpCloser(wrapperRef, setIsSelectOpen);
 

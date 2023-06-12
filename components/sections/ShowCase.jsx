@@ -1,6 +1,5 @@
 "use client";
 import InputMultiSelectV2TS from "@/app/doc/tabs/components/multiSelect/inputMultiSelectV2/inputMultiSelectV2TS";
-import TabDefaultTS from "@/app/doc/tabs/components/tabs/tabDefault/TabDefaultTS";
 import CheckWithLabelTS from "@/app/doc/tabs/components/checkBox/checkWithLabel/CheckWithLabelTS";
 import React from "react";
 import ToastDefault from "@/app/doc/tabs/components/toast/toastDefault/ToastDefault";
@@ -8,6 +7,7 @@ import ToggleWithLabel from "@/app/doc/tabs/components/toggleSwitch/toggleWithLa
 import InputPasswordTS from "@/app/doc/tabs/components/inputs/inputPassword/InputPasswordTS";
 import InputFileDefaultTS from "@/app/doc/tabs/components/fileInput/inputFileDefault/InputFileDefaultTS";
 import DropDownIcon from "@/app/doc/tabs/components/dropdown/dropDownIcon/DropDownIcon";
+import TabOutlineTS from "@/app/doc/tabs/components/tabs/tabOutline/TabOutlineTS";
 
 const ShowCase = () => {
   return (
@@ -16,7 +16,7 @@ const ShowCase = () => {
 
       <div className="absolute z-0 mt-16 flex w-full gap-4">
         <div className="flex w-full flex-col gap-5">
-          <TabDefaultTS />
+          <TabOutlineTS />
           <InputMultiSelectV2TS />
           <CheckWithLabelTS />
         </div>
