@@ -8,7 +8,7 @@ const HmFooter = () => {
           Wind Form UI
         </span>
         <p class="mt-5 text-center text-sm leading-6 text-slate-500">
-          © 2023 Tailwind Labs Inc. All rights reserved.
+          © Open Source Form UI Library
         </p>
         <div class="mt-10 flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-slate-700">
           <a href="/privacy-policy">Privacy policy</a>

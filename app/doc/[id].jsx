@@ -2,7 +2,6 @@ import React from 'react'
 
 const DynamicURL = () => {
 
-    
   return (
     <div>[id]</div>
   )
