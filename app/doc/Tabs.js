@@ -3,17 +3,17 @@ import Usage from "./tabs/usage/Usage";
 import DocSection from "@/components/DocSection";
 
 import { HomeIcon, CloudArrowDownIcon } from "@heroicons/react/24/outline";
-import { InputMain } from "./tabs/components/inputs/InputMain";
-import { buttonMain } from "./tabs/components/buttons/Buttonmain";
-import { CheckBoxMain } from "./tabs/components/checkBox/CheckBoxMain";
-import { ToggleSwitchMain } from "./tabs/components/toggleSwitch/ToggleSwitchMain";
-import { TabsMain } from "./tabs/components/tabs/TabsMain";
-import { MultiSelectMain } from "./tabs/components/multiSelect/MultiSelectMain";
-import { FileInputMain } from "./tabs/components/fileInput/FileInputMain";
-import { InputDropdown } from "./tabs/components/inputDropdown/InputDropdown";
-import { DropDownMain } from "./tabs/components/dropdown/DropDownMain";
-import { ToastMain } from "./tabs/components/toast/ToastMain";
-import { TextAreaMain } from "./tabs/components/textArea/TextAreaMain";
+import { InputMain } from "./tabs/inputs/InputMain";
+import { buttonMain } from "./tabs/buttons/Buttonmain";
+import { CheckBoxMain } from "./tabs/checkBox/CheckBoxMain";
+import { ToggleSwitchMain } from "./tabs/toggleSwitch/ToggleSwitchMain";
+import { TabsMain } from "./tabs/tabs/TabsMain";
+import { MultiSelectMain } from "./tabs/multiSelect/MultiSelectMain";
+import { FileInputMain } from "./tabs/fileInput/FileInputMain";
+import { InputDropdown } from "./tabs/inputDropdown/InputDropdown";
+import { DropDownMain } from "./tabs/dropdown/DropDownMain";
+import { ToastMain } from "./tabs/toast/ToastMain";
+import { TextAreaMain } from "./tabs/textArea/TextAreaMain";
 
 export const tabs = [
   {

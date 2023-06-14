@@ -1,13 +1,13 @@
 "use client";
-import InputMultiSelectV2TS from "@/app/doc/tabs/components/multiSelect/inputMultiSelectV2/inputMultiSelectV2TS";
-import CheckWithLabelTS from "@/app/doc/tabs/components/checkBox/checkWithLabel/CheckWithLabelTS";
+import InputMultiSelectV2TS from "@/app/doc/tabs/multiSelect/inputMultiSelectV2/inputMultiSelectV2TS";
+import CheckWithLabelTS from "@/app/doc/tabs/checkBox/checkWithLabel/CheckWithLabelTS";
 import React from "react";
-import ToastDefault from "@/app/doc/tabs/components/toast/toastDefault/ToastDefault";
-import ToggleWithLabel from "@/app/doc/tabs/components/toggleSwitch/toggleWithLabel/ToggleWithLabel";
-import InputPasswordTS from "@/app/doc/tabs/components/inputs/inputPassword/InputPasswordTS";
-import InputFileDefaultTS from "@/app/doc/tabs/components/fileInput/inputFileDefault/InputFileDefaultTS";
-import DropDownIcon from "@/app/doc/tabs/components/dropdown/dropDownIcon/DropDownIcon";
-import TabOutlineTS from "@/app/doc/tabs/components/tabs/tabOutline/TabOutlineTS";
+import ToastDefault from "@/app/doc/tabs/toast/toastDefault/ToastDefault";
+import ToggleWithLabel from "@/app/doc/tabs/toggleSwitch/toggleWithLabel/ToggleWithLabel";
+import InputPasswordTS from "@/app/doc/tabs/inputs/inputPassword/InputPasswordTS";
+import InputFileDefaultTS from "@/app/doc/tabs/fileInput/inputFileDefault/InputFileDefaultTS";
+import DropDownIcon from "@/app/doc/tabs/dropdown/dropDownIcon/DropDownIcon";
+import TabOutlineTS from "@/app/doc/tabs/tabs/tabOutline/TabOutlineTS";
 
 const ShowCase = () => {
   return (
