@@ -13,7 +13,20 @@ export const buttonMain = [
             {
                 name: 'Default',
                 component: <ButtonPrimary />,
-                code: `<button className='py-2 px-4 rounded-md bg-light-lightbg text-dark-darkbg hover:bg-light-lightbg/90 duration-200'>Button</button>`,
+                code: 
+` const links = [
+   { name: 'Open roles', href: '#' },
+   { name: 'Internship program', href: '#' },
+   { name: 'Our values', href: '#' },
+   { name: 'Meet our leadership', href: '#' },
+ ]
+ const stats = [
+   { name: 'Offices worldwide', value: '12' },
+   { name: 'Full-time colleagues', value: '300+' },
+   { name: 'Hours per week', value: '40' },
+   { name: 'Paid time off', value: 'Unlimited' },
+ ]
+`,
                 href: 'ButtonPrimary'
             },
             {

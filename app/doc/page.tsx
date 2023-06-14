@@ -33,7 +33,7 @@ const page = () => {
         />
       </div>
 
-      <main className="relative min-h-screen py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr]">
+      <main className="relative min-h-screen py-6 lg:gap-10 lg:py-8">
         {tabs[activeTab].section}
         <Footer setActiveTab={setActiveTab} activeTab={activeTab} tabs={tabs}/>
       </main>
