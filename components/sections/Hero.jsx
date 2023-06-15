@@ -80,6 +80,7 @@ export default function Hero() {
               Serious video <span aria-hidden="true">→</span>
             </a>
           </div>
+          
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import ToggleSwitch from "./toggleDefault/ToggleSwitch";
+import ToggleSwitch from "./toggleDefault/ToggleSwitch"; 
 import ToggleWithLabel from "./toggleWithLabel/ToggleWithLabel";
 import ToggleDisableJS from "./toggledDissable/ToggleDisableTS";
 import ToggleSwitchColor from "./toggleColor/ToggleSwitchColor";
