@@ -14,7 +14,6 @@ const page = () => {
     window.scrollTo(0, 0);
   }, [activeTab]);
 
-
   const handleTabChange = (tabIndex: number) => {
     setActiveTab(tabIndex);
     if (mainRef.current) {
@@ -22,9 +21,8 @@ const page = () => {
     }
   };
 
-
   return (
-    <div className="h-full w-full flex-1 items-start pt-12 md:grid md:grid-cols-[200px_minmax(0,1fr)_200px] md:gap-6 lg:grid-cols-[250px_minmax(0,1fr)_250px] lg:gap-10">
+    <div className="h-full w-full flex-1 items-start px-5 pt-12 md:grid md:grid-cols-[200px_minmax(0,1fr)_200px] md:gap-6 md:px-0 lg:grid-cols-[250px_minmax(0,1fr)_250px] lg:gap-10">
       <div className="fixed top-14 z-30 -ml-2 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 overflow-y-auto md:sticky md:block">
         <SideBar
           tabs={tabs}
@@ -35,7 +33,7 @@ const page = () => {
 
       <main className="relative min-h-screen py-6 lg:gap-10 lg:py-8">
         {tabs[activeTab].section}
-        <Footer setActiveTab={setActiveTab} activeTab={activeTab} tabs={tabs}/>
+        <Footer setActiveTab={setActiveTab} activeTab={activeTab} tabs={tabs} />
       </main>
 
       <div className="included sticky top-14 pt-10">

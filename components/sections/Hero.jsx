@@ -3,6 +3,7 @@ import React from "react";
 import ReactIcon from "@/components/assets/brandIcons/ReactIcon";
 import TailwindIcon from "@/components/assets/brandIcons/TailwindIcon";
 import TypeScriptIcon from "@/components/assets/brandIcons/TypeScriptIcon";
+import HeroIcons from "@/components/assets/brandIcons/HeroIcons";
 
 export default function Hero() {
   return (
@@ -58,6 +59,8 @@ export default function Hero() {
             <TypeScriptIcon />
 
             <TailwindIcon />
+
+            <HeroIcons />
           </div>
           <p className="text-lg leading-8 text-gray-600">
             Say goodbye to npm downloads and gain complete control over your
@@ -68,19 +71,18 @@ export default function Hero() {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
               href="/doc"
-              className="rounded-md bg-blue-500 px-4 py-2 text-sm font-medium text-slate-50 duration-200 hover:bg-blue-500/80"
+              className="rounded-md bg-blue-500 px-4 py-2 font-medium text-slate-50 duration-200 hover:bg-blue-500/80"
             >
               Get started
             </Link>
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
               target="_blank"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="font-semibold leading-6 text-gray-900"
             >
               Serious video <span aria-hidden="true">→</span>
             </a>
           </div>
-          
         </div>
       </div>
     </div>

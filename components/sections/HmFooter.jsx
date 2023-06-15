@@ -11,9 +11,9 @@ const HmFooter = () => {
           © Open Source Form UI Library
         </p>
         <div class="mt-10 flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-slate-700">
-          <a href="/privacy-policy">Privacy policy</a>
+        <a href="https://www.linkedin.com/in/tarik-doganay/" target="_blank">Linkedin</a>
           <div class="h-4 w-px bg-slate-500/20"></div>
-          <a href="/changelog">Changelog</a>
+          <a href="https://github.com/GoodGuyForReal/Wind-Form" target="_blank">Github</a>
         </div>
       </div>
     </div>

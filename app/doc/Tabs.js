@@ -24,7 +24,7 @@ export const tabs = [
   },
   {
     id: 1,
-    title: "Installation",
+    title: "Usage",
     section: <Usage />,
     icon: <CloudArrowDownIcon className="w-h-5 h-5" />,
   },
