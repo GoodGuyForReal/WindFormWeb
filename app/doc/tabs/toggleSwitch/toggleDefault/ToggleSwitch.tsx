@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const ToggleSwitch = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState<boolean>(false);
 
   return (
     <div className="flex gap-3">
