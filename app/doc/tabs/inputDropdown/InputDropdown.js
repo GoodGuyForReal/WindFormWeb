@@ -8,13 +8,13 @@ export const InputDropdown = [
       {
         name: "Input with dropdown Outside",
         component: <InputDropdownOutsideTS />,
-        code: ``,
+        code: "inputDropdown/inputDropdownOutside/InputDropdownOutsideTS.tsx",
         href: "InputDropdownOutside",
       },
       {
         name: "Input with dropdown",
         component: <InputDropdownTS />,
-        code: ``,
+        code: "inputDropdown/inputDropdown/InputDropdownTS.tsx",
         href: "InputDropdown",
       },
     ],

@@ -21,11 +21,9 @@ export const TextAreaMain = [
       {
         name: "Text Area With Actions",
         component: <TextAreaWithActions />,
-        code: ``,
+        code: "textArea/textAreaWithActions/TextAreaWithActions.tsx",
         href: "textAreaWithActions",
       },
-
-      
     ],
   },
 ];

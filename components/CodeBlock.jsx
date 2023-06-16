@@ -1,8 +1,23 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import SyntaxHighlighter from "react-syntax-highlighter";
+import { FetchFileDataFromGithub } from "@/app/api/FetchFileDataFromGithub";
 
 const CodeBlock = ({ item }) => {
+  const [code, setCode] = useState("")
+
+  useEffect(() => {
+    FetchFileDataFromGithub(item.code)
+      .then((item) => {
+        setCode(item);
+        console.log("FROM", item);
+      })
+      .catch((error) => {
+        console.error("Error fetching code:", error);
+      });
+  }, [item.code]);
+
   return (
     <div className="text-sm">
       <SyntaxHighlighter
@@ -18,7 +33,7 @@ const CodeBlock = ({ item }) => {
           return { style };
         }}
       >
-        {item.code}
+        {code}
       </SyntaxHighlighter>
     </div>
   );
