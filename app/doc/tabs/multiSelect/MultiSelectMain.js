@@ -9,19 +9,19 @@ export const MultiSelectMain = [
       {
         name: "Input Multi Select",
         component: <InputMultiSelectTS />,
-        code: ``,
+        code: "multiSelect/inputMultiSelect/InputMultiSelectTS.tsx",
         href: "InputMultiSelect",
       },
       {
         name: "Input Multi Select V2",
         component: <InputMultiSelectV2TS />,
-        code: ``,
+        code: "multiSelect/inputMultiSelectV2/inputMultiSelectV2TS.tsx",
         href: "InputMultiSelect",
       },
       {
         name: "Input Single Select",
         component: <InputSingleSelectTS />,
-        code: ``,
+        code: "multiSelect/inputSingleSelect/InputSingleSelectTS.tsx",
         href: "InputMultiSelect",
       },
     ],

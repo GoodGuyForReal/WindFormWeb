@@ -9,13 +9,13 @@ export const TextAreaMain = [
       {
         name: "Text Area Default",
         component: <TextAreaDefault />,
-        code: ``,
+        code: "textArea/textAreaDefault/TextAreaDefault.tsx",
         href: "TextAreaDefault",
       },
       {
         name: "Text Area With Image",
         component: <TextAreaWithImage />,
-        code: ``,
+        code: "textArea/textAreaWithImage/TextAreaWithImage.tsx",
         href: "TextAreaWithImage",
       },
       {
