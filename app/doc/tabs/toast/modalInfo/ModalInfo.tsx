@@ -1,7 +1,7 @@
 import React from "react";
 import { InformationCircleIcon } from "@heroicons/react/24/solid"; 
 
-const ToastInfo = () => {
+const ModalInfo = () => {
   return (
     <div>
       <div className="rounded-lg border bg-slate-50 p-5 shadow-xl">
@@ -19,4 +19,4 @@ const ToastInfo = () => {
   );
 };
 
-export default ToastInfo;
+export default ModalInfo;

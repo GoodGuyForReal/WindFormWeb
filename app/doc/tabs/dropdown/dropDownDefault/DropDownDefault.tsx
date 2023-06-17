@@ -59,7 +59,7 @@ const DropDownDefault = () => {
         className="flex  items-center gap-2 rounded-md bg-blue-500 px-4 py-2 text-sm text-slate-50 duration-200 hover:bg-blue-500/80"
       >
         Options <ChevronDownIcon className=" h-5 w-5 text-slate-50" />
-      </button>
+      </button> 
       <div className="relative" ref={wrapperRef}>
         {isOpen && <DropDownModal />}
       </div>

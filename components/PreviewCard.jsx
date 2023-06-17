@@ -41,14 +41,14 @@ const PreviewCard = ({ item }) => {
         </div>
       </div>
       <div
-        className={`card_main flex items-center justify-center rounded-lg border border-gray-300/90 ${isCodeDisplay.style}`}
+        className={`relative card_main flex items-center justify-center rounded-lg border border-gray-300/90 ${isCodeDisplay.style}`}
       >
         {isCodeDisplay.isDisplay ? (
           <div className="h-full w-full px-5 py-2">
             <CodeBlock item={item} />
           </div>
         ) : (
-          <div className="flex w-full max-w-sm items-center justify-center py-10">
+          <div className="flex w-full items-center justify-center py-10">
             {item.component}
           </div>
         )}

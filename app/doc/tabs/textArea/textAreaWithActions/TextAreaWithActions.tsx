@@ -195,7 +195,7 @@ const TextAreaWithActions = () => {
 
   return (
     <div
-      className={`w-full rounded-md p-2 ring-1 ring-inset placeholder:text-gray-400 ${
+      className={`w-full max-w-sm rounded-md p-2 ring-1 ring-inset placeholder:text-gray-400 ${
         isTextAreaFocused ? "ring-2 ring-blue-500" : "ring-gray-300"
       }`}
     >

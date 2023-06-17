@@ -73,7 +73,7 @@ const InputMultiSelectTS = () => {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full max-w-sm">
       <label
         htmlFor="person"
         className="mb-1 block text-sm font-medium leading-6 text-gray-900"

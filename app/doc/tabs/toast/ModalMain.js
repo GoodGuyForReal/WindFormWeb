@@ -1,33 +1,33 @@
-import ToastDefault from "./toastDefault/ToastDefault";
-import ToastFail from "./toastFail/ToastFail";
-import ToastInfo from "./toastInfo/ToastInfo";
-import ToastWarning from "./toastWarning/ToastWarning";
+import ModalSuccess from "./modalSuccess/ModalSuccess";
+import ModalFail from "./ModalFail/ModalFail";
+import ModalInfo from "./modalInfo/ModalInfo";
+import ModalWarning from "./modalWarning/ModalWarning";
 
-export const ToastMain = [
+export const ModalMain = [
   {
-    title: "Toast Cards",
+    title: "Modals",
     subComponent: [
       {
         name: "Toast Default",
-        component: <ToastDefault />,
+        component: <ModalSuccess />,
         code: "toast/toastDefault/ToastDefault.tsx",
         href: "ToastDefault",
       },
       {
         name: "Toast Warning",
-        component: <ToastWarning />,
+        component: <ModalFail />,
         code: "toast/toastWarning/ToastWarning.tsx",
         href: "ToastWarning",
       },
       {
         name: "Toast Info",
-        component: <ToastInfo />,
+        component: <ModalInfo />,
         code: "toast/toastInfo/ToastInfo.tsx",
         href: "ToastInfo",
       },
       {
         name: "Toast Fail",
-        component: <ToastFail />,
+        component: <ModalWarning />,
         code: "toast/toastFail/ToastFail.tsx",
         href: "ToastFail",
       },

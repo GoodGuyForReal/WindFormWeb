@@ -5,7 +5,7 @@ const InputPasswordTS = () => {
   const [isPasswordHide, setIsPasswordHide] = useState<boolean>(true);
 
   return (
-    <div className="w-full">
+    <div className="w-full max-w-sm">
       <label
         htmlFor="password"
         className="mb-1 block w-full text-sm font-medium leading-6 text-gray-800"

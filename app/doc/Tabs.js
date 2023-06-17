@@ -12,7 +12,7 @@ import { MultiSelectMain } from "./tabs/multiSelect/MultiSelectMain";
 import { FileInputMain } from "./tabs/fileInput/FileInputMain";
 import { InputDropdown } from "./tabs/inputDropdown/InputDropdown";
 import { DropDownMain } from "./tabs/dropdown/DropDownMain";
-import { ToastMain } from "./tabs/toast/ToastMain";
+import { ModalMain } from "./tabs/toast/ModalMain";
 import { TextAreaMain } from "./tabs/textArea/TextAreaMain";
 
 export const tabs = [
@@ -84,9 +84,9 @@ export const tabs = [
   },
   {
     id: 11,
-    title: "Toast Cards",
-    section: <DocSection section={ToastMain} />,
-    list: ToastMain,
+    title: "Modals",
+    section: <DocSection section={ModalMain} />,
+    list: ModalMain,
   },
   {
     id: 12,

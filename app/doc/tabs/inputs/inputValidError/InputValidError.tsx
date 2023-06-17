@@ -3,7 +3,7 @@ import { ExclamationCircleIcon } from "@heroicons/react/24/solid";
 
 const InputValidError = () => {
   return (
-    <div className="w-full">
+    <div className="w-full max-w-sm">
       <div className="flex w-full items-center justify-between">
         <label
           htmlFor="Email"

@@ -2,7 +2,7 @@ import React from "react";
 
 const InputUrl = () => {
   return (
-    <div className="w-full">
+    <div className="w-full max-w-sm">
       <label
         htmlFor="url"
         className="mb-1 block w-full text-sm font-medium leading-6 text-gray-800"

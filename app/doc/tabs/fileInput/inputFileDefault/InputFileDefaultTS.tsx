@@ -25,7 +25,7 @@ export function InputFileDefaultTS({ maxSizeInMb = 5 }: FileInputProps) {
   };
 
   return (
-    <div className="h-full w-full rounded-lg border border-gray-300 duration-200 hover:bg-blue-50">
+    <div className="h-full w-full max-w-sm rounded-lg border border-gray-300 duration-200 hover:bg-blue-50">
       <label
         htmlFor="file-input"
         className="flex h-full w-full cursor-pointer flex-col items-center justify-center gap-3 rounded-lg p-5"

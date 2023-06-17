@@ -42,7 +42,7 @@ const TabLineTS = () => {
   const selectedTab = tabs.find((item) => item.id === selectedTabID);
 
   return (
-    <div className="w-full">
+    <div className="w-full max-w-sm">
       <div className="tabs flex gap-1 border-b border-gray-300">
         {tabs.map((item, id) => (
           <button
