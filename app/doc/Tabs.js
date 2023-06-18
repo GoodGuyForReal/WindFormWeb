@@ -8,11 +8,11 @@ import { buttonMain } from "./tabs/buttons/Buttonmain";
 import { CheckBoxMain } from "./tabs/checkBox/CheckBoxMain";
 import { ToggleSwitchMain } from "./tabs/toggleSwitch/ToggleSwitchMain";
 import { TabsMain } from "./tabs/tabs/TabsMain";
-import { MultiSelectMain } from "./tabs/multiSelect/MultiSelectMain";
+import { SelectMain } from "./tabs/select/SelectMain";
 import { FileInputMain } from "./tabs/fileInput/FileInputMain";
 import { InputDropdown } from "./tabs/inputDropdown/InputDropdown";
 import { DropDownMain } from "./tabs/dropdown/DropDownMain";
-import { ModalMain } from "./tabs/toast/ModalMain";
+import { ModalMain } from "./tabs/modals/ModalMain";
 import { TextAreaMain } from "./tabs/textArea/TextAreaMain";
 
 export const tabs = [
@@ -61,8 +61,8 @@ export const tabs = [
   {
     id: 7,
     title: "Select",
-    section: <DocSection section={MultiSelectMain} />,
-    list: MultiSelectMain,
+    section: <DocSection section={SelectMain} />,
+    list: SelectMain,
   },
   {
     id: 8,

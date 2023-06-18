@@ -2,7 +2,7 @@ import InputMultiSelectTS from "./inputMultiSelect/InputMultiSelectTS";
 import InputMultiSelectV2TS from "./inputMultiSelectV2/inputMultiSelectV2TS";
 import InputSingleSelectTS from "./inputSingleSelect/InputSingleSelectTS";
 
-export const MultiSelectMain = [
+export const SelectMain = [
   {
     title: "Select",
     subComponent: [

@@ -1,6 +1,6 @@
 import ModalSuccess from "./modalSuccess/ModalSuccess";
 import ModalFail from "./ModalFail/ModalFail";
-import ModalInfo from "./modalInfo/ModalInfo";
+import ModalInfo from "./modalWithAction/ModalWithAction";
 import ModalWarning from "./modalWarning/ModalWarning";
 
 export const ModalMain = [
@@ -8,28 +8,28 @@ export const ModalMain = [
     title: "Modals",
     subComponent: [
       {
-        name: "Toast Default",
+        name: "Modal Success",
         component: <ModalSuccess />,
         code: "toast/toastDefault/ToastDefault.tsx",
-        href: "ToastDefault",
+        href: "ModalSuccess",
       },
       {
-        name: "Toast Warning",
+        name: "Modal Warning",
         component: <ModalFail />,
         code: "toast/toastWarning/ToastWarning.tsx",
-        href: "ToastWarning",
+        href: "ModalFail",
       },
       {
-        name: "Toast Info",
+        name: "Modal Info",
         component: <ModalInfo />,
         code: "toast/toastInfo/ToastInfo.tsx",
         href: "ToastInfo",
       },
       {
-        name: "Toast Fail",
+        name: "Modal Fail",
         component: <ModalWarning />,
         code: "toast/toastFail/ToastFail.tsx",
-        href: "ToastFail",
+        href: "ModalWarning",
       },
     ],
   },

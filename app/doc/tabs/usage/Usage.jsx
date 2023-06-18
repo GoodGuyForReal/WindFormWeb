@@ -5,11 +5,7 @@ const Usage = () => {
     <div className="Intro flex w-full flex-col items-start gap-5">
       <div className="intro flex flex-col gap-5">
         <div className="intro_header">
-          <h1 className="mb-4 text-5xl font-extrabold text-gray-800">Usage</h1>
-          <p className="text-lg text-gray-500">
-            This is a re-usable and costimazible components based on forms.
-            Built with Tailwind CSS.
-          </p>
+          <h1 className="mb-4 text-5xl font-bold text-gray-800">Usage</h1>
         </div>
         <hr className="border-light-secondary" />
         <div className="intro_main">

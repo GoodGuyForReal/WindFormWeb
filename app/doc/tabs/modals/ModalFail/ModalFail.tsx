@@ -1,19 +1,19 @@
 import React, { useEffect, useRef, useState } from "react";
-import { CheckBadgeIcon } from "@heroicons/react/24/solid";
+import { XCircleIcon } from "@heroicons/react/24/solid";
 
 function Card({ setisOpen }: any) {
   return (
-    <div className=" flex items-center justify-center rounded-lg border bg-slate-50 p-5 shadow-xl backdrop-blur-lg">
+    <div className=" flex items-center justify-center rounded-lg border bg-slate-50 p-5 shadow-xl">
       <div className="flex w-64 flex-col items-center justify-center gap-1">
-        <CheckBadgeIcon className="h-w-9 w-9 text-blue-500" />
-        <h2 className="font-semibold">Form Successfully Submitted</h2>
+        <XCircleIcon className="h-9 w-9 text-red-500" />
+        <h2 className="font-semibold">Action Failed</h2>
         <p className="text-center text-gray-500">
-          Congratulations! Your account has been created successfully.
+          Oops! Something went wrong with the action.
         </p>
-        <div className="mt-5 w-full">
+        <div className="mt-5 flex w-full gap-2">
           <button
             onClick={() => setisOpen(false)}
-            className="w-full rounded-md border border-blue-400 px-4 py-1.5 text-sm text-blue-500 duration-200 hover:bg-blue-500 hover:text-slate-50"
+            className="w-full rounded-md border border-red-400 px-4 py-1.5 text-sm text-red-500 duration-200 hover:bg-red-500 hover:text-slate-50"
           >
             Close
           </button>
@@ -23,7 +23,7 @@ function Card({ setisOpen }: any) {
   );
 }
 
-const ModalSuccess = () => {
+const ModalFail = () => {
   const [isOpen, setisOpen] = useState<boolean>(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -45,15 +45,15 @@ const ModalSuccess = () => {
   popUpCloser(wrapperRef, setisOpen);
 
   return (
-    <div className="relative flex h-80 w-full justify-center">
+    <div className="relative flex w-full justify-center">
       <button
         onClick={() => setisOpen(!isOpen)}
-        className="absolute rounded-md bg-blue-500 px-4 py-2 text-slate-50 duration-200 hover:bg-blue-500/80"
+        className="rounded-md bg-red-500 px-4 py-2 text-slate-50 duration-200 hover:bg-red-500/80"
       >
-        Modal Success
+        Modal Fail
       </button>
       {isOpen && (
-        <div className="absolute z-50 flex h-full w-full items-center justify-center bg-black/50">
+        <div className="fixed top-0 z-50 flex h-full w-full items-center justify-center bg-black/50">
           <div ref={wrapperRef}>
             <Card setisOpen={setisOpen} />
           </div>
@@ -63,4 +63,4 @@ const ModalSuccess = () => {
   );
 };
 
-export default ModalSuccess;
+export default ModalFail;
