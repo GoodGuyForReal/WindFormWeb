@@ -24,7 +24,7 @@ function SpinIcon() {
 const ButtonLoading = () => {
   return (
     <div>
-      <button className="flex items-center gap-2 rounded-md bg-blue-500 px-4 py-2 text-slate-50">
+      <button className="flex items-center gap-2 rounded-md bg-blue-500 px-4 py-2 text-sm text-slate-50">
         <SpinIcon /> Loading...
       </button>
     </div>

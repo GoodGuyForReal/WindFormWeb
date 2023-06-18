@@ -48,7 +48,7 @@ const ModalFail = () => {
     <div className="relative flex w-full justify-center">
       <button
         onClick={() => setisOpen(!isOpen)}
-        className="rounded-md bg-red-500 px-4 py-2 text-slate-50 duration-200 hover:bg-red-500/80"
+        className="rounded-md bg-red-500 px-4 py-2 text-sm text-slate-50 duration-200 hover:bg-red-500/80"
       >
         Modal Fail
       </button>
