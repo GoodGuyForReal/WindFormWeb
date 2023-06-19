@@ -1,35 +1,35 @@
 import ToastFail from "./toastFail/ToastFail";
 import ToastSuccess from "./toastSuccess/ToastSuccess";
 import ToastWarning from "./toastWarning/ToastWarning";
-import ToastWithAction from "./toastWithAction/ToastWithAction";
+import ToastInfo from "./toastInfo/ToastInfo";
 
 export const ToastMain = [
   {
     title: "Modals",
     subComponent: [
       {
-        name: "Modal Success",
+        name: "Toast Success",
         component: <ToastSuccess />,
         code: "toast/toastDefault/ToastDefault.tsx",
-        href: "ModalSuccess",
+        href: "ToastSuccess",
       },
       {
-        name: "Modal Warning",
+        name: "Toast Fail",
         component: <ToastFail />,
         code: "toast/toastWarning/ToastWarning.tsx",
-        href: "ModalFail",
+        href: "ToastFail",
       },
       {
-        name: "Modal Info",
-        component: <ToastWithAction />,
+        name: "Toast Info",
+        component: <ToastInfo />,
         code: "toast/toastInfo/ToastInfo.tsx",
         href: "ToastInfo",
       },
       {
-        name: "Modal Fail",
+        name: "Toast Warning",
         component: <ToastWarning />,
         code: "toast/toastFail/ToastFail.tsx",
-        href: "ModalWarning",
+        href: "ToastWarning",
       },
     ],
   },
