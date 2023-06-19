@@ -3,17 +3,26 @@ import { CheckBadgeIcon } from "@heroicons/react/24/solid";
 
 function Card({ setisOpen }: any) {
   return (
-    <div className=" flex items-center justify-center rounded-lg border bg-slate-50 p-5 shadow-xl">
+    <div className=" flex items-center justify-center rounded-lg bg-white p-5 shadow-xl">
       <div className="flex w-64 flex-col items-center justify-center gap-1">
+        <img src="" alt="" />
+
         <CheckBadgeIcon className="h-w-9 w-9 text-blue-500" />
-        <h2 className="font-semibold">Form Successfully Submitted</h2>
-        <p className="text-center text-gray-500">
+        <h3 className="text-lg font-semibold text-gray-800">
+          Form Successfully Submitted
+        </h3>
+        <hr />
+        <p className="text-center text-gray-800">
           Congratulations! Your account has been created successfully.
         </p>
-        <div className="mt-5 w-full">
+        <hr />
+        <div className="mt-5 flex w-full flex-col gap-2">
+          <button className="rounded-md bg-blue-500 px-4 py-2 text-sm text-slate-50 duration-200 hover:bg-blue-500/80">
+            Details
+          </button>
           <button
             onClick={() => setisOpen(false)}
-            className="w-full rounded-md border border-blue-400 px-4 py-1.5 text-sm text-blue-500 duration-200 hover:bg-blue-500 hover:text-slate-50"
+            className="rounded-md border border-gray-400 px-4 py-2 text-sm text-gray-800 duration-200 hover:bg-gray-800 hover:text-slate-50"
           >
             Close
           </button>
@@ -23,7 +32,7 @@ function Card({ setisOpen }: any) {
   );
 }
 
-const ModalSuccess = () => {
+const ModalSmall = () => {
   const [isOpen, setisOpen] = useState<boolean>(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -50,7 +59,7 @@ const ModalSuccess = () => {
         onClick={() => setisOpen(!isOpen)}
         className="rounded-md bg-blue-500 px-4 py-2 text-sm text-slate-50 duration-200 hover:bg-blue-500/80"
       >
-        Modal Success
+        Display Modal
       </button>
       {isOpen && (
         <div className="fixed top-0 z-50 flex h-full w-full items-center justify-center bg-black/50">
@@ -63,4 +72,4 @@ const ModalSuccess = () => {
   );
 };
 
-export default ModalSuccess;
+export default ModalSmall;

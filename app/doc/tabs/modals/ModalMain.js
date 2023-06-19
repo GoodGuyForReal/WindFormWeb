@@ -1,35 +1,35 @@
-import ModalSuccess from "./modalSuccess/ModalSuccess";
-import ModalFail from "./ModalFail/ModalFail";
-import ModalInfo from "./modalWithAction/ModalWithAction";
-import ModalWarning from "./modalWarning/ModalWarning";
+import ModalSmall from "./modalSmall/ModalSmall";
+import ModalDefault from "./modalDefault/ModalDefault";
+import ModalWithBodyScroll from "./modalWithBodyScroll/ModalWithBodyScroll";
+import ModalFullScreen from "./modalFullScreen/ModalFullScreen";
 
 export const ModalMain = [
   {
     title: "Modals",
     subComponent: [
       {
-        name: "Modal Success",
-        component: <ModalSuccess />,
-        code: "toast/toastDefault/ToastDefault.tsx",
-        href: "ModalSuccess",
-      },
-      {
-        name: "Modal Warning",
-        component: <ModalFail />,
+        name: "Modal Default",
+        component: <ModalDefault />,
         code: "toast/toastWarning/ToastWarning.tsx",
-        href: "ModalFail",
+        href: "ModalDefault",
       },
       {
-        name: "Modal Info",
-        component: <ModalInfo />,
+        name: "Modal Small",
+        component: <ModalSmall />,
+        code: "toast/toastDefault/ToastDefault.tsx",
+        href: "ModalSmall",
+      },
+      {
+        name: "Modal Full Screen",
+        component: <ModalFullScreen />,
         code: "toast/toastInfo/ToastInfo.tsx",
-        href: "ToastInfo",
+        href: "ModalFullScreen",
       },
       {
-        name: "Modal Fail",
-        component: <ModalWarning />,
+        name: "Modal With Body Scroll",
+        component: <ModalWithBodyScroll />,
         code: "toast/toastFail/ToastFail.tsx",
-        href: "ModalWarning",
+        href: "ModalWithBodyScroll",
       },
     ],
   },

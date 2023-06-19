@@ -3,16 +3,27 @@ import { InformationCircleIcon } from "@heroicons/react/24/solid";
 
 function Card({ setisOpen }: any) {
   return (
-    <div className=" flex items-center justify-center rounded-lg border bg-slate-50 p-5 shadow-xl ">
-      <div className="flex w-64 flex-col items-center justify-center gap-1">
-        <InformationCircleIcon className="h-9 w-9 text-blue-500" />
-        <h2 className="font-semibold">Information</h2>
-        <div className="mt-5 flex w-full gap-2">
+    <div className="m-5 flex items-center justify-center rounded-lg bg-slate-50 p-5 shadow-xl">
+      <div className="flex max-w-xl flex-col justify-center gap-5">
+        <div className="flex items-center gap-3">
+          <InformationCircleIcon className="h-7 w-7 text-blue-500" />
+          <h3 className="text-lg font-bold text-gray-800">Modal title</h3>
+        </div>
+        <hr/>
+        <p className="text-gray-800">
+          Are you sure you want to deactivate your account? All of your data
+          will be permanently removed. This action cannot be undone.
+        </p>
+        <hr/>
+        <div className="flex w-full justify-end gap-2">
           <button
             onClick={() => setisOpen(false)}
-            className="w-full rounded-md border border-red-400 px-4 py-1.5 text-sm text-red-500 duration-200 hover:bg-red-500 hover:text-slate-50"
+            className="rounded-md border border-gray-400 px-4 py-2 text-sm  text-gray-800 duration-200 hover:bg-gray-800 hover:text-slate-50"
           >
             Close
+          </button>
+          <button className="rounded-md bg-blue-500 px-4 py-2 text-sm text-slate-50 duration-200 hover:bg-blue-500/80">
+            Deatils
           </button>
         </div>
       </div>
@@ -20,7 +31,7 @@ function Card({ setisOpen }: any) {
   );
 }
 
-const ModalWithAction = () => {
+const ModalDefault = () => {
   const [isOpen, setisOpen] = useState<boolean>(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -47,7 +58,7 @@ const ModalWithAction = () => {
         onClick={() => setisOpen(!isOpen)}
         className="rounded-md bg-blue-500 px-4 py-2 text-sm text-slate-50 duration-200 hover:bg-blue-500/80"
       >
-        Modal Action
+         Display Modal
       </button>
       {isOpen && (
         <div className="fixed top-0 z-50 flex h-full w-full items-center justify-center bg-black/50">
@@ -60,4 +71,4 @@ const ModalWithAction = () => {
   );
 };
 
-export default ModalWithAction;
+export default ModalDefault;

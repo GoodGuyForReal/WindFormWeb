@@ -14,6 +14,7 @@ import { InputDropdown } from "./tabs/inputDropdown/InputDropdown";
 import { DropDownMain } from "./tabs/dropdown/DropDownMain";
 import { ModalMain } from "./tabs/modals/ModalMain";
 import { TextAreaMain } from "./tabs/textArea/TextAreaMain";
+import { ToastMain } from "./tabs/toasts/ToastMain"
 
 export const tabs = [
   {
@@ -90,6 +91,12 @@ export const tabs = [
   },
   {
     id: 12,
+    title: "Toasts",
+    section: <DocSection section={ToastMain} />,
+    list: ToastMain,
+  },
+  {
+    id: 13,
     title: "Textareas",
     section: <DocSection section={TextAreaMain} />,
     list: TextAreaMain,
