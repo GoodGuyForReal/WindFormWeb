@@ -10,12 +10,17 @@ function Card({ setisOpen }: any) {
           <InformationCircleIcon className="h-7 w-7 text-blue-500" />
           <h3 className="text-lg font-bold text-gray-800">Modal title</h3>
         </div>
-        <hr/>
+        <hr />
         <p className="text-gray-800">
-          Are you sure you want to deactivate your account? All of your data
-          will be permanently removed. This action cannot be undone.
+          The Modal Text / HTML Link Element is another simple element, that
+          allows you to add a text or html link to trigger a modal dialog, in
+          conjunction with the Modal Element. The two work hand in hand. With
+          this simple element, you can add some text to trigger a modal, or you
+          can add html or shortcodes (like an image) to trigger a modal that way
+          as well. See below to read more about this handy element, and watch
+          the video for a visual overview.
         </p>
-        <hr/>
+        <hr />
         <div className="flex w-full justify-end gap-2">
           <button
             onClick={() => setisOpen(false)}
