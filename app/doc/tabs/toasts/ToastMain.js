@@ -5,7 +5,7 @@ import ToastInfo from "./toastInfo/ToastInfo";
 
 export const ToastMain = [
   {
-    title: "Modals",
+    title: "Toasts",
     subComponent: [
       {
         name: "Toast Success",
