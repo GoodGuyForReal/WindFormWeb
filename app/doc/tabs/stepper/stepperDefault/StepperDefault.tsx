@@ -10,7 +10,7 @@ type Step = {
 const Tab1 = ({ onNextStep }: { onNextStep: () => void }) => {
   return (
     <div className="h-full w-full rounded-md bg-gray-100 p-10">
-      <h1>Job details</h1>
+      <h1 className="mb-5 text-2xl font-bold">Job details</h1>
       <button
         className="rounded-md bg-blue-500 px-4 py-2 text-sm text-slate-50 duration-200 hover:bg-blue-500/80"
         onClick={onNextStep}
@@ -24,7 +24,7 @@ const Tab1 = ({ onNextStep }: { onNextStep: () => void }) => {
 const Tab2 = ({ onNextStep }: { onNextStep: () => void }) => {
   return (
     <div className="h-full w-full rounded-md bg-gray-100 p-10">
-      <h1>Application form</h1>
+      <h1 className="mb-5 text-2xl font-bold">Application form</h1>
       <button
         className="rounded-md bg-blue-500 px-4 py-2 text-sm text-slate-50 duration-200 hover:bg-blue-500/80"
         onClick={onNextStep}
@@ -38,7 +38,7 @@ const Tab2 = ({ onNextStep }: { onNextStep: () => void }) => {
 const Tab3 = () => {
   return (
     <div className="h-full w-full rounded-md bg-gray-100 p-10">
-      <h1>Preview</h1>
+      <h1 className="mb-5 text-2xl font-bold">Preview</h1>
     </div>
   );
 };
@@ -51,7 +51,7 @@ const StepBar = ({ step, setCurrentStep }: any) => {
         <div
           key={step.id}
           onClick={() => setCurrentStep(step.id)}
-          className="group flex cursor-pointer flex-col border-l-4 border-blue-600 py-2 pl-4 hover:border-blue-600/80 md:border-b-4 md:border-l-0 md:pb-4 md:pl-0 md:pt-0"
+          className="group flex cursor-pointer flex-col border-l-4 border-blue-500 py-2 pl-4 hover:border-blue-500/80 md:border-l-0 md:border-t-4 md:pb-0 md:pl-0 md:pt-4"
         >
           <span className="text-sm font-medium">{step.name}</span>
         </div>
@@ -59,7 +59,7 @@ const StepBar = ({ step, setCurrentStep }: any) => {
         step.status === "inactive" && (
           <div
             key={step.id}
-            className="group flex cursor-pointer flex-col border-l-4 border-gray-300 py-2 pl-4 text-gray-300 hover:border-gray-500 hover:text-gray-500 md:border-b-4 md:border-l-0 md:pb-4 md:pl-0 md:pt-0"
+            className="group flex cursor-pointer flex-col border-l-4 border-gray-300 py-2 pl-4 text-gray-300 hover:border-gray-500 hover:text-gray-500 md:border-l-0 md:border-t-4 md:pb-0 md:pl-0 md:pt-4"
           >
             <span className="text-sm font-medium">{step.name}</span>
           </div>
@@ -111,7 +111,7 @@ const StepperDefault = () => {
   );
 
   return (
-    <div className="flex w-full flex-row gap-x-10 md:max-w-lg md:flex-col">
+    <div className="flex w-full flex-col gap-x-10 md:max-w-lg">
       <nav aria-label="Progress" className="w-full">
         <ol role="list" className="md:flex md:space-y-0">
           {steps.map((step) => (
