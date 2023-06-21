@@ -41,7 +41,6 @@ const ToastSuccess = () => {
       setisOpen(false);
       setTimer(3);
     }
-    console.log(timer);
   }, [timer]);
 
   return (

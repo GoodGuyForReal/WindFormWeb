@@ -31,10 +31,6 @@ const Intro = () => {
           </p>
         </div>
       </div>
-
-      <button className="rounded-md border border-light-secondary px-6 py-2 font-medium text-gray-800 duration-200 hover:bg-gray-800 hover:text-slate-50">
-        How to use
-      </button>
     </div>
   );
 };
