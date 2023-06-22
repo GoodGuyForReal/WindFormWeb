@@ -52,7 +52,7 @@ const Footer = ({ setActiveTab, activeTab, tabs }) => {
             Linkedin
           </a>
           <a
-            href="https://github.com/GoodGuyForReal"
+            href="https://github.com/GoodGuyForReal/WindFormWeb/tree/main/app/doc/tabs"
             target="_blank"
             className="text-gray-500"
           >
