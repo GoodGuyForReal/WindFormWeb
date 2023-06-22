@@ -14,7 +14,17 @@ const SideBar = ({ tabs, setActiveTab, activeTab }) => {
             }`}
             onClick={() => setActiveTab(index)}
           >
-            {tab.icon}
+            {tab.icon && (
+              <span
+                className={` rounded-md text-white p-1.5 bg-blue-500 ${
+                  activeTab === index
+                    ? "shadow-blue-400 shadow-lg duration-200"
+                    : " "
+                }`}
+              >
+                {tab.icon}
+              </span>
+            )}
             {tab.title}
           </button>
         </div>

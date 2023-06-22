@@ -2,7 +2,7 @@ import Intro from "./tabs/intro/Intro";
 import Usage from "./tabs/usage/Usage";
 import DocSection from "@/components/DocSection";
 
-import { HomeIcon, CloudArrowDownIcon } from "@heroicons/react/24/outline";
+import { HomeIcon, CodeBracketSquareIcon } from "@heroicons/react/24/outline";
 import { InputMain } from "./tabs/inputs/InputMain";
 import { buttonMain } from "./tabs/buttons/Buttonmain";
 import { CheckBoxMain } from "./tabs/checkBox/CheckBoxMain";
@@ -28,7 +28,7 @@ export const tabs = [
     id: 1,
     title: "Usage",
     section: <Usage />,
-    icon: <CloudArrowDownIcon className="w-h-5 h-5" />,
+    icon: <CodeBracketSquareIcon className="w-h-5 h-5" />,
   },
   {
     id: 2,
