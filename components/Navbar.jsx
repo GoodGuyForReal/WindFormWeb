@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,7 +15,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-white/50 backdrop-blur-lg">
+      <header className="fixed drop-shadow-sm inset-x-0 top-0 z-50 border-b border-gray-200 bg-white/50 backdrop-blur-lg">
         <nav
           className="flex items-center justify-between px-6 py-3 lg:px-8"
           aria-label="Global"
