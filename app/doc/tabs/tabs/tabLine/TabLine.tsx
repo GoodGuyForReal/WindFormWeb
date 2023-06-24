@@ -30,7 +30,7 @@ type TabsProbs = {
   content: React.JSX.Element;
 }[];
 
-const TabOutlineTS = () => {
+const TabLine = () => {
   const [selectedTabID, setSelectedTabID] = useState<number>(0);
 
   const tabs: TabsProbs = [
@@ -43,16 +43,16 @@ const TabOutlineTS = () => {
 
   return (
     <div className="w-full max-w-sm">
-      <div className="tabs flex w-full gap-1 rounded-md border border-gray-300 p-1">
+      <div className="tabs flex gap-1 border-b border-gray-300">
         {tabs.map((item, id) => (
           <button
             key={id}
-            className={`w-full rounded-md px-4 py-2 text-sm font-medium outline-none duration-200  
-            ${
-              selectedTabID === item.id
-                ? "bg-blue-500 text-white hover:bg-blue-500/80 hover:text-white "
-                : "bg-none text-gray-400 hover:bg-gray-100 hover:text-gray-500"
-            } `}
+            className={`px-4 py-2 text-sm font-medium outline-none duration-200
+              ${
+                selectedTabID === item.id
+                  ? "border-b-2 border-blue-500 text-blue-500"
+                  : "text-gray-400 hover:text-gray-500"
+              } `}
             onClick={() => setSelectedTabID(item.id)}
           >
             {item.label}
@@ -68,4 +68,4 @@ const TabOutlineTS = () => {
   );
 };
 
-export default TabOutlineTS;
+export default TabLine;

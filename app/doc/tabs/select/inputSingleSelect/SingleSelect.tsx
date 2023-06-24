@@ -19,7 +19,7 @@ type CategoryProp = {
   label: string;
 }[];
 
-const InputSingleSelectTS = () => {
+const SingleSelect = () => {
   const [selectedValue, setselectedValue] = useState<string | null>(null);
   const [isSelectOpen, setIsSelectOpen] = useState<boolean>(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -87,4 +87,4 @@ const InputSingleSelectTS = () => {
   );
 };
 
-export default InputSingleSelectTS;
+export default SingleSelect;

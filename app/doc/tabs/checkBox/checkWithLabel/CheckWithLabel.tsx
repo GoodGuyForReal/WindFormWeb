@@ -28,11 +28,11 @@ function CheckIcon({ checked }: CheckProp) {
   );
 }
 
-const CheckDefaultTS = () => {
+const CheckWithLabel = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
   return (
-    <div className="check_default flex gap-3">
+    <div className="check_with_label flex gap-3">
       <div className="toggle_container">
         <label className="relative inline-flex cursor-pointer items-center">
           <input
@@ -46,11 +46,12 @@ const CheckDefaultTS = () => {
           </div>
         </label>
       </div>
-      <span className="text-sm font-medium text-gray-900 dark:text-gray-800">
-        {isChecked ? "True" : "False"}
-      </span>
+      <div className="label">
+        <h3 className="text-base font-semibold text-gray-800">Notifications</h3>
+        <p className="text-sm text-gray-400">Receive updates and alerts</p>
+      </div>
     </div>
   );
 };
 
-export default CheckDefaultTS;
+export default CheckWithLabel;

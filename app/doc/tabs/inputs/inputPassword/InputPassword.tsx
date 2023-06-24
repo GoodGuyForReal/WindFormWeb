@@ -1,7 +1,7 @@
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 
-const InputPasswordTS = () => {
+const InputPassword = () => {
   const [isPasswordHide, setIsPasswordHide] = useState<boolean>(true);
 
   return (
@@ -37,4 +37,4 @@ const InputPasswordTS = () => {
   );
 };
 
-export default InputPasswordTS;
+export default InputPassword;

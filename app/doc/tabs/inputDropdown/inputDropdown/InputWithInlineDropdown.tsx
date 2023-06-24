@@ -5,7 +5,7 @@ type SelectProp = {
   code: string;
 }[];
 
-const InputDropdownTS = () => {
+const InputWithInlineDropdown = () => {
   const [selectedValue, setSelectedValue] = useState<string>("");
   const [isSelectOpen, setIsSelectOpen] = useState<boolean>(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -88,4 +88,4 @@ const InputDropdownTS = () => {
   );
 };
 
-export default InputDropdownTS;
+export default InputWithInlineDropdown;

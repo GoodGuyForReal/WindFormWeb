@@ -5,7 +5,7 @@ interface FileInputProps {
   maxSizeInMb?: number;
 }
 
-export function InputFileDefaultTS({ maxSizeInMb = 5 }: FileInputProps) {
+export function InputFileDefault({ maxSizeInMb = 5 }: FileInputProps) {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -58,4 +58,4 @@ export function InputFileDefaultTS({ maxSizeInMb = 5 }: FileInputProps) {
   );
 }
 
-export default InputFileDefaultTS;
+export default InputFileDefault;

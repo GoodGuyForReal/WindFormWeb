@@ -1,6 +1,6 @@
-import InputMultiSelectTS from "./inputMultiSelect/InputMultiSelectTS";
-import InputMultiSelectV2TS from "./inputMultiSelectV2/inputMultiSelectV2TS";
-import InputSingleSelectTS from "./inputSingleSelect/InputSingleSelectTS";
+import MultiSelect from "./inputMultiSelect/MultiSelect";
+import MultiSelectWithImage from "./inputMultiSelectV2/MultiSelectWithImage";
+import SingleSelect from "./inputSingleSelect/SingleSelect";
 
 export const SelectMain = [
   {
@@ -8,19 +8,19 @@ export const SelectMain = [
     subComponent: [
       {
         name: "Input Multi Select",
-        component: <InputMultiSelectTS />,
+        component: <MultiSelect />,
         code: "multiSelect/inputMultiSelect/InputMultiSelectTS.tsx",
         href: "InputMultiSelect",
       },
       {
         name: "Input Multi Select V2",
-        component: <InputMultiSelectV2TS />,
+        component: <MultiSelectWithImage />,
         code: "multiSelect/inputMultiSelectV2/inputMultiSelectV2TS.tsx",
         href: "InputMultiSelect",
       },
       {
         name: "Input Single Select",
-        component: <InputSingleSelectTS />,
+        component: <SingleSelect />,
         code: "multiSelect/inputSingleSelect/InputSingleSelectTS.tsx",
         href: "InputMultiSelect",
       },

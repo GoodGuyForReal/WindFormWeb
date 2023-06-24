@@ -5,7 +5,7 @@ type CategoryProp = {
   label: string;
 }[];
 
-const InputDropdownOutsideTS = () => {
+const InputDropdownOutside = () => {
   const [selectedValue, setselectedValue] = useState<string | null>(null);
   const [isSelectOpen, setIsSelectOpen] = useState<boolean>(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -50,7 +50,9 @@ const InputDropdownOutsideTS = () => {
             className="flex h-full w-full cursor-pointer items-center justify-between rounded-l-md border border-gray-300 px-2 py-2 outline-none hover:bg-slate-100"
             onClick={() => setIsSelectOpen(true)}
           >
-            <label className="text-sm text-gray-800">{selectedValue}</label>
+            <label className="text-sm text-gray-800">
+              {selectedValue}
+            </label>
             <ChevronDownIcon className="h-4 w-4 text-gray-600" />
           </div>
 
@@ -79,7 +81,7 @@ const InputDropdownOutsideTS = () => {
           type="text"
           name="category"
           id="category"
-          className="borderpx-4 block w-full rounded-r-md border-gray-300 py-2 text-gray-900 outline-none ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-blue-500 sm:text-sm sm:leading-6"
+          className="block w-full rounded-r-md border px-4 py-2 text-gray-900 outline-none ring-inset border-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-500 sm:text-sm sm:leading-6"
           placeholder="Search..."
         />
       </div>
@@ -87,4 +89,4 @@ const InputDropdownOutsideTS = () => {
   );
 };
 
-export default InputDropdownOutsideTS;
+export default InputDropdownOutside;

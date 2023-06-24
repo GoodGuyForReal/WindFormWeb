@@ -1,6 +1,6 @@
-import TabDefaultTS from "../tabs/tabDefault/TabDefaultTS";
-import TabLineTS from "./tabLine/TabLineTS";
-import TabOutlineTS from "./tabOutline/TabOutlineTS";
+import TabDefault from "./tabDefault/TabDefault";
+import TabLine from "./tabLine/TabLine";
+import TabOutline from "./tabOutline/TabOutline";
 
 export const TabsMain = [
   {
@@ -8,19 +8,19 @@ export const TabsMain = [
     subComponent: [
       {
         name: "Tab Default",
-        component: <TabDefaultTS />,
+        component: <TabDefault />,
         code: "tabs/tabDefault/TabDefaultTS.tsx",
         href: "TabDefault",
       },
       {
         name: "Tab Outline",
-        component: <TabOutlineTS />,
+        component: <TabOutline />,
         code: "tabs/tabOutline/TabOutlineTS.tsx",
         href: "TabOutlineTS",
       },
       {
         name: "Tab Line",
-        component: <TabLineTS />,
+        component: <TabLine />,
         code: "tabs/tabLine/TabLineTS.tsx",
         href: "TabLine",
       },

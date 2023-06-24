@@ -1,12 +1,12 @@
 "use client";
-import InputMultiSelectV2TS from "@/app/doc/tabs/select/inputMultiSelectV2/inputMultiSelectV2TS";
-import CheckWithLabelTS from "@/app/doc/tabs/checkBox/checkWithLabel/CheckWithLabelTS";
+import MultiSelectWithImage from "@/app/doc/tabs/select/inputMultiSelectV2/MultiSelectWithImage";
+import CheckWithLabelTS from "@/app/doc/tabs/checkBox/checkWithLabel/CheckWithLabel";
 import React from "react";
 import ToggleWithLabel from "@/app/doc/tabs/toggleSwitch/toggleWithLabel/ToggleWithLabel";
-import InputPasswordTS from "@/app/doc/tabs/inputs/inputPassword/InputPasswordTS";
-import InputFileDefaultTS from "@/app/doc/tabs/fileInput/inputFileDefault/InputFileDefaultTS";
+import InputPassword from "@/app/doc/tabs/inputs/inputPassword/InputPassword";
+import InputFileDefault from "@/app/doc/tabs/fileInput/inputFileDefault/InputFileDefault";
 import DropDownIcon from "@/app/doc/tabs/dropdown/dropDownIcon/DropDownIcon";
-import TabOutlineTS from "@/app/doc/tabs/tabs/tabOutline/TabOutlineTS";
+import TabOutline from "@/app/doc/tabs/tabs/tabOutline/TabOutline";
 import ModalDefault from "@/app/doc/tabs/modals/modalDefault/ModalDefault";
 
 const ShowCase = () => {
@@ -16,8 +16,8 @@ const ShowCase = () => {
 
       <div className="absolute z-0 mt-16 flex w-full gap-4">
         <div className="flex w-full flex-col gap-5">
-          <TabOutlineTS />
-          <InputMultiSelectV2TS />
+          <TabOutline />
+          <MultiSelectWithImage />
           <CheckWithLabelTS />
         </div>
         <div className="flex w-full flex-col gap-5">
@@ -25,12 +25,12 @@ const ShowCase = () => {
             <ToggleWithLabel />
             <DropDownIcon />
           </div>
-          <InputPasswordTS />
+          <InputPassword />
           <ModalDefault />
         </div>
         <div className="flex w-full flex-col gap-5">
-          <InputFileDefaultTS />
-          <InputMultiSelectV2TS />
+          <InputFileDefault />
+          <MultiSelectWithImage />
           <CheckWithLabelTS />
         </div>
       </div>

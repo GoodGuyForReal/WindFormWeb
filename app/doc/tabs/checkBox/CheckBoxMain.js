@@ -1,7 +1,7 @@
-import CheckDefaultTS from "./checkDefault/CheckDefaultTS";
-import CheckDisableTS from "./checkDisable/CheckDisableTS";
-import CheckOutlineTS from "./checkOutline/CheckOutlineTS";
-import CheckWithLabelTS from "./checkWithLabel/CheckWithLabelTS";
+import CheckDefault from "./checkDefault/CheckDefault";
+import CheckDisable from "./checkDisable/CheckDisable";
+import CheckOutline from "./checkOutline/CheckOutline";
+import CheckWithLabelTS from "./checkWithLabel/CheckWithLabel";
 
 export const CheckBoxMain = [
   {
@@ -9,13 +9,13 @@ export const CheckBoxMain = [
     subComponent: [
       {
         name: "Input Checkbox Default",
-        component: <CheckDefaultTS />,
+        component: <CheckDefault />,
         code: "checkBox/checkDefault/CheckDefaultTS.tsx",
         href: "InputCheckboxDefault",
       },
       {
         name: "Input Check Outline",
-        component: <CheckOutlineTS />,
+        component: <CheckOutline />,
         code: "checkBox/checkOutline/CheckOutlineTS.tsx",
         href: "CheckOutline",
       },
@@ -27,7 +27,7 @@ export const CheckBoxMain = [
       },
       {
         name: "Input Check Disable",
-        component: <CheckDisableTS />,
+        component: <CheckDisable />,
         code: "checkBox/checkDisable/CheckDisableTS.tsx",
         href: "InputCheckDisable",
       },

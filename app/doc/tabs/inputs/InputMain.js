@@ -4,7 +4,7 @@ import InputValidError from "./inputValidError/InputValidError";
 import InputUrl from "./inputUrl/InputUrl";
 import InputWithInfo from "./inputHint/InputWithInfo";
 import InputSuccess from "./inputSuccess/InputSuccess";
-import InputPasswordTS from "./inputPassword/InputPasswordTS";
+import InputPassword from "./inputPassword/InputPassword";
 import InputButtonInside from "./inputButtonInside/InputButtonInside";
 import InputButtonOutside from "./inputButtonOutside/InputButtonOutside";
 
@@ -38,7 +38,7 @@ export const InputMain = [
       },
       {
         name: "Input Password",
-        component: <InputPasswordTS />,
+        component: <InputPassword />,
         code: "inputs/inputPassword/InputPasswordTS.tsx",
         href: "InputPassword",
       },

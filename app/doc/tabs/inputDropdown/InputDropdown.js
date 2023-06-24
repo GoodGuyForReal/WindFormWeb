@@ -1,19 +1,19 @@
-import InputDropdownTS from "./inputDropdown/InputDropdownTS";
-import InputDropdownOutsideTS from "./inputDropdownOutside/InputDropdownOutsideTS";
+import InputWithInlineDropdown from "./inputDropdown/InputWithInlineDropdown";
+import InputDropdownOutside from "./inputDropdownOutside/InputDropdownOutside";
 
 export const InputDropdown = [
   {
     title: "Inputs Dropdown",
     subComponent: [
       {
-        name: "Input with dropdown Outside",
-        component: <InputDropdownOutsideTS />,
+        name: "Input With Dropdown Outside",
+        component: <InputDropdownOutside />,
         code: "inputDropdown/inputDropdownOutside/InputDropdownOutsideTS.tsx",
         href: "InputDropdownOutside",
       },
       {
-        name: "Input with dropdown",
-        component: <InputDropdownTS />,
+        name: "Input With Inline Dropdown",
+        component: <InputWithInlineDropdown />,
         code: "inputDropdown/inputDropdown/InputDropdownTS.tsx",
         href: "InputDropdown",
       },

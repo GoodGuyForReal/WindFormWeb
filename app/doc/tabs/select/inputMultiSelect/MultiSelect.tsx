@@ -5,69 +5,27 @@ type TeamProps = {
   empID: number;
   value: string;
   label: string;
-  img: string;
 }[];
 
 type PersonProps = {
   empID: number;
   value: string;
   label: string;
-  img: string;
 };
 
 const teamEm: TeamProps = [
-  {
-    empID: 1,
-    img: "https://images.unsplash.com/photo-1534180477871-5d6cc81f3920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    value: "Jane",
-    label: "Jane",
-  },
-  {
-    empID: 2,
-    img: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    value: "Jason",
-    label: "Jason",
-  },
-  {
-    empID: 3,
-    img: "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
-    value: "Karen",
-    label: "Karen",
-  },
-  {
-    empID: 5,
-    img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
-    value: "Mark",
-    label: "Mark",
-  },
-  {
-    empID: 6,
-    img: "https://images.unsplash.com/photo-1513673054901-2b5f51551112?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ3fHxwb3J0cmFpdHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
-    value: "Vin",
-    label: "Vin",
-  },
-  {
-    empID: 7,
-    img: "https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    value: "Kurt",
-    label: "Kurt",
-  },
-  {
-    empID: 8,
-    img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    value: "Ashly",
-    label: "Ashly",
-  },
+  { empID: 1, value: "Jane", label: "Jane" },
+  { empID: 2, value: "Jason", label: "Jason" },
+  { empID: 3, value: "Karen", label: "Karen" },
+  { empID: 5, value: "Mark", label: "Mark" },
+  { empID: 6, value: "Kandry", label: "Kandry" },
+  { empID: 7, value: "Kurt", label: "Kurt" },
+  { empID: 8, value: "Ashly", label: "Ashly" },
 ];
 
-const InputMultiSelectV2TS = () => {
+const MultiSelect = () => {
   const [selectedOptions, setSelectedOptions] = useState<TeamProps>([
-    {
-      empID: 4,
-      img: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      value: "Kaven",
-      label: "Kaven",
-    },
+    { empID: 4, value: "Kaven", label: "Kaven" },
   ]);
   const [team, setTeam] = useState<TeamProps>(teamEm);
   const [searchitem, setSearchitem] = useState<string>("");
@@ -124,22 +82,17 @@ const InputMultiSelectV2TS = () => {
       </label>
       <div className="multi_select_body">
         <div
-          className={`flex h-full min-h-[40px] w-full rounded-md border-0 px-2 py-2 text-gray-900 outline-none ring-1 ring-inset  duration-200 sm:text-sm sm:leading-6
-         ${!isSelectOpen ? "ring-gray-300" : "ring-blue-500"}
-         `}
+          className={`flex h-full min-h-[40px] w-full rounded-md border-0 px-2 py-2 text-gray-900 outline-none ring-1 ring-inset duration-200 sm:text-sm sm:leading-6
+          ${!isSelectOpen ? "ring-gray-300" : "ring-blue-500"}
+          `}
         >
           <div className="team_main flex w-full flex-wrap items-center gap-2">
             {selectedOptions.map((item, id) => (
               <span
                 key={id}
-                className="flex cursor-pointer items-center gap-2 rounded-md border border-gray-300 px-2 py-1 text-sm font-medium text-gray-800 duration-200 hover:border-red-300 hover:bg-red-100"
+                className="flex cursor-pointer items-center gap-2 rounded-lg border border-gray-300 px-3 py-1 text-sm font-medium text-gray-800 duration-200 hover:border-red-300 hover:bg-red-100"
                 onClick={() => handleSelectRemove(item)}
               >
-                <img
-                  src={item.img}
-                  alt={item.value}
-                  className="h-5 w-5 rounded-full bg-slate-400 object-cover"
-                />
                 {item.value}
                 <XMarkIcon className="h-4 w-4 text-gray-800" />
               </span>
@@ -147,7 +100,7 @@ const InputMultiSelectV2TS = () => {
             <input
               type="text"
               className="flex-grow bg-transparent p-1 text-sm text-gray-800 outline-none"
-              placeholder="@Search..."
+              placeholder="Search..."
               value={searchitem}
               onChange={(e) => setSearchitem(e.target.value)}
               onClick={() => setIsSelectOpen(true)}
@@ -160,19 +113,14 @@ const InputMultiSelectV2TS = () => {
               ref={wrapperRef}
               className="absolute left-0 right-0 top-1 z-10 items-center drop-shadow-sm"
             >
-              <div className="drop_down h-full w-full overflow-hidden rounded-md border">
+              <div className="drop_down w-full overflow-hidden rounded-md border">
               <ul className="max-h-60 overflow-y-auto">
                 {search.map((item) => (
                   <li
                     onClick={() => handleSelectAdd(item)}
                     key={item.value}
-                    className="flex w-full cursor-pointer items-center gap-1 truncate bg-white px-2 py-2 text-gray-800 duration-200 hover:bg-blue-100"
+                    className="w-full cursor-pointer truncate bg-white px-2 py-2 text-gray-800 duration-200 hover:bg-blue-100"
                   >
-                    <img
-                      src={item.img}
-                      alt={item.value}
-                      className="h-5 w-5 rounded-full object-cover"
-                    />
                     {item.label}
                   </li>
                 ))}
@@ -186,4 +134,4 @@ const InputMultiSelectV2TS = () => {
   );
 };
 
-export default InputMultiSelectV2TS;
+export default MultiSelect;

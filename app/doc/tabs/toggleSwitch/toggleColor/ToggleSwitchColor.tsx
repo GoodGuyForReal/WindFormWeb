@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const ToggleBlue = () => {
-  const [isChecked, setIsChecked] = useState(true);
+  const [isChecked, setIsChecked] = useState<boolean>(true);
   return (
     <div>
       <div className="toggle_container">

@@ -28,7 +28,7 @@ function CheckIcon({ checked }: CheckProp) {
   );
 }
 
-const CheckDisableTS = () => {
+const CheckDisable = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [isDisabled, setIsDisabled] = useState<boolean>(true);
 
@@ -72,4 +72,4 @@ const CheckDisableTS = () => {
   );
 };
 
-export default CheckDisableTS;
+export default CheckDisable;

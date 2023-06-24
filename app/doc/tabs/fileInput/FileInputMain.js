@@ -1,5 +1,5 @@
-import InputFileDefaultTS from "../fileInput/inputFileDefault/InputFileDefaultTS";
-import InputFileSmallTS from "./inputFileSmall/InputFileSmallTS";
+import InputFileDefault from "./inputFileDefault/InputFileDefault";
+import InputFileSmall from "./inputFileSmall/InputFileSmall";
 
 export const FileInputMain = [
   {
@@ -7,13 +7,13 @@ export const FileInputMain = [
     subComponent: [
       {
         name: "Input File Default",
-        component: <InputFileDefaultTS />,
+        component: <InputFileDefault />,
         code: "fileInput/inputFileDefault/InputFileDefaultTS.tsx",
         href: "InputFileDefault",
       },
       {
         name: "Input File Small",
-        component: <InputFileSmallTS />,
+        component: <InputFileSmall />,
         code: "fileInput/inputFileSmall/InputFileSmallTS.tsx",
         href: "InputFileSmall",
       },
