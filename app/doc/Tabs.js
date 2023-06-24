@@ -92,13 +92,13 @@ export const tabs = [
   },
   {
     id: 12,
-    title: "Toasts",
+    title: "Toast Message",
     section: <DocSection section={ToastMain} />,
     list: ToastMain,
   },
   {
     id: 13,
-    title: "Textareas",
+    title: "Textarea",
     section: <DocSection section={TextAreaMain} />,
     list: TextAreaMain,
   },

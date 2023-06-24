@@ -4,7 +4,7 @@ import TextAreaWithImage from "./textAreaWithImage/TextAreaWithImage";
 
 export const TextAreaMain = [
   {
-    title: "Text Area",
+    title: "Textarea",
     subComponent: [
       {
         name: "Text Area Default",
