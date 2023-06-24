@@ -7,13 +7,13 @@ export const StepperMain = [
       {
         name: "Stepper Default",
         component: <StepperDefault />,
-        code: "tabs/tabDefault/TabDefaultTS.tsx",
+        code: "app/doc/tabs/stepper/stepperDefault/StepperDefault.tsx",
         href: "StepperDefault",
       },
       {
         name: "Stepper With Number",
         component: <StepperWithNumber />,
-        code: "tabs/tabDefault/TabDefaultTS.tsx",
+        code: "app/doc/tabs/stepper/stepperWithNumber/StepperWithNumber.tsx",
         href: "StepperWithNumber",
       },
     ],

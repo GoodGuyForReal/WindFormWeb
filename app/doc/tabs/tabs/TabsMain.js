@@ -9,19 +9,19 @@ export const TabsMain = [
       {
         name: "Tab Default",
         component: <TabDefault />,
-        code: "tabs/tabDefault/TabDefaultTS.tsx",
+        code: "app/doc/tabs/tabs/tabDefault/TabDefault.tsx",
         href: "TabDefault",
       },
       {
         name: "Tab Outline",
         component: <TabOutline />,
-        code: "tabs/tabOutline/TabOutlineTS.tsx",
+        code: "app/doc/tabs/tabs/tabOutline/TabOutline.tsx",
         href: "TabOutlineTS",
       },
       {
         name: "Tab Line",
         component: <TabLine />,
-        code: "tabs/tabLine/TabLineTS.tsx",
+        code: "app/doc/tabs/tabs/tabLine/TabLine.tsx",
         href: "TabLine",
       },
     ],

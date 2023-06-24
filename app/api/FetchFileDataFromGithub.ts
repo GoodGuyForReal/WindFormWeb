@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function FetchFileDataFromGithub(path: string) {
   const owner: string = "GoodGuyForReal";
-  const repo: string = "Wind-Form";
+  const repo: string = "WindFormWeb";
   const filePath: string = path;
 
   try {

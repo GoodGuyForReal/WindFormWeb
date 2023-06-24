@@ -9,19 +9,19 @@ export const TextAreaMain = [
       {
         name: "Text Area Default",
         component: <TextAreaDefault />,
-        code: "textArea/textAreaDefault/TextAreaDefault.tsx",
+        code: "app/doc/tabs/textArea/textAreaDefault/TextAreaDefault.tsx",
         href: "TextAreaDefault",
       },
       {
         name: "Text Area With Image",
         component: <TextAreaWithImage />,
-        code: "textArea/textAreaWithImage/TextAreaWithImage.tsx",
+        code: "app/doc/tabs/textArea/textAreaWithImage/TextAreaWithImage.tsx",
         href: "TextAreaWithImage",
       },
       {
         name: "Text Area With Actions",
         component: <TextAreaWithActions />,
-        code: "textArea/textAreaWithActions/TextAreaWithActions.tsx",
+        code: "app/doc/tabs/textArea/textAreaWithActions/TextAreaWithActions.tsx",
         href: "textAreaWithActions",
       },
     ],

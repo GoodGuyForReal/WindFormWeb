@@ -8,13 +8,13 @@ export const FileInputMain = [
       {
         name: "Input File Default",
         component: <InputFileDefault />,
-        code: "fileInput/inputFileDefault/InputFileDefaultTS.tsx",
+        code: "app/doc/tabs/fileInput/inputFileDefault/InputFileDefault.tsx",
         href: "InputFileDefault",
       },
       {
         name: "Input File Small",
         component: <InputFileSmall />,
-        code: "fileInput/inputFileSmall/InputFileSmallTS.tsx",
+        code: "app/doc/tabs/fileInput/inputFileSmall/InputFileSmall.tsx",
         href: "InputFileSmall",
       },
     ],
