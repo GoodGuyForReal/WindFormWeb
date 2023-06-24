@@ -15,10 +15,10 @@ const InputButtonOutside = () => {
           type="text"
           name="searchButtonOutside"
           id="searchButtonOutside"
-          className="block w-full rounded-md border-0 py-2 pl-4 pr-[88px] text-gray-900 outline-none ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
+          className="block w-full rounded-md border border-gray-300 py-2 pl-4 pr-[88px] text-gray-900 outline-none ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-blue-500 sm:text-sm sm:leading-6"
           placeholder="Search..."
         />
-        <button className="rounded-md bg-blue-500 px-6 py-2 font-medium text-sm text-slate-50 duration-200 hover:bg-blue-500/80">
+        <button className="rounded-md bg-blue-500 px-6 py-2 text-sm font-medium text-slate-50 duration-200 hover:bg-blue-500/80">
           Search
         </button>
       </div>

@@ -82,7 +82,7 @@ const InputMultiSelectTS = () => {
       </label>
       <div className="multi_select_body">
         <div
-          className={`flex h-full min-h-[40px] w-full rounded-md border-0 px-2 py-2 text-gray-900 outline-none ring-1 ring-inset  duration-200 sm:text-sm sm:leading-6
+          className={`flex h-full min-h-[40px] w-full rounded-md border-0 px-2 py-2 text-gray-900 outline-none ring-1 ring-inset duration-200 sm:text-sm sm:leading-6
           ${!isSelectOpen ? "ring-gray-300" : "ring-blue-500"}
           `}
         >

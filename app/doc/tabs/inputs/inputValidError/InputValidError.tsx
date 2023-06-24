@@ -18,7 +18,7 @@ const InputValidError = () => {
           type="text"
           name="Email"
           id="errorEmail"
-          className="block w-full rounded-md border-0 px-4 py-2 text-sm text-red-900 outline-none ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:leading-6"
+          className="block w-full rounded-md border border-red-500 px-4 py-2 text-sm text-red-900 outline-none ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-blue-500 sm:leading-6"
           placeholder="Enter your email"
         />
         <span className="mt-2 flex items-center gap-1 text-sm text-red-500">
