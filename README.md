@@ -2,7 +2,7 @@
 website: https://windform.vercel.app/
 
 ## Overview
-Welcome to WindForm Alpha 1.0! Our startup company is dedicated to providing a revolutionary solution for building forms quickly and effortlessly. With our fully customizable Tailwind CSS components, you can say goodbye to the hassle of npm downloads and gain complete control over your form design.
+Welcome to WindForm Alpha 1.0! Our project is dedicated to providing a revolutionary solution for building forms quickly and effortlessly. With our fully customizable Tailwind CSS components, you can say goodbye to the hassle of npm downloads and gain complete control over your form design.
 
 ## Getting Started
 This is a collection of reusable and customizable form components built with Tailwind CSS. The purpose of this repository is to provide a reference and inspiration for building your own form components, rather than being installed as a dependency or distributed through npm. Therefore, it is not considered a traditional component library.
